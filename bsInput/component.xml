@@ -1,0 +1,76 @@
+<DesignerComponent>
+	<Header>
+		<Name>Boostrap Input</Name>
+		<IName>BSInputComponent</IName>
+		<Description>Bootstrap Input</Description>
+		<Category>BOOTSTRAP</Category>
+		<CatDescription>Bootstrap UI</CatDescription>
+		<Type>PalleteEntry</Type>
+		<Version>1.0</Version>
+	</Header>
+	<Contents>
+		
+		<Model>
+			<Property>listeners</Property>
+			<Property>parameter</Property>
+			<Property>executeAtStart</Property>
+			<Property>htmlObject</Property>
+			<Property>preExecution</Property>
+			<Property>postExecution</Property>
+			<Property>preChange</Property>
+			<Property>postChange</Property>
+			<Property name ="inputType" type="string">inputType</Property>
+		</Model>
+		
+		<Implementation>
+			<Code src="bsInput.js" />
+			<Dependencies>		    
+				<Dependency src="../bootstrap/js/bootstrap.js" version="1.0">bootstrap.js</Dependency>
+			</Dependencies>
+			<Styles>
+				<Style src="../bootstrap/css/bootstrap.css">bootstrap.css</Style>
+			</Styles>
+			
+			<CustomProperties>
+			
+			<DesignerProperty>
+				<Header>
+					<Name>inputType</Name>
+					<Parent>BaseProperty</Parent>
+					<DefaultValue>text</DefaultValue>
+					<Description>Input Type</Description>
+					<InputType type='valuelist' />
+					<OutputType>String</OutputType>
+					<Order>52</Order>
+					<Advanced>false</Advanced>
+					<Version>1.0</Version>
+				</Header>
+				<Values>
+					<Value display='Text'>text</Value>
+					<Value display='Password'>password</Value>
+
+				</Values>
+			</DesignerProperty>
+			<!--
+			<DesignerProperty>
+				<Header>
+					<Name>prependIcon</Name>
+					<Parent>BaseProperty</Parent>
+					<DefaultValue>"false"</DefaultValue>
+					<Description>Prepend Icon</Description>
+					<Advanced>false</Advanced>
+					<Tooltip>Prepend Icon</Tooltip>
+					<InputType>Boolean</InputType>
+					<OutputType>Boolean</OutputType>
+					<Order>30</Order>
+					<Version>1.0</Version>
+				</Header>
+			</DesignerProperty>
+			-->
+		</CustomProperties>
+	
+	
+		</Implementation>
+		
+	</Contents>
+</DesignerComponent> 

@@ -1,0 +1,39 @@
+<DesignerComponent>
+	<Header>
+		<Name>Boostrap Button Group</Name>
+		<IName>BSButtonGroupComponent</IName>
+		<Description>Bootstrap Button Group</Description>
+		<Category>BOOTSTRAP</Category>
+		<CatDescription>Bootstrap UI</CatDescription>
+		<Type>PalleteEntry</Type>
+		<Version>1.0</Version>
+	</Header>
+	<Contents>
+		
+		<Model>
+			<Property>parameter</Property>
+			<Property>listeners</Property>
+			<Property>expression</Property>
+			<Property>executeAtStart</Property>
+			<Property>htmlObject</Property>
+			<Property name="parameters">xActionArrayParameter</Property>
+                        <Definition name="queryDefinition">
+				<Property>dataSource</Property>
+			</Definition>
+			<Property>postFetch</Property>
+			<Property>valuesArray</Property>
+			<Property>valueAsId</Property>
+		</Model>
+		
+		<Implementation>
+			<Code src="bsButtonGroup.js" />
+			<Dependencies>		    
+				<Dependency src="../bootstrap/js/bootstrap.js" version="1.0">bootstrap.js</Dependency>
+			</Dependencies>
+			<Styles>
+				<Style src="../bootstrap/css/bootstrap.css">bootstrap.css</Style>
+			</Styles>
+		</Implementation>
+		
+	</Contents>
+</DesignerComponent> 
