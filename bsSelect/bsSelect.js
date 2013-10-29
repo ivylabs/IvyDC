@@ -16,17 +16,17 @@ var BSSelectBaseComponent = InputBaseComponent.extend({
 	draw: function (myArray) {
 		var myself = this;
 		var $htmlObject = $("#"+this.htmlObject);
-
-
+		var width = this.buttonWidth && this.buttonWidth != "" ? this.buttonWidth : $htmlObject.width();
+		if (width > 0) {
+			width = width + "px";
+		} else {
+			width = "auto";
+		}
+		var caret =  "  <span class='caret'></span>";
 		selectHTML = "<div class='btn-group'>";
-		//selectHTML += "<a class='btn "+this.buttonType+" "+this.buttonSize+" dropdown-toggle' data-toggle='dropdown' href='#'>";
-		
-		
-		selectHTML += "<button type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown' style='width:"+$htmlObject.width()+"px'>"
+		selectHTML += "<button type='button' class='btn "+this.buttonType+" "+this.buttonSize+" dropdown-toggle' data-toggle='dropdown' href='#' style='width:"+ width +";'>";
 		selectHTML += "Select ";
-		selectHTML += "</button>";
-		
-		
+		selectHTML += caret + "</button>";
 
 		var firstVal,
 		currentVal = Dashboards.ev(Dashboards.getParameterValue(this.parameter)),
@@ -47,10 +47,10 @@ var BSSelectBaseComponent = InputBaseComponent.extend({
 		
 		
 	
-		selectHTML += "<ul class='dropdown-menu' style='width:"+$htmlObject.width()+"px'>";
+		selectHTML += "<ul class='dropdown-menu' style='width:"+ width +";'>";
 
 		
-		
+		var values = {};
 		for (var i = 0, len = myArray.length; i < len; i++) {
 			if (myArray[i] != null && myArray[i].length > 0) {
 				var ivid = vid || myArray[i][0] == null;
@@ -58,9 +58,11 @@ var BSSelectBaseComponent = InputBaseComponent.extend({
 				if (myArray[i].length > 1) {
 					value = "" + myArray[i][ivid ? 1 : 0];
 					label = "" + myArray[i][1];
+					values[value] = label;
 				} else {
 					value = "" + myArray[i][0];
 					label = "" + myArray[i][0];
+					values[value] = label;
 				}
 				if (i == 0) {
 					firstVal = value;
@@ -69,65 +71,10 @@ var BSSelectBaseComponent = InputBaseComponent.extend({
 				if (jQuery.inArray(""+ value, currentValArray.map(function (v) {return "" + v;})) > -1) {
 					currentIsValid = true;
 				}
-				selectHTML += "<li><a href='#'>" + Dashboards.escapeHtml(label) + "</a></li>";
+				selectHTML += "<li><a href='#" + Dashboards.escapeHtml(value) + "'>" + Dashboards.escapeHtml(label) + "</a></li>";
 			}
 		}
 		
-		
-		
-		/*
-		
-		$wrapperTemplate = $(this.defaultWrapper);
-		$buttonTemplate = $(this.defaultTemplate);
-		
-		console.log($wrapperTemplate);
-		
-		var valIdx = this.valueAsId ? 1 : 0;
-		var lblIdx = 1;
-		
-		
-		
-		var $buttons = [];
-		for (var i = 0, len = myArray.length; i < len; i++){
-      			var value = myArray[i][valIdx],
-				label = myArray[i][lblIdx];
-
-      			value = (value == null ? null : value.replace('"','&quot;' ));
-      			label = (label == null ? null : label.replace('"','&quot;' ));
-
-      			if(i == 0){
-		        	firstVal = value;
-		      	}
-
-		      	var $newObj = $buttonTemplate.clone();
-		      	$newObj.html("<a href='#'></a>");
-			$newObj.text(label);
-		//      	$newObj.attr("value",value);
-		//      	$newObj.attr("content",value);
-
-		      	$buttons.push($newObj);
-			
-		//	console.log($buttons);
-
-		//     	$htmlObject.append($newObj);
-			
-			$($wrapperTemplate).find("ul").append($newObj);
-			
-
-			
-			$htmlObject.append($wrapperTemplate);
-      		}
-      		
-      		console.log($buttons);
-		
- 		$buttons.each(function(){
- 			$(this).bind("click", function(){
- 				BootstrapMultiButtonComponent.prototype.clickHandler();
- 			});	
- 		})
-
-*/
-	
 		selectHTML += "</ul>"
 		selectHTML += "</div>";
 		
@@ -137,31 +84,38 @@ var BSSelectBaseComponent = InputBaseComponent.extend({
 
 		$htmlObject.html(selectHTML);
 
-		var replacementValue = (this.defaultIfEmpty)? firstVal : null;
-		
-		$("select", $htmlObject).val(replacementValue);
-		
-		Dashboards.setParameter(this.parameter,firstVal);
-		Dashboards.processChange(this.name);
 		
 		var currentParameter = Dashboards.getParameterValue(this.parameter)
 
-		// set the default value to the first item in the data source. This needs to be changed to use the value of the parameter
-		$("#" + this.htmlObject+" .btn:first-child").html(currentParameter);
+		if (currentParameter) {
+			// set the default value to the first item in the data source. This needs to be changed to use the value of the parameter
+			$("#" + this.htmlObject+" .btn:first-child").html(values[currentParameter] + caret);
+			$("#" + this.htmlObject+" .btn:first-child").attr('#' + currentParameter);
+		} else {
+			var replacementValue = firstVal;
+			var replacementLabel = firstLabel;
+			$("#" + this.htmlObject+" .btn:first-child").attr('href', '#' + replacementValue);
+			$("#" + this.htmlObject+" .btn:first-child").html(replacementLabel + caret);
+			
+			Dashboards.fireChange(this.parameter,firstVal);
+			
+		}
 
 	
 		var myself = this;
 	
-		$(".dropdown-menu li a", $htmlObject).click(function(){
-                        var v = $(this).text();
+		$("#" + this.htmlObject + " .dropdown-menu li a").click(function(e){
+                        var v = $(this).attr('href').replace('#','');
+                        var t = $(this).text();
                        
                         // change the default value of the selector
-                        $("#" + myself.htmlObject+" .btn:first-child").html(v);
+                        $("#" + myself.htmlObject+" .btn:first-child").html(t + caret);
                         // set the value on the component 'cache'
                         myself.setValue(v);
- 
                         Dashboards.processChange(myself.name);         
                 //      Dashboards.fireChange(myself.parameter,$(this).text());
+
+                		e.preventDefault();
                
                        
  
