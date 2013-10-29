@@ -104,7 +104,7 @@ var BSSelectBaseComponent = InputBaseComponent.extend({
 	
 		var myself = this;
 	
-		$("#" + this.htmlObject + " .dropdown-menu li a").click(function(){
+		$("#" + this.htmlObject + " .dropdown-menu li a").click(function(e){
                         var v = $(this).attr('href').replace('#','');
                         var t = $(this).text();
                        
@@ -114,6 +114,8 @@ var BSSelectBaseComponent = InputBaseComponent.extend({
                         myself.setValue(v);
                         Dashboards.processChange(myself.name);         
                 //      Dashboards.fireChange(myself.parameter,$(this).text());
+
+                		e.preventDefault();
                
                        
  
