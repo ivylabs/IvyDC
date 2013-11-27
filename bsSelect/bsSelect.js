@@ -16,7 +16,7 @@ var BSSelectBaseComponent = InputBaseComponent.extend({
 	draw: function (myArray) {
 		var myself = this;
 		var $htmlObject = $("#"+this.htmlObject);
-		var width = this.buttonWidth && this.buttonWidth != "" ? this.buttonWidth : $htmlObject.width();
+		var width = this.buttonWidth && this.buttonWidth != "" ? this.buttonWidth : 0; // $htmlObject.width() ??
 		if (width > 0) {
 			width = width + "px";
 		} else {
