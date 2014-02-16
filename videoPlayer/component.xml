@@ -1,0 +1,96 @@
+<DesignerComponent>
+	<Header>
+		<Name>Video Player</Name>
+		<IName>videoPlayerComponent</IName>
+		<Description>Play a Video in your dashboard</Description>
+		<Category>IVYIS</Category>
+		<CatDescription>Ivy IS</CatDescription>
+		<Type>PalleteEntry</Type>
+		<Version>1.0</Version>
+	</Header>
+	<Contents>
+		<Model>
+			<Property>executeAtStart</Property>
+			<Property>htmlObject</Property>
+			<Property>width</Property>
+			<Property>height</Property>
+			<Property name ="videoURL" type="string">videoURL</Property>
+			<Property name ="controls" type="boolean">controls</Property>
+			<Property name ="autoPlay" type="boolean">autoPlay</Property>
+			<Property name ="popup" type="boolean">popup</Property>
+			
+		</Model>
+		<Implementation>
+			<Code src="videoPlayer.js" />
+			
+			<Dependencies>
+				<Dependency src="video.js">video.js</Dependency>
+			</Dependencies>
+			
+			<Styles>
+				<Style src="video.css">video.css</Style>
+			</Styles>
+			
+			<CustomProperties>
+			
+				<DesignerProperty>
+					<Header>
+						<Name>controls</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"true"</DefaultValue>
+						<Description>Enable Controls</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>autoPlay</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"false"</DefaultValue>
+						<Description>Auto Play</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>videoURL</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Video URL</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>popup</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"false"</DefaultValue>
+						<Description>Show Video in a Popup</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+			
+			</CustomProperties>
+			
+		</Implementation>
+	</Contents>
+</DesignerComponent>
