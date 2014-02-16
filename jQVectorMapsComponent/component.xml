@@ -1,0 +1,217 @@
+<DesignerComponent>
+	<Header>
+		<Name>SVG Vector Map</Name>
+		<IName>jQVectorMapComponent</IName>
+		<Description>jQVectorMapComponent</Description>
+		<Category>IVYIS</Category>
+		<CatDescription>Ivy IS</CatDescription>
+		<Type>PalleteEntry</Type>
+		<Version>1.0</Version>
+	</Header>
+	<Contents>
+		
+		<Model>
+			<Property>executeAtStart</Property>
+			<Property>htmlObject</Property>
+			<Property>preExecution</Property>
+			<Property>postExecution</Property>
+			<Property>listeners</Property>
+			<Property name="parameters">xActionArrayParameter</Property>
+			<Property name ="mapFile" type="string">mapFile</Property>
+			<Property name ="mapColor">mapColor</Property>
+			<Property name ="mapBackgroundColor" type="string">mapBackgroundColor</Property>
+			<Property name ="mapHoverColor" type="string">mapHoverColor</Property>
+			<Property name ="mapNormalizeFunction" type="string">mapNormalizeFunction</Property>
+			<Property name ="mapLowScaleColor" type="string">mapLowScaleColor</Property>
+			<Property name ="mapHighScaleColor" type="string">mapHighScaleColor</Property>
+			<Property name ="mapHoverOpacity" type="string">mapHoverOpacity</Property>
+			<Property>mapClickFunction</Property>
+			<Property>mapOnRegionShowFunction</Property>
+			
+			<Definition name="queryDefinition">
+				<Property type="query">dataSource</Property>
+			</Definition>
+		</Model>
+		
+		<Implementation>
+			<Code src="jQVectorMapsImplementation.js" />
+			
+			
+			
+			<Dependencies>
+				<Dependency src="jquery.vector-map.js">jquery.vector-map.js</Dependency>
+			</Dependencies>
+			<Dependencies>
+				<Dependency src="world-en.js">world-en.js</Dependency>
+				<Dependency src="world-en.js">germany-en.js</Dependency>
+				<Dependency src="world-en.js">europe-en.js</Dependency>
+				<Dependency src="usa-en.js">usa-en.js</Dependency>
+			</Dependencies>
+			
+			<Styles>
+				<Style src="jquery.vector-map.css">jquery.vector-map.css</Style>
+			</Styles>
+			
+			<CustomProperties>
+				<DesignerProperty>
+					<Header>
+						<Name>mapFile</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>world_en</DefaultValue>
+						<Description>Map File</Description>
+						<InputType type='valuelist'/>
+						<OutputType>String</OutputType>
+						<Order>51</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+					<Values>
+						<Value display='World'>world_en</Value>
+						<Value display='Europe'>europe_en</Value>
+						<Value display='Germany'>germany_en</Value>
+						<Value display='USA'>usa_en</Value>
+					</Values>
+				</DesignerProperty>
+				
+				
+				<DesignerProperty>
+					<Header>
+						<Name>mapColor</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Map Color</Description>
+						<InputType>Color</InputType>
+						<OutputType>String</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>mapBackgroundColor</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Map Background Color</Description>
+						<InputType>Color</InputType>
+						<OutputType>String</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>mapHoverColor</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Map Hover Color</Description>
+						<InputType>Color</InputType>
+						<OutputType>String</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>mapLowScaleColor</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Map Low Scale Color</Description>
+						<InputType>Color</InputType>
+						<OutputType>String</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>mapHighScaleColor</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Map High Scale Color</Description>
+						<InputType>Color</InputType>
+						<OutputType>String</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>mapNormalizeFunction</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>linear</DefaultValue>
+						<Description>Normalize Function</Description>
+						<InputType type='valuelist' />
+						<OutputType>String</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+					<Values>
+						<Value display='Linear'>linear</Value>
+						<Value display='Polynomial'>polynomial</Value>
+					</Values>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>mapHoverOpacity</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>0.7</DefaultValue>
+						<Description>Map Hover Opacity</Description>
+						<InputType>Float</InputType>
+						<OutputType>Number</OutputType>
+						<Order>52</Order> 
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				
+				
+				<DesignerProperty>
+					<Header>
+						<Name>mapClickFunction</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Map Click Function</Description>
+						<Tooltip>Function to be called when map is clicked</Tooltip>
+						<Advanced>false</Advanced>
+						<InputType>JavaScript</InputType>
+						<OutputType>Function</OutputType>
+						<Order>40</Order>
+						<Version>1.0</Version>
+					</Header>            
+		      	</DesignerProperty>
+		      	
+		      	<DesignerProperty>
+					<Header>
+						<Name>mapOnRegionShowFunction</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Map Show Region Function</Description>
+						<Tooltip>Function to be called when </Tooltip>
+						<Advanced>false</Advanced>
+						<InputType>JavaScript</InputType>
+						<OutputType>Function</OutputType>
+						<Order>40</Order>
+						<Version>1.0</Version>
+					</Header>            
+		      	</DesignerProperty>
+				
+			</CustomProperties>
+			
+
+		</Implementation>
+
+	</Contents>
+</DesignerComponent>
