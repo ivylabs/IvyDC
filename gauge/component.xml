@@ -1,0 +1,105 @@
+
+<DesignerComponent>
+	<Header>
+		<Name>Gauge Component</Name>
+		<IName>gaugeComponent</IName>
+		<Description>Gauge Component</Description>
+		<Category>IVYIS</Category>
+		<CatDescription>Ivy IS</CatDescription>
+		<Type>PalleteEntry</Type>
+		<Version>1.0</Version>
+	</Header>
+	<Contents>
+		<Model>
+			<Property>executeAtStart</Property>
+			<Property>htmlObject</Property>
+			<Property>label</Property>
+			<Property>parameters</Property>
+			<Property>listeners</Property>
+			<Property>preExecution</Property>
+			<Property>postExecution</Property>
+			
+			<Property name ="minValue" type="string">minValue</Property>
+			<Property name ="maxValue" type="string">maxValue</Property>
+			<Property name ="gaugeWidth" type="string">gaugeWidth</Property>
+			<Property name ="subTitle" type="string">subTitle</Property>
+				
+			<Definition name="queryDefinition">
+				<Property type="query">dataSource</Property>
+			</Definition>        
+		</Model>
+		
+		<Implementation>
+			<Code src="gaugeComponent.js" />
+			
+			<Dependencies>		    
+				<Dependency src="justgage.1.0.1.js" version="1.0">justgage</Dependency>
+				<Dependency src="raphael.2.1.0.min.js">justgage</Dependency>
+			</Dependencies>
+			
+			<Styles>
+			</Styles>
+			
+			<CustomProperties>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>minValue</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>0</DefaultValue>
+						<Description>Min Value</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>9</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>maxValue</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>1000</DefaultValue>
+						<Description>Max Value</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>10</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>gaugeWidth</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>1</DefaultValue>
+						<Description>Gauge Width</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>53</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>subTitle</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Subtitle</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>53</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+			</CustomProperties>
+			
+		</Implementation>
+	</Contents>
+</DesignerComponent>
