@@ -1,22 +1,23 @@
 .jvectormap-label {
     position: absolute;
     display: none;
-    border: solid 2px #CDCDCD;
+    border: solid 1px #CDCDCD;
+    -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    background: #ffffff;
-    color: #292929;
+    border-radius: 3px;
+    background: #292929;
+    color: white;
     font-family: sans-serif, Verdana;
     font-size: smaller;
-    padding: 5px;
-}
-
-.jvectormap-label h3 {
-	margin:0px;
+    padding: 3px;
 }
 
 .jvectormap-zoomin, .jvectormap-zoomout {
     position: absolute;
+    left: 10px;
+    -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+    border-radius: 3px;
     background: #292929;
     padding: 3px;
     color: white;
@@ -28,11 +29,9 @@
 }
 
 .jvectormap-zoomin {
-    left: 10px;
     top: 10px;
 }
 
 .jvectormap-zoomout {
-    left: 10px;
     top: 30px;
 }
