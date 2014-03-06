@@ -39,17 +39,19 @@
 			
 			
 			<Dependencies>
-				<Dependency src="jquery.vector-map.js">jquery.vector-map.js</Dependency>
+				<Dependency src="jquery-jvectormap-1.2.2.min.js">jquery-jvectormap-1.2.2.min.js</Dependency>
 			</Dependencies>
 			<Dependencies>
-				<Dependency src="world-en.js">world-en.js</Dependency>
-				<Dependency src="world-en.js">germany-en.js</Dependency>
-				<Dependency src="world-en.js">europe-en.js</Dependency>
-				<Dependency src="usa-en.js">usa-en.js</Dependency>
+				<Dependency src="jquery-jvectormap-world-mill-en.js">jquery-jvectormap-world-mill-en.js</Dependency>
+				<Dependency src="jquery-jvectormap-europe-mill-en.js">jquery-jvectormap-europe-mill-en.js</Dependency>
+				<Dependency src="jquery-jvectormap-de-mill-en.js">jquery-jvectormap-de-mill-en.js</Dependency>
+				<Dependency src="jquery-jvectormap-us-aea-en.js">jquery-jvectormap-us-aea-en.js</Dependency>
+				<Dependency src="jquery-jvectormap-uk-mill-en.js">jquery-jvectormap-uk-mill-en.js</Dependency>
+				<Dependency src="jquery-jvectormap-pt-mill-en.js">jquery-jvectormap-pt-mill-en.js</Dependency>
 			</Dependencies>
 			
 			<Styles>
-				<Style src="jquery.vector-map.css">jquery.vector-map.css</Style>
+				<Style src="jquery-jvectormap-1.2.2.css">jquery-jvectormap-1.2.2.css</Style>
 			</Styles>
 			
 			<CustomProperties>
@@ -57,7 +59,7 @@
 					<Header>
 						<Name>mapFile</Name>
 						<Parent>BaseProperty</Parent>
-						<DefaultValue>world_en</DefaultValue>
+						<DefaultValue>world_mill_en</DefaultValue>
 						<Description>Map File</Description>
 						<InputType type='valuelist'/>
 						<OutputType>String</OutputType>
@@ -66,10 +68,12 @@
 						<Version>1.0</Version>
 					</Header>
 					<Values>
-						<Value display='World'>world_en</Value>
-						<Value display='Europe'>europe_en</Value>
-						<Value display='Germany'>germany_en</Value>
-						<Value display='USA'>usa_en</Value>
+						<Value display='World'>world_mill_en</Value>
+						<Value display='Europe'>europe_mill_en</Value>
+						<Value display='Germany'>de_mill_en</Value>
+						<Value display='United Kingdom'>uk_mill_en</Value>
+						<Value display='Portugal'>pt_mill_en</Value>
+						<Value display='USA'>us_aea_en</Value>
 					</Values>
 				</DesignerProperty>
 				
