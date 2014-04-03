@@ -14,16 +14,19 @@
 			<Property>executeAtStart</Property>
 			<Property>htmlObject</Property>
 			<Property>label</Property>
+			<Property>expression</Property>
 			<Property>parameters</Property>
 			<Property>listeners</Property>
 			<Property>preExecution</Property>
 			<Property>postExecution</Property>
-			
-			<Property name ="minValue" type="string">minValue</Property>
-			<Property name ="maxValue" type="string">maxValue</Property>
-			<Property name ="gaugeWidth" type="string">gaugeWidth</Property>
-			<Property name ="subTitle" type="string">subTitle</Property>
-				
+			<Property>gaugeType</Property>
+			<Property>minValue</Property>
+			<Property>maxValue</Property>
+			<Property>gaugeWidthScale</Property>
+			<Property>subTitle</Property>
+			<Property>formatNumber</Property>
+			<Property>gaugeSymbol</Property>
+			<Property>extensionPoints</Property>
 			<Definition name="queryDefinition">
 				<Property type="query">dataSource</Property>
 			</Definition>        
@@ -33,14 +36,33 @@
 			<Code src="gaugeComponent.js" />
 			
 			<Dependencies>		    
-				<Dependency src="justgage.1.0.1.js" version="1.0">justgage</Dependency>
-				<Dependency src="raphael.2.1.0.min.js">justgage</Dependency>
+				<Dependency src="eve.js" version="1.0">eve</Dependency>
+				<Dependency src="raphael-2.1.2.js">raphael-2.1.2</Dependency>
+				<Dependency src="justgage.js" version="1.0">justgage</Dependency>
 			</Dependencies>
 			
 			<Styles>
 			</Styles>
 			
 			<CustomProperties>
+			
+				<DesignerProperty>
+					<Header>
+						<Name>gaugeType</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>gauge</DefaultValue>
+						<Description>Gauge Type</Description>
+						<InputType type='valuelist' />
+						<OutputType>String</OutputType>
+						<Order>51</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+					<Values>
+						<Value display='Gauge'>gauge</Value>
+						<Value display='Doughnut'>doughnut</Value>
+					</Values>
+				</DesignerProperty>
 				
 				<DesignerProperty>
 					<Header>
@@ -50,7 +72,7 @@
 						<Description>Min Value</Description>
 						<InputType>String</InputType>
 						<OutputType>String</OutputType>
-						<Order>9</Order>
+						<Order>52</Order>
 						<Advanced>false</Advanced>
 						<Version>1.0</Version>
 					</Header>
@@ -64,7 +86,7 @@
 						<Description>Max Value</Description>
 						<InputType>String</InputType>
 						<OutputType>String</OutputType>
-						<Order>10</Order>
+						<Order>53</Order>
 						<Advanced>false</Advanced>
 						<Version>1.0</Version>
 					</Header>
@@ -72,13 +94,13 @@
 				
 				<DesignerProperty>
 					<Header>
-						<Name>gaugeWidth</Name>
+						<Name>gaugeWidthScale</Name>
 						<Parent>BaseProperty</Parent>
 						<DefaultValue>1</DefaultValue>
-						<Description>Gauge Width</Description>
+						<Description>Gauge Width Scale</Description>
 						<InputType>String</InputType>
 						<OutputType>String</OutputType>
-						<Order>53</Order>
+						<Order>54</Order>
 						<Advanced>false</Advanced>
 						<Version>1.0</Version>
 					</Header>
@@ -92,10 +114,53 @@
 						<Description>Subtitle</Description>
 						<InputType>String</InputType>
 						<OutputType>String</OutputType>
-						<Order>53</Order>
-						<Advanced>false</Advanced>
+						<Order>55</Order>
+						<Advanced>true</Advanced>
 						<Version>1.0</Version>
 					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>formatNumber</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>true</DefaultValue>
+						<Description>Format Number</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>56</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>gaugeSymbol</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Symbol</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>54</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+				<Header>
+					<Name>extensionPoints</Name>
+					<Parent>BaseProperty</Parent>
+					<DefaultValue>"[]"</DefaultValue>
+					<Description>Extension points</Description>
+					<Tooltip>Chart Extension points</Tooltip>
+					<InputType>ValuesArray</InputType>
+					<OutputType>Array</OutputType>
+					<Order>55</Order>
+					<Advanced>true</Advanced>
+					<Version>1.0</Version>
+				</Header>
 				</DesignerProperty>
 				
 			</CustomProperties>

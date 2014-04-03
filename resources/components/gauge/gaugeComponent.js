@@ -43,20 +43,35 @@ var gaugeComponent = BaseComponent.extend({
 					maxValue = myself.maxValue;
 				}
 				
-				
-				
-				
-				var g1 = new JustGage({
+				var gageConf = {
 					id: myself.htmlObject, 
 					value: values.resultset[0][1], 
 					min: minValue,
 					max: maxValue,
 					title: title,
 					label:subTitle,
-					gaugeWidthScale:myself.gaugeWidth
-				}); 
+					gaugeWidthScale:myself.gaugeWidthScale,
+          			symbol: myself.gaugeSymbol,
+        			relativeGaugeSize: true,
+        			formatNumber: myself.formatNumber,
+        			donut: myself.gaugeType == "doughnut"
+				};
+
+				var extension = {};
+				if(myself.extensionPoints != undefined && myself.extensionPoints[0] != undefined){
+					for(var i = 0; i < myself.extensionPoints.length; i++){
+						extension[myself.extensionPoints[i][0]] = typeof myself.extensionPoints[i][0] === 'function'?myself.extensionPoints[i][0]():myself.extensionPoints[i][0];
+					}
+				}
+
+				gageConf = $.extend({}, gageConf, extension);
 				
-				
+				var g1 = new JustGage(gageConf);
+				if(myself.expression!==undefined){
+					$("#"+myself.htmlObject).click(function(e){
+						myself.expression(e);
+					});
+				}
 			});
 		}
 	}
