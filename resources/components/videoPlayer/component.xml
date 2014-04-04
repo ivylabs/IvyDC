@@ -2,7 +2,7 @@
 	<Header>
 		<Name>Video Player</Name>
 		<IName>videoPlayerComponent</IName>
-		<Description>Play a Video in your dashboard</Description>
+		<Description>Video Player</Description>
 		<Category>IVYIS</Category>
 		<CatDescription>Ivy IS</CatDescription>
 		<Type>PalleteEntry</Type>
@@ -12,12 +12,19 @@
 		<Model>
 			<Property>executeAtStart</Property>
 			<Property>htmlObject</Property>
-			<Property>width</Property>
-			<Property>height</Property>
-			<Property name ="videoURL" type="string">videoURL</Property>
-			<Property name ="controls" type="boolean">controls</Property>
-			<Property name ="autoPlay" type="boolean">autoPlay</Property>
-			<Property name ="popup" type="boolean">popup</Property>
+			<Property>preExecution</Property>
+			<Property>postExecution</Property>
+			<Property>videos</Property>
+			<Property>tracks</Property>
+			<Property>controls</Property>
+			<Property>autoPlay</Property>
+			<Property>CssClasses</Property>
+			<Property>buttonsControlsColor</Property>
+			<Property>controlsLevelColor</Property>
+			<Property>controlBarSize</Property>
+			<Property>videoPosterImg</Property>
+			<Property>videoLoop</Property>
+			<Property>popup</Property>
 			
 		</Model>
 		<Implementation>
@@ -32,6 +39,35 @@
 			</Styles>
 			
 			<CustomProperties>
+
+				<DesignerProperty>
+					<Header>
+						<Name>videos</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"[]"</DefaultValue>
+						<Description>Videos</Description>
+						<Tooltip>Define the different vidoes types</Tooltip>
+						<InputType>ValuesArray</InputType>
+						<OutputType>Array</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>tracks</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"[]"</DefaultValue>
+						<Description>Tracks</Description>
+						<InputType>ValuesArray</InputType>
+						<OutputType>Array</OutputType>
+						<Order>53</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
 			
 				<DesignerProperty>
 					<Header>
@@ -41,8 +77,8 @@
 						<Description>Enable Controls</Description>
 						<InputType>Boolean</InputType>
 						<OutputType>Boolean</OutputType>
-						<Order>52</Order>
-						<Advanced>false</Advanced>
+						<Order>54</Order>
+						<Advanced>true</Advanced>
 						<Version>1.0</Version>
 					</Header>
 				</DesignerProperty>
@@ -55,22 +91,92 @@
 						<Description>Auto Play</Description>
 						<InputType>Boolean</InputType>
 						<OutputType>Boolean</OutputType>
-						<Order>52</Order>
-						<Advanced>false</Advanced>
+						<Order>55</Order>
+						<Advanced>true</Advanced>
 						<Version>1.0</Version>
 					</Header>
 				</DesignerProperty>
 				
 				<DesignerProperty>
 					<Header>
-						<Name>videoURL</Name>
+						<Name>CssClasses</Name>
 						<Parent>BaseProperty</Parent>
 						<DefaultValue></DefaultValue>
-						<Description>Video URL</Description>
+						<Description>Custom CSS</Description>
 						<InputType>String</InputType>
 						<OutputType>String</OutputType>
-						<Order>52</Order>
-						<Advanced>false</Advanced>
+						<Order>56</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>buttonsControlsColor</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Buttons Controllers Color</Description>
+						<InputType>Color</InputType>
+						<OutputType>String</OutputType>
+						<Order>57</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>controlsLevelColor</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Control Level Color</Description>
+						<InputType>Color</InputType>
+						<OutputType>String</OutputType>
+						<Order>59</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>controlBarSize</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Control Bar Size</Description>
+						<InputType>Integer</InputType>
+						<OutputType>Number</OutputType>
+						<Order>60</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>videoPosterImg</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Porter Image</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>61</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+			
+				<DesignerProperty>
+					<Header>
+						<Name>videoLoop</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"false"</DefaultValue>
+						<Description>Loop</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>62</Order>
+						<Advanced>true</Advanced>
 						<Version>1.0</Version>
 					</Header>
 				</DesignerProperty>
@@ -83,8 +189,8 @@
 						<Description>Show Video in a Popup</Description>
 						<InputType>Boolean</InputType>
 						<OutputType>Boolean</OutputType>
-						<Order>52</Order>
-						<Advanced>false</Advanced>
+						<Order>63</Order>
+						<Advanced>true</Advanced>
 						<Version>1.0</Version>
 					</Header>
 				</DesignerProperty>
