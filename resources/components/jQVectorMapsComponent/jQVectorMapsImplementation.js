@@ -40,14 +40,19 @@ var jQVectorMapComponent = BaseComponent.extend({
 			        normalizeFunction: this.mapNormalizeFunction
 			      }]
 			    },
-				color: this.mapColor,
+			    regionStyle: {
+	              initial: {
+	                fill: this.mapColor
+	              }
+	            },
 				backgroundColor: this.mapBackgroundColor,
-			//	hoverColor: this.mapHoverColor,
-				// set to fasle at the moment. we need to test for this
-				hoverColor: false,
+				hoverColor: this.mapHoverColor,
+				hoverColor: true,
 				hoverOpacity : this.mapHoverOpacity,
 				onRegionClick: function(event, code){
-					myself.mapClickFunction(event, code);
+					if(myself.mapClickFunction){
+						myself.mapClickFunction(event, code);
+					}
 				},
 				onRegionLabelShow: function(event, label, code){
 					if(myself.mapOnRegionShowFunction){
@@ -61,9 +66,6 @@ var jQVectorMapComponent = BaseComponent.extend({
 
 		this.vectorMap=$("#"+this.htmlObject).vectorMap(mapDefinition);
 		
-	},
-	
-	renderMap: function(){
-		
 	}
+	
 });

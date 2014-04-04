@@ -39,39 +39,17 @@
 			
 			
 			<Dependencies>
-				<Dependency src="jquery-jvectormap-1.2.2.min.js">jquery-jvectormap-1.2.2.min.js</Dependency>
-				<Dependency src="jquery-jvectormap-world-mill-en.js">jquery-jvectormap-world-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-europe-mill-en.js">jquery-jvectormap-europe-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-ar-mill-en.js">jquery-jvectormap-ar-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-at-mill-en.js">jquery-jvectormap-at-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-au-mill-en.js">jquery-jvectormap-au-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-be-mill-en.js">jquery-jvectormap-be-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-ca-lcc-en.js">jquery-jvectormap-ca-lcc-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-ch-mill-en.js">jquery-jvectormap-ch-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-cn-mill-en.js">jquery-jvectormap-cn-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-co-mill-en.js">jquery-jvectormap-co-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-de-mill-en.js">jquery-jvectormap-de-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-dk-mill-en.js">jquery-jvectormap-dk-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-es-mill-en.js">jquery-jvectormap-es-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-fr-mill-en.js">jquery-jvectormap-fr-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-in-mill-en.js">jquery-jvectormap-in-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-it-mill-en.js">jquery-jvectormap-it-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-nl-mill-en.js">jquery-jvectormap-nl-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-no-mill-en.js">jquery-jvectormap-no-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-nz-mill-en.js">jquery-jvectormap-nz-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-ph_regions-mill-en.js">jquery-jvectormap-ph_regions-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-pl-mill-en.js">jquery-jvectormap-pl-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-pt-mill-en.js">jquery-jvectormap-pt-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-se-mill-en.js">jquery-jvectormap-se-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-th_regions-mill-en.js">jquery-jvectormap-th_regions-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-uk-mill-en.js">jquery-jvectormap-uk-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-us-aea-en.js">jquery-jvectormap-us-aea-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-ve-mill-en.js">jquery-jvectormap-ve-mill-en.js</Dependency>
-				<Dependency src="jquery-jvectormap-za-mill-en.js">jquery-jvectormap-za-mill-en.js</Dependency>
+				<Dependency src="jquery.vector-map.js">jquery.vector-map.js</Dependency>
+			</Dependencies>
+			<Dependencies>
+				<Dependency src="world-en.js">world-en.js</Dependency>
+				<Dependency src="world-en.js">germany-en.js</Dependency>
+				<Dependency src="world-en.js">europe-en.js</Dependency>
+				<Dependency src="usa-en.js">usa-en.js</Dependency>
 			</Dependencies>
 			
 			<Styles>
-				<Style src="jquery-jvectormap-1.2.2.css">jquery-jvectormap-1.2.2.css</Style>
+				<Style src="jquery.vector-map.css">jquery.vector-map.css</Style>
 			</Styles>
 			
 			<CustomProperties>
@@ -79,7 +57,7 @@
 					<Header>
 						<Name>mapFile</Name>
 						<Parent>BaseProperty</Parent>
-						<DefaultValue>world_mill_en</DefaultValue>
+						<DefaultValue>world_en</DefaultValue>
 						<Description>Map File</Description>
 						<InputType type='valuelist'/>
 						<OutputType>String</OutputType>
@@ -88,35 +66,10 @@
 						<Version>1.0</Version>
 					</Header>
 					<Values>
-						<Value display='World'>world_mill_en</Value>
-						<Value display='Europe'>europe_mill_en</Value>
-						<Value display='Argentina'>ar_mill_en</Value>
-						<Value display='Australia'>at_mill_en</Value>
-						<Value display='Austria'>au_mill_en</Value>
-						<Value display='Belgium'>be_mill_en</Value>
-						<Value display='Canada'>ca_mill_en</Value>
-						<Value display='China'>cn_mill_en</Value>
-						<Value display='Colombia'>co_mill_en</Value>
-						<Value display='Denmark'>dk_mill_en</Value>
-						<Value display='France'>fr_mill_en</Value>
-						<Value display='Germany'>de_mill_en</Value>
-						<Value display='India'>in_mill_en</Value>
-						<Value display='Italy'>it_mill_en</Value>
-						<Value display='Netherlands'>nl_mill_en</Value>
-						<Value display='New Zealand'>nz_mill_en</Value>
-						<Value display='Norway'>no_mill_en</Value>
-						<Value display='Philippines'>ph_regions_mill_en</Value>
-						<Value display='Poland'>pl_mill_en</Value>
-						<Value display='Portugal'>pt_mill_en</Value>
-						<Value display='South Africa'>za_mill_en</Value>
-						<Value display='Spain'>es_mill_en</Value>
-						<Value display='Sweden'>se_mill_en</Value>
-						<Value display='Switzerland'>ch_mill_en</Value>
-						<Value display='Thailand Regions'>th_regions_mill_en</Value>
-						<Value display='Thailand'>th_mill_en</Value>
-						<Value display='United Kingdom'>uk_mill_en</Value>
-						<Value display='USA'>us_aea_en</Value>
-						<Value display='Venezuela'>ve_mill_en</Value>
+						<Value display='World'>world_en</Value>
+						<Value display='Europe'>europe_en</Value>
+						<Value display='Germany'>germany_en</Value>
+						<Value display='USA'>usa_en</Value>
 					</Values>
 				</DesignerProperty>
 				
@@ -125,7 +78,7 @@
 					<Header>
 						<Name>mapColor</Name>
 						<Parent>BaseProperty</Parent>
-						<DefaultValue>#fefff2</DefaultValue>
+						<DefaultValue></DefaultValue>
 						<Description>Map Color</Description>
 						<InputType>Color</InputType>
 						<OutputType>String</OutputType>
@@ -139,7 +92,7 @@
 					<Header>
 						<Name>mapBackgroundColor</Name>
 						<Parent>BaseProperty</Parent>
-						<DefaultValue>#baddff</DefaultValue>
+						<DefaultValue></DefaultValue>
 						<Description>Map Background Color</Description>
 						<InputType>Color</InputType>
 						<OutputType>String</OutputType>
@@ -153,7 +106,7 @@
 					<Header>
 						<Name>mapHoverColor</Name>
 						<Parent>BaseProperty</Parent>
-						<DefaultValue>#8da166</DefaultValue>
+						<DefaultValue></DefaultValue>
 						<Description>Map Hover Color</Description>
 						<InputType>Color</InputType>
 						<OutputType>String</OutputType>
@@ -167,7 +120,7 @@
 					<Header>
 						<Name>mapLowScaleColor</Name>
 						<Parent>BaseProperty</Parent>
-						<DefaultValue>#03f748</DefaultValue>
+						<DefaultValue></DefaultValue>
 						<Description>Map Low Scale Color</Description>
 						<InputType>Color</InputType>
 						<OutputType>String</OutputType>
@@ -181,7 +134,7 @@
 					<Header>
 						<Name>mapHighScaleColor</Name>
 						<Parent>BaseProperty</Parent>
-						<DefaultValue>#317000</DefaultValue>
+						<DefaultValue></DefaultValue>
 						<Description>Map High Scale Color</Description>
 						<InputType>Color</InputType>
 						<OutputType>String</OutputType>

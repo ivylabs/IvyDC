@@ -26,6 +26,9 @@
     cursor: pointer;
     line-height: 10px;
     text-align: center;
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
 }
 
 .jvectormap-zoomin {
@@ -34,4 +37,10 @@
 
 .jvectormap-zoomout {
     top: 30px;
+}
+
+.jvectormap-container{
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
 }
