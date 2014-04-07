@@ -3,7 +3,7 @@
   "title": "samples",
   "rows": [
    {
-    "id": "94765c28-5de2-0880-1f09-b16ce7652231",
+    "id": "ebb83eb3-f61a-91cf-6164-b5690bde31dc",
     "type": "LayoutRow",
     "typeDesc": "Row",
     "parent": "UnIqEiD",
@@ -41,10 +41,227 @@
     ]
    },
    {
-    "id": "746aeb3e-809a-5ed6-070e-0ea8902fb4fe",
+    "id": "e4060785-13fd-e3a9-6dc8-ec9203075eca",
     "type": "LayoutColumn",
     "typeDesc": "Column",
-    "parent": "94765c28-5de2-0880-1f09-b16ce7652231",
+    "parent": "ebb83eb3-f61a-91cf-6164-b5690bde31dc",
+    "properties": [
+     {
+      "name": "name",
+      "value": "MENU",
+      "type": "Id"
+     },
+     {
+      "name": "columnSpan",
+      "value": "3",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrepend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnAppend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrependTop",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnAppendBottom",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBigBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "d6f2e3b0-5c19-b673-ffa9-1366f11ae81a",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "e4060785-13fd-e3a9-6dc8-ec9203075eca",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<div>\n    <br />\n    <h4>Component Samples</h4>\n    <ul class=\"nav nav-stacked\" id=\"sidebar\">\n        <li><a href=\"#gauge\">Gauge</a></li>\n        <li><a href=\"#vector_map\">Vector Map</a></li>\n        <li><a href=\"#video_player\">Video Player</a></li>\n    </ul> \n</div> ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "6ffda715-d309-ea2f-2224-44f47249f4d3",
+    "type": "LayoutColumn",
+    "typeDesc": "Column",
+    "parent": "ebb83eb3-f61a-91cf-6164-b5690bde31dc",
+    "properties": [
+     {
+      "name": "name",
+      "value": "MAIN",
+      "type": "Id"
+     },
+     {
+      "name": "columnSpan",
+      "value": "9",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrepend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnAppend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrependTop",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnAppendBottom",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBigBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "27b81c0a-70dd-d68f-0d48-77d2d985210e",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "6ffda715-d309-ea2f-2224-44f47249f4d3",
+    "properties": [
+     {
+      "name": "name",
+      "value": "GAUGES",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "ef182fc9-7c39-8a3e-3c4f-48e058291df2",
+    "type": "LayoutColumn",
+    "typeDesc": "Column",
+    "parent": "27b81c0a-70dd-d68f-0d48-77d2d985210e",
     "properties": [
      {
       "name": "name",
@@ -114,10 +331,10 @@
     ]
    },
    {
-    "id": "900df7cb-d43c-630e-5c91-89fd65ad995a",
+    "id": "24e79a1f-9ae0-8bb2-9e6a-4ed4f5e5cf38",
     "type": "LayoutHtml",
     "typeDesc": "Html",
-    "parent": "746aeb3e-809a-5ed6-070e-0ea8902fb4fe",
+    "parent": "ef182fc9-7c39-8a3e-3c4f-48e058291df2",
     "properties": [
      {
       "name": "name",
@@ -126,7 +343,295 @@
      },
      {
       "name": "html",
-      "value": "<div class=\"panel-group\" id=\"accordion\">\n  <div class=\"panel panel-default\">\n    <div class=\"panel-heading\">\n      <h4 class=\"panel-title\">\n        <a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseOne\">\n          Gage Component\n        </a>\n      </h4>\n    </div>\n    <div id=\"collapseOne\" class=\"panel-collapse collapse in\">\n      <div class=\"panel-body\">\n        <div class=\"row\" style=\"height:200px;\">\n            <div class=\"col-md-3\" id=\"G1\"></div>\n            <div class=\"col-md-3\" id=\"G2\"></div>\n            <div class=\"col-md-3\" id=\"G3\"></div>\n            <div class=\"col-md-3\" id=\"G4\"></div>\n        </div>\n        <div class=\"row\" style=\"max-height:370px;\">\n            <div class=\"col-md-6\" id=\"G5\"></div>\n            <div class=\"col-md-6\" id=\"G6\"></div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"panel panel-default\">\n    <div class=\"panel-heading\">\n      <h4 class=\"panel-title\">\n        <a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseTwo\">\n          Vector Map Component\n        </a>\n      </h4>\n    </div>\n    <div id=\"collapseTwo\" class=\"panel-collapse collapse in\">\n      <div class=\"panel-body\">\n        <div class=\"row\">\n            <div class=\"col-md-6\" style=\"height:350px;\" id=\"M1\"></div>\n            <div class=\"col-md-6\" style=\"height:350px;\" id=\"M2\"></div>\n        </div>\n        <div class=\"row\">\n            <br/>\n            <div class=\"col-md-12\">Try click in USA</div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-12\"  style=\"height:450px;\" id=\"M3\"></div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"panel panel-default\">\n    <div class=\"panel-heading\">\n      <h4 class=\"panel-title\">\n        <a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseThree\">\n          Video Player Component\n        </a>\n      </h4>\n    </div>\n    <div id=\"collapseThree\" class=\"panel-collapse collapse in\">\n      <div class=\"panel-body\">\n        <div class=\"row\">\n            <div class=\"col-md-3\" style=\"height:350px;\" id=\"V2\"></div>\n            <div class=\"col-md-9\" style=\"height:350px;\" id=\"V1\"></div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div> ",
+      "value": "<div id=\"gauge\" style=\"padding-top: 50px;\">\n    <h2>Gauges</h2>\n    <div class=\"row\" style=\"height:200px;\">\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_1\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_2\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_3\"></div>\n    </div>\n    <hr /> \n</div> ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "d7c88c4b-db74-197a-aebf-6f186972beb9",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "6ffda715-d309-ea2f-2224-44f47249f4d3",
+    "properties": [
+     {
+      "name": "name",
+      "value": "MAPS",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "ab33c92f-ef42-8622-c264-4c602d5b16b4",
+    "type": "LayoutColumn",
+    "typeDesc": "Column",
+    "parent": "d7c88c4b-db74-197a-aebf-6f186972beb9",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "columnSpan",
+      "value": "12",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrepend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnAppend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrependTop",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnAppendBottom",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBigBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "f3480726-d0c9-e7a0-d98d-7b4216b11ffc",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "ab33c92f-ef42-8622-c264-4c602d5b16b4",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<div id=\"map\" style=\"padding-top: 50px;\">\n    <h2>Vector Maps</h2>\n    <div class=\"row\">\n    <div style=\"height:350px;\" class=\"col-md-6\" id=\"sample_map_1\"></div>\n    <div style=\"height:350px;\" class=\"col-md-6\" id=\"sample_map_2\"></div>\n    </div>\n    <div class=\"row\">\n    <div class=\"col-md-12\"><h3>Clickable Map</h3></div>\n    </div>\n    <div class=\"row\">\n    <div style=\"height:350px;\" class=\"col-md-12\" id=\"sample_map_3\"></div>\n    </div>\n    <hr /> \n</div> ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "7e8e5e27-72e8-987a-9bac-848e94c2d079",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "6ffda715-d309-ea2f-2224-44f47249f4d3",
+    "properties": [
+     {
+      "name": "name",
+      "value": "VIDEO",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "1e363a32-0537-1589-f3d5-872f41803732",
+    "type": "LayoutColumn",
+    "typeDesc": "Column",
+    "parent": "7e8e5e27-72e8-987a-9bac-848e94c2d079",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "columnSpan",
+      "value": "12",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrepend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnAppend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrependTop",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnAppendBottom",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBigBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "62ac7cb3-c685-962e-1968-01afb67a8c8b",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "1e363a32-0537-1589-f3d5-872f41803732",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<div id=\"\" style=\"padding-top: 50px;\">\n    <h2>Video Player</h2>\n    <h3>Embedded</h3>\n    <div id=\"video_sample_1\"></div>\n    <h3>Open in Popup</h3>\n    <div id=\"video_sample_2\"></div>\n    </div>\n    <hr /> \n</div> ",
       "type": "Html"
      },
      {
@@ -177,7 +682,7 @@
      },
      {
       "name": "label",
-      "value": "Gauge Chart Tittle",
+      "value": "Default",
       "type": "String"
      },
      {
@@ -192,7 +697,7 @@
      },
      {
       "name": "expression",
-      "value": "function(){\n    alert(\"Hello world!\");\n    Dashboards.fireChange(\"PARAM2\",\"Executive Management\");\n}",
+      "value": "",
       "type": "JavaScript"
      },
      {
@@ -247,7 +752,7 @@
      },
      {
       "name": "htmlObject",
-      "value": "G1",
+      "value": "panel_sample_gauge_1",
       "type": "HtmlObject"
      },
      {
@@ -280,7 +785,7 @@
      },
      {
       "name": "label",
-      "value": "",
+      "value": "Donut",
       "type": "String"
      },
      {
@@ -350,7 +855,7 @@
      },
      {
       "name": "htmlObject",
-      "value": "G2",
+      "value": "panel_sample_gauge_2",
       "type": "HtmlObject"
      },
      {
@@ -383,7 +888,7 @@
      },
      {
       "name": "label",
-      "value": "Click There",
+      "value": "Clickable",
       "type": "String"
      },
      {
@@ -398,7 +903,7 @@
      },
      {
       "name": "expression",
-      "value": "function(){\n    Dashboards.fireChange(\"PARAM1\",\"Executive Management\");\n}",
+      "value": "function(){\n    alert(\"You clicked a Dial!\")\n}",
       "type": "JavaScript"
      },
      {
@@ -453,321 +958,12 @@
      },
      {
       "name": "htmlObject",
-      "value": "G3",
+      "value": "panel_sample_gauge_3",
       "type": "HtmlObject"
      },
      {
       "name": "executeAtStart",
       "value": "true",
-      "type": "Boolean"
-     },
-     {
-      "name": "preExecution",
-      "value": "",
-      "type": "JavaScript"
-     },
-     {
-      "name": "postExecution",
-      "value": "",
-      "type": "JavaScript"
-     }
-    ]
-   },
-   {
-    "id": "f6778e59-b0ad-c1c3-337b-8d81081c7c94",
-    "type": "ComponentsgaugeComponent",
-    "typeDesc": "Gauge Component",
-    "parent": "IVYIS",
-    "properties": [
-     {
-      "name": "name",
-      "value": "G4",
-      "type": "Id"
-     },
-     {
-      "name": "label",
-      "value": "",
-      "type": "String"
-     },
-     {
-      "name": "listeners",
-      "value": "['${p:PARAM1}']",
-      "type": "Listeners"
-     },
-     {
-      "name": "parameters",
-      "value": "[[\"PARAM1\",\"PARAM1\",\"String\",\"\"]]",
-      "type": "CdaParameters"
-     },
-     {
-      "name": "expression",
-      "value": "function(){\n    Dashboards.fireChange(\"PARAM3\",\"Executive Management\");    \n}",
-      "type": "JavaScript"
-     },
-     {
-      "name": "dataSource",
-      "value": "G4_QUERY",
-      "type": "Datasource"
-     },
-     {
-      "name": "priority",
-      "value": "6",
-      "type": "Integer"
-     },
-     {
-      "name": "gaugeType",
-      "value": "doughnut",
-      "type": "gaugeTypeCustom"
-     },
-     {
-      "name": "minValue",
-      "value": "0",
-      "type": "String"
-     },
-     {
-      "name": "maxValue",
-      "value": "500000",
-      "type": "String"
-     },
-     {
-      "name": "gaugeWidthScale",
-      "value": "0.3",
-      "type": "String"
-     },
-     {
-      "name": "gaugeSymbol",
-      "value": "",
-      "type": "String"
-     },
-     {
-      "name": "subTitle",
-      "value": "",
-      "type": "String"
-     },
-     {
-      "name": "extensionPoints",
-      "value": "[]",
-      "type": "ValuesArray"
-     },
-     {
-      "name": "formatNumber",
-      "value": "true",
-      "type": "Boolean"
-     },
-     {
-      "name": "htmlObject",
-      "value": "G4",
-      "type": "HtmlObject"
-     },
-     {
-      "name": "executeAtStart",
-      "value": "false",
-      "type": "Boolean"
-     },
-     {
-      "name": "preExecution",
-      "value": "",
-      "type": "JavaScript"
-     },
-     {
-      "name": "postExecution",
-      "value": "",
-      "type": "JavaScript"
-     }
-    ]
-   },
-   {
-    "id": "daf6e816-e346-cc81-7f2e-3a1d9aca5d8f",
-    "type": "ComponentsgaugeComponent",
-    "typeDesc": "Gauge Component",
-    "parent": "IVYIS",
-    "properties": [
-     {
-      "name": "name",
-      "value": "G5",
-      "type": "Id"
-     },
-     {
-      "name": "label",
-      "value": "",
-      "type": "String"
-     },
-     {
-      "name": "listeners",
-      "value": "['${p:PARAM2}']",
-      "type": "Listeners"
-     },
-     {
-      "name": "parameters",
-      "value": "[[\"PARAM2\",\"PARAM2\",\"String\",\"\"]]",
-      "type": "CdaParameters"
-     },
-     {
-      "name": "expression",
-      "value": "",
-      "type": "JavaScript"
-     },
-     {
-      "name": "dataSource",
-      "value": "G5_QUERY",
-      "type": "Datasource"
-     },
-     {
-      "name": "priority",
-      "value": "6",
-      "type": "Integer"
-     },
-     {
-      "name": "gaugeType",
-      "value": "doughnut",
-      "type": "gaugeTypeCustom"
-     },
-     {
-      "name": "minValue",
-      "value": "0",
-      "type": "String"
-     },
-     {
-      "name": "maxValue",
-      "value": "500000",
-      "type": "String"
-     },
-     {
-      "name": "gaugeWidthScale",
-      "value": "1",
-      "type": "String"
-     },
-     {
-      "name": "gaugeSymbol",
-      "value": "",
-      "type": "String"
-     },
-     {
-      "name": "subTitle",
-      "value": "",
-      "type": "String"
-     },
-     {
-      "name": "extensionPoints",
-      "value": "[]",
-      "type": "ValuesArray"
-     },
-     {
-      "name": "formatNumber",
-      "value": "true",
-      "type": "Boolean"
-     },
-     {
-      "name": "htmlObject",
-      "value": "G5",
-      "type": "HtmlObject"
-     },
-     {
-      "name": "executeAtStart",
-      "value": "false",
-      "type": "Boolean"
-     },
-     {
-      "name": "preExecution",
-      "value": "",
-      "type": "JavaScript"
-     },
-     {
-      "name": "postExecution",
-      "value": "",
-      "type": "JavaScript"
-     }
-    ]
-   },
-   {
-    "id": "7a7f7418-5c45-b505-d5d0-648877e61698",
-    "type": "ComponentsgaugeComponent",
-    "typeDesc": "Gauge Component",
-    "parent": "IVYIS",
-    "properties": [
-     {
-      "name": "name",
-      "value": "G6",
-      "type": "Id"
-     },
-     {
-      "name": "label",
-      "value": "",
-      "type": "String"
-     },
-     {
-      "name": "listeners",
-      "value": "['${p:PARAM3}']",
-      "type": "Listeners"
-     },
-     {
-      "name": "parameters",
-      "value": "[[\"PARAM3\",\"PARAM3\",\"String\",\"\"]]",
-      "type": "CdaParameters"
-     },
-     {
-      "name": "expression",
-      "value": "",
-      "type": "JavaScript"
-     },
-     {
-      "name": "dataSource",
-      "value": "G6_QUERY",
-      "type": "Datasource"
-     },
-     {
-      "name": "priority",
-      "value": "6",
-      "type": "Integer"
-     },
-     {
-      "name": "gaugeType",
-      "value": "gauge",
-      "type": "gaugeTypeCustom"
-     },
-     {
-      "name": "minValue",
-      "value": "0",
-      "type": "String"
-     },
-     {
-      "name": "maxValue",
-      "value": "100000000",
-      "type": "String"
-     },
-     {
-      "name": "gaugeWidthScale",
-      "value": "0.3",
-      "type": "String"
-     },
-     {
-      "name": "gaugeSymbol",
-      "value": "",
-      "type": "String"
-     },
-     {
-      "name": "subTitle",
-      "value": "",
-      "type": "String"
-     },
-     {
-      "name": "extensionPoints",
-      "value": "[[\"startAnimationTime\",\"function(){ return 1000;}\"],[\"startAnimationType\",\"bounce\"],[\"showMinMax\",\"false\"],[\"gaugeColor\",\"#036\"],[\"levelColors\",\"function(){ return [\\\"#8cc63f\\\"]; }\"]]",
-      "type": "ValuesArray"
-     },
-     {
-      "name": "formatNumber",
-      "value": "true",
-      "type": "Boolean"
-     },
-     {
-      "name": "htmlObject",
-      "value": "G6",
-      "type": "HtmlObject"
-     },
-     {
-      "name": "executeAtStart",
-      "value": "false",
       "type": "Boolean"
      },
      {
@@ -860,7 +1056,7 @@
      },
      {
       "name": "htmlObject",
-      "value": "M1",
+      "value": "sample_map_1",
       "type": "HtmlObject"
      },
      {
@@ -958,7 +1154,7 @@
      },
      {
       "name": "htmlObject",
-      "value": "M2",
+      "value": "sample_map_2",
       "type": "HtmlObject"
      },
      {
@@ -1056,7 +1252,7 @@
      },
      {
       "name": "htmlObject",
-      "value": "M3",
+      "value": "sample_map_3",
       "type": "HtmlObject"
      },
      {
@@ -1149,7 +1345,7 @@
      },
      {
       "name": "htmlObject",
-      "value": "V1",
+      "value": "video_sample_1",
       "type": "HtmlObject"
      },
      {
@@ -1242,7 +1438,7 @@
      },
      {
       "name": "htmlObject",
-      "value": "V2",
+      "value": "video_sample_2",
       "type": "HtmlObject"
      },
      {
@@ -1418,13 +1614,13 @@
       "type": "Id"
      },
      {
-      "name": "language",
-      "value": "beanshell",
+      "name": "initscript",
+      "value": "",
       "type": "String"
      },
      {
-      "name": "initscript",
-      "value": "",
+      "name": "language",
+      "value": "beanshell",
       "type": "String"
      },
      {
@@ -1489,13 +1685,13 @@
       "type": "Id"
      },
      {
-      "name": "language",
-      "value": "beanshell",
+      "name": "initscript",
+      "value": "",
       "type": "String"
      },
      {
-      "name": "initscript",
-      "value": "",
+      "name": "language",
+      "value": "beanshell",
       "type": "String"
      },
      {
@@ -1560,13 +1756,13 @@
       "type": "Id"
      },
      {
-      "name": "language",
-      "value": "beanshell",
+      "name": "initscript",
+      "value": "",
       "type": "String"
      },
      {
-      "name": "initscript",
-      "value": "",
+      "name": "language",
+      "value": "beanshell",
       "type": "String"
      },
      {
@@ -1631,13 +1827,13 @@
       "type": "Id"
      },
      {
-      "name": "language",
-      "value": "beanshell",
+      "name": "initscript",
+      "value": "",
       "type": "String"
      },
      {
-      "name": "initscript",
-      "value": "",
+      "name": "language",
+      "value": "beanshell",
       "type": "String"
      },
      {
