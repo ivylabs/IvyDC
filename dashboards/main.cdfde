@@ -48,7 +48,7 @@
     "properties": [
      {
       "name": "name",
-      "value": "",
+      "value": "MENU",
       "type": "Id"
      },
      {
@@ -154,7 +154,7 @@
     "properties": [
      {
       "name": "name",
-      "value": "",
+      "value": "MAIN",
       "type": "Id"
      },
      {
@@ -227,7 +227,7 @@
     "properties": [
      {
       "name": "name",
-      "value": "",
+      "value": "GAUGE",
       "type": "Id"
      },
      {
@@ -343,7 +343,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"gauge\" style=\"padding-top: 50px;\">\n    <h2>Gauge</h2>\n    <h4>Common Options</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Option</th>\n                <th>Example</th>\n                <th>Description</th>\n            </tr>\n            </thead>\n            <tbody>\n            <tr>\n                <td>Label</td>\n                <td></td>\n                <td>Chart title on top</td>\n            </tr>\n            <tr>\n                <td>Expression</td>\n                <td><div class=\"well\"> function( event ) { ... } </div></td>\n                <td>Callback functionon for chart event click</td>\n            </tr>\n            <tr>\n                <td>Gauge Type</td>\n                <td>Gauge</td>\n                <td>Chart type Gauge or Doughnut (default is Gauge)</td>\n            </tr>\n            <tr>\n                <td>Min Value</td>\n                <td>10</td>\n                <td>The minimal value of range</td>\n            </tr>\n            <tr>\n                <td>Max Value</td>\n                <td>1000</td>\n                <td>The maximal value of range</td>\n            </tr>\n            <tr>\n                <td>Gauge Width Scale</td>\n                <td>2</td>\n                <td>The maximal value of range</td>\n            </tr>\n            <tr>\n                <td>Symbol</td>\n                <td>%</td>\n                <td>The value symbol can be %, $, £, ...</td>\n            </tr>\n            <tr>\n                <td>Subtitle</td>\n                <td></td>\n                <td>The sub title appear in bottom</td>\n            </tr>\n            <tr>\n                <td>Format Number</td>\n                <td>true</td>\n                <td>The sub title appear in bottom</td>\n            </tr>\n            <tr>\n                <td>Extension points</td>\n                <td></td>\n                <td>Array of properties that override the justgage</td>\n            </tr>\n        </tbody>\n    </table>\n    <h4>Default Gauge</h4>\n    <div id=\"panel_sample_gauge\"></div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"gauge\" style=\"padding-top: 50px;\">\n    <h2>Gauge</h2>\n    <h4>Common Options</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Option</th>\n                <th>Example</th>\n                <th>Description</th>\n            </tr>\n            </thead>\n            <tbody>\n            <tr>\n                <td>Label</td>\n                <td></td>\n                <td>The lable of the Gauge Component</td>\n            </tr>\n            <tr>\n                <td>Expression</td>\n                <td><div class=\"well\"> function( event ) { ... } </div></td>\n                <td>The Javascript to execute when the Gauge is clicked</td>\n            </tr>\n            <tr>\n                <td>Gauge Type</td>\n                <td>Gauge, Donut</td>\n                <td>The type of gauge to render. It can be either Dial or Donut</td>\n            </tr>\n            <tr>\n                <td>Min Value</td>\n                <td>10</td>\n                <td>The minimal value of range</td>\n            </tr>\n            <tr>\n                <td>Max Value</td>\n                <td>1000</td>\n                <td>The maximal value of range</td>\n            </tr>\n            <tr>\n                <td>Gauge Width Scale</td>\n                <td>2</td>\n                <td>The maximal value of range</td>\n            </tr>\n            <tr>\n                <td>Symbol</td>\n                <td>%</td>\n                <td>The value symbol can be %, $, £, ...</td>\n            </tr>\n            <tr>\n                <td>Subtitle</td>\n                <td></td>\n                <td>The sub title appear in bottom</td>\n            </tr>\n            <tr>\n                <td>Format Number</td>\n                <td>true</td>\n                <td>The Lable that appears below the Gauge</td>\n            </tr>\n            <tr>\n                <td>Extension points</td>\n                <td></td>\n                <td>Array of properties that override the justgage</td>\n            </tr>\n        </tbody>\n    </table>\n    <h4>Default Gauge</h4>\n    <div class=\"row\" style=\"height:200px;\">\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_1\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_2\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_3\"></div>\n    </div>\n    <hr /> \n</div> ",
       "type": "Html"
      },
      {
@@ -371,7 +371,7 @@
     "properties": [
      {
       "name": "name",
-      "value": "",
+      "value": "MAP",
       "type": "Id"
      },
      {
@@ -487,7 +487,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"vector_map\" style=\"padding-top: 50px;\">\n    <h2>Vector Map</h2>\n    <h4>Common Options</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Option</th>\n                <th>Example</th>\n                <th>Description</th>\n            </tr>\n            </thead>\n            <tbody>\n            <tr>\n                <td>Map Click Function</td>\n                <td><div class=\"well\"> function( event, code ) { ... } </div></td>\n                <td>Define a function for region click</td>\n            </tr>\n            <tr>\n                <td>Map Show Region Function</td>\n                <td><div class=\"well\"> function( event, label, code, data ) { ... } </div></td>\n                <td>Define a function for region mouseover</td>\n            </tr>\n            <tr>\n                <td>Map File</td>\n                <td>World</td>\n                <td>Vector map file name to render</td>\n            </tr>\n            <tr>\n                <td>Map Color</td>\n                <td>#fefff2</td>\n                <td>Default Regions color</td>\n            </tr>\n            <tr>\n                <td>Map Background Color</td>\n                <td>#baddff</td>\n                <td>Map background color (oceans)</td>\n            </tr>\n            <tr>\n                <td>Map Hover Color</td>\n                <td>#8da166</td>\n                <td>Map hover color</td>\n            </tr>\n            <tr>\n                <td>Normalize Function</td>\n                <td>Linear</td>\n                <td>Normalize math function can be Lienar or Polynomial</td>\n            </tr>\n            <tr>\n                <td>Map Low Scale Color</td>\n                <td>#03f748</td>\n                <td>Map low scale color of regions map</td>\n            </tr>\n            <tr>\n                <td>Map High Scale Color</td>\n                <td>#317000</td>\n                <td>Map high scale color of regions map</td>\n            </tr>\n            <tr>\n                <td>Map Hover Opacity</td>\n                <td>0.7</td>\n                <td>Opacity color of mouse over map regions</td>\n            </tr>\n        </tbody>\n    </table>\n    <h4>Default Vector Map</h4>\n    <div id=\"panel_sample_map\" style=\"height:400px;\"></div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"vector_map\" style=\"padding-top: 50px;\">\n    <h2>Vector Map</h2>\n    <h4>Common Options</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Option</th>\n                <th>Example</th>\n                <th>Description</th>\n            </tr>\n            </thead>\n            <tbody>\n            <tr>\n                <td>Map Click Function</td>\n                <td><div class=\"well\"> function( event, code ) { ... } </div></td>\n                <td>The Javascript to execute when the Map is clicked</td>\n            </tr>\n            <tr>\n                <td>Map Show Region Function</td>\n                <td><div class=\"well\"> function( event, label, code, data ) { ... } </div></td>\n                <td>The Javascript to execute when the Map Region is hovered over</td>\n            </tr>\n            <tr>\n                <td>Map File</td>\n                <td>World</td>\n                <td>The Map to render</td>\n            </tr>\n            <tr>\n                <td>Map Color</td>\n                <td>#fefff2</td>\n                <td>Default Regions color in hexidecimal</td>\n            </tr>\n            <tr>\n                <td>Map Background Color</td>\n                <td>#baddff</td>\n                <td>Map background color in hexidecimal</td>\n            </tr>\n            <tr>\n                <td>Map Hover Color</td>\n                <td>#8da166</td>\n                <td>Map hover color in hexidecimal</td>\n            </tr>\n            <tr>\n                <td>Normalize Function</td>\n                <td>Linear</td>\n                <td>Normalize math function can be Lienar or Polynomial</td>\n            </tr>\n            <tr>\n                <td>Map Low Scale Color</td>\n                <td>#03f748</td>\n                <td>Map low scale color of regions map in hexidecimal</td>\n            </tr>\n            <tr>\n                <td>Map High Scale Color</td>\n                <td>#317000</td>\n                <td>Map high scale color of regions map in hexidecimal</td>\n            </tr>\n            <tr>\n                <td>Map Hover Opacity</td>\n                <td>0.7</td>\n                <td>Opacity color of mouse over map regions</td>\n            </tr>\n        </tbody>\n    </table>\n    <h4>Default Vector Map</h4>\n    <div id=\"panel_sample_map\" style=\"height:400px;\"></div>\n    <hr /> \n</div> ",
       "type": "Html"
      },
      {
@@ -515,7 +515,7 @@
     "properties": [
      {
       "name": "name",
-      "value": "",
+      "value": "VIDEO",
       "type": "Id"
      },
      {
@@ -670,14 +670,14 @@
     ]
    },
    {
-    "id": "4b4a669b-a81e-7e87-6f00-59bc0fc53c91",
+    "id": "dad69363-7bc7-5fe8-85be-1d6ee5fea9ec",
     "type": "ComponentsgaugeComponent",
     "typeDesc": "Gauge Component",
     "parent": "IVYIS",
     "properties": [
      {
       "name": "name",
-      "value": "SAMPE_GAUGE",
+      "value": "SAMPE_GAUGE_1",
       "type": "Id"
      },
      {
@@ -752,7 +752,213 @@
      },
      {
       "name": "htmlObject",
-      "value": "panel_sample_gauge",
+      "value": "panel_sample_gauge_1",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "caea9cc9-aa36-4e0b-238f-f0927252dc9d",
+    "type": "ComponentsgaugeComponent",
+    "typeDesc": "Gauge Component",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "SAMPE_GAUGE_2",
+      "type": "Id"
+     },
+     {
+      "name": "label",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "expression",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "dataSource",
+      "value": "GAUGE_QUERY_SAMPLE",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "gaugeType",
+      "value": "gauge",
+      "type": "gaugeTypeCustom"
+     },
+     {
+      "name": "minValue",
+      "value": "0",
+      "type": "String"
+     },
+     {
+      "name": "maxValue",
+      "value": "1000",
+      "type": "String"
+     },
+     {
+      "name": "gaugeWidthScale",
+      "value": "1",
+      "type": "String"
+     },
+     {
+      "name": "gaugeSymbol",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "subTitle",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "extensionPoints",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "formatNumber",
+      "value": true,
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "panel_sample_gauge_2",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "4b4a669b-a81e-7e87-6f00-59bc0fc53c91",
+    "type": "ComponentsgaugeComponent",
+    "typeDesc": "Gauge Component",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "SAMPE_GAUGE_3",
+      "type": "Id"
+     },
+     {
+      "name": "label",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "expression",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "dataSource",
+      "value": "GAUGE_QUERY_SAMPLE",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "gaugeType",
+      "value": "gauge",
+      "type": "gaugeTypeCustom"
+     },
+     {
+      "name": "minValue",
+      "value": "0",
+      "type": "String"
+     },
+     {
+      "name": "maxValue",
+      "value": "1000",
+      "type": "String"
+     },
+     {
+      "name": "gaugeWidthScale",
+      "value": "1",
+      "type": "String"
+     },
+     {
+      "name": "gaugeSymbol",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "subTitle",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "extensionPoints",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "formatNumber",
+      "value": true,
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "panel_sample_gauge_3",
       "type": "HtmlObject"
      },
      {
@@ -829,9 +1035,9 @@
       "type": "Color"
      },
      {
-      "name": "mapHoverColor",
-      "value": "#8da166",
-      "type": "Color"
+      "name": "mapHoverOpacity",
+      "value": 0.7,
+      "type": "Float"
      },
      {
       "name": "mapNormalizeFunction",
@@ -847,11 +1053,6 @@
       "name": "mapHighScaleColor",
       "value": "#317000",
       "type": "Color"
-     },
-     {
-      "name": "mapHoverOpacity",
-      "value": 0.7,
-      "type": "Float"
      },
      {
       "name": "htmlObject",
