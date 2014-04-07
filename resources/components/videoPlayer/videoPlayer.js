@@ -42,41 +42,57 @@ var videoPlayerComponent = BaseComponent.extend({
 		if(this.popup){
 			
 			var popupHTML = "";
-			popupHTML += "<div id='videoPlayer' style='height:" + this.height + "px;display:none;'>";
-			popupHTML += "<div id='popupForm' style='width:" + this.width + "px'>";
+			popupHTML += "<div id='"+this.htmlObject+"_videoPlayer' style='height:" + this.height + "px;display:none;'>";
+			popupHTML += "<div id='"+this.htmlObject+"_popupForm' style='width:" + this.width + "px'>";
 			popupHTML += videoHTML;
 			popupHTML += "</div></div>";
 
 			$('.container').append(popupHTML);
 			
-			$('#'+this.htmlObject+'_video').attr('width',$('#popupForm').width());
+			$('#'+this.htmlObject+'_video').attr('width',$('#'+this.htmlObject+'_popupForm').width());
 		
-			$("#"+this.htmlObject).html("<a href='#popupForm' id='openVideo'>Open Video</a>");
+			$("#"+this.htmlObject).html("<a href='#"+this.htmlObject+"_popupForm' id='"+this.htmlObject+"_openVideo'>Open Video</a>");
 
-			$('#openVideo').fancybox({
+			$('#'+this.htmlObject+'_openVideo').fancybox({
 				'width': this.width,
-				'height': this.height
+				'height': this.height,
+                onComplete: function(){
+                    videojs(myself.htmlObject+'_video', {"height":"auto", "width":"auto"}).ready(function(){
+                        var myPlayer = this;    // Store the video object
+                        var aspectRatio = 5/12; // Make up an aspect ratio
+
+                        function resizeVideoJS(){
+                          // Get the parent element's actual width
+                          var width = document.getElementById(myPlayer.id()).parentElement.offsetWidth;
+                          // Set width to fill parent element, Set height
+                          myPlayer.width(width-30).height( width * aspectRatio );
+                        }
+
+                        resizeVideoJS(); // Initialize the function
+                        window.onresize = resizeVideoJS; // Call the function on resize
+                    });
+                }
 			});
 
-			idObj = "popupForm";
+			idObj = this.htmlObject+"_popupForm";
 		} else {
 			$("#"+this.htmlObject).html(videoHTML);
+
+        videojs(this.htmlObject+'_video', {"height":"auto", "width":"auto"}).ready(function(){
+            var myPlayer = this;    // Store the video object
+            var aspectRatio = 5/12; // Make up an aspect ratio
+
+            function resizeVideoJS(){
+              // Get the parent element's actual width
+              var width = document.getElementById(myPlayer.id()).parentElement.offsetWidth;
+              // Set width to fill parent element, Set height
+              myPlayer.width(width-30).height( width * aspectRatio );
+            }
+
+            resizeVideoJS(); // Initialize the function
+            window.onresize = resizeVideoJS; // Call the function on resize
+        });
 		}
-
-		videojs(this.htmlObject+'_video', {"height":"auto", "width":"auto"}).ready(function(){
-			var myPlayer = this;    // Store the video object
-			var aspectRatio = 5/12; // Make up an aspect ratio
-
-			function resizeVideoJS(){
-			  // Get the parent element's actual width
-			  var width = document.getElementById(myPlayer.id()).parentElement.offsetWidth;
-			  // Set width to fill parent element, Set height
-			  myPlayer.width(width-30).height( width * aspectRatio );
-			}
-
-			resizeVideoJS(); // Initialize the function
-			window.onresize = resizeVideoJS; // Call the function on resize
-		});
 
 		if(myself.buttonsControlsColor!==undefined&&myself.buttonsControlsColor!==""){
 			$("#"+idObj).find(".vjs-default-skin").css("color", myself.buttonsControlsColor);

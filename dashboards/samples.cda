@@ -1,14 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CDADescriptor>
    <DataSources>
-      <Connection id="dummy" type="sql.jndi">
-         <Jndi></Jndi>
+      <Connection id="G1_QUERY" type="scripting.scripting">
+         <Initscript></Initscript>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="M1_QUERY" type="scripting.scripting">
+         <Initscript></Initscript>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="M2_QUERY" type="scripting.scripting">
+         <Initscript></Initscript>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="M3_QUERY" type="scripting.scripting">
+         <Initscript></Initscript>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="G3_QUERY" type="mondrian.jndi">
+         <Catalog>mondrian:/SampleData</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="G4_QUERY" type="mondrian.jndi">
+         <Catalog>mondrian:/SampleData</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="G5_QUERY" type="mondrian.jndi">
+         <Catalog>mondrian:/SampleData</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="G6_QUERY" type="mondrian.jndi">
+         <Catalog>mondrian:/SampleData</Catalog>
+         <Jndi>SampleData</Jndi>
       </Connection>
    </DataSources>
-   <DataAccess access="public" cache="true" cacheDuration="3600" connection="dummy" id="dummy"
-               type="sql">
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="G1_QUERY"
+               id="G1_QUERY"
+               type="scriptable">
       <Columns/>
       <Parameters/>
-      <Query></Query>
+      <Query>import org.pentaho.reporting.engine.classic.core.util.TypedTableModel;
+String [] columnNames = {"Title","Value"};
+Class[] columnTypes = {String.class, Integer.class};
+TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
+
+
+ model.addRow(new Object[] {"Value", 720});
+
+return model;</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="M1_QUERY"
+               id="M1_QUERY"
+               type="scriptable">
+      <Columns/>
+      <Parameters/>
+      <Query>import org.pentaho.reporting.engine.classic.core.util.TypedTableModel;
+String [] columnNames = {"Country", "Amount"};
+Class[] columnTypes = {String.class, Integer.class};
+TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
+
+
+ model.addRow(new Object[] {"US", 45667});
+ model.addRow(new Object[] {"PT", 93922});
+ model.addRow(new Object[] {"GB", 95445});
+ model.addRow(new Object[] {"FR", 8244});
+ model.addRow(new Object[] {"ES", 3535});
+ model.addRow(new Object[] {"BR", 3534});
+ model.addRow(new Object[] {"CA", 10000});
+ model.addRow(new Object[] {"UK", 76225});
+ model.addRow(new Object[] {"DE", 89341});
+ model.addRow(new Object[] {"NZ", 8454});
+ model.addRow(new Object[] {"AR", 78435});
+ model.addRow(new Object[] {"CO", 36769});
+ model.addRow(new Object[] {"AU", 10000});
+ model.addRow(new Object[] {"CZ", 478});
+ model.addRow(new Object[] {"PO", 587});
+ model.addRow(new Object[] {"CN", 3453});
+ model.addRow(new Object[] {"IN", 3455});
+ model.addRow(new Object[] {"JP", 45734});
+ model.addRow(new Object[] {"EG", 56583});
+ model.addRow(new Object[] {"ET", 35765});
+ model.addRow(new Object[] {"GA", 2323});
+ model.addRow(new Object[] {"GH", 36567});
+ model.addRow(new Object[] {"GN", 2463});
+ model.addRow(new Object[] {"GW", 2346});
+ model.addRow(new Object[] {"IE", 23467});
+ model.addRow(new Object[] {"RU", 8632});
+ model.addRow(new Object[] {"PR", 2345});
+ model.addRow(new Object[] {"UA", 10000});
+ model.addRow(new Object[] {"UY", 34573});
+ model.addRow(new Object[] {"ZM", 3265});
+ model.addRow(new Object[] {"MZ", 235});
+ model.addRow(new Object[] {"ZW", 2346});
+ model.addRow(new Object[] {"MM", 235});
+
+return model;</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="M2_QUERY"
+               id="M2_QUERY"
+               type="scriptable">
+      <Columns/>
+      <Parameters/>
+      <Query>import org.pentaho.reporting.engine.classic.core.util.TypedTableModel;
+String [] columnNames = {"Country", "Amount"};
+Class[] columnTypes = {String.class, Integer.class};
+TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
+
+
+ model.addRow(new Object[] {"UKM", 45667});
+ model.addRow(new Object[] {"UKL", 93922});
+ model.addRow(new Object[] {"UKJ", 95445});
+ model.addRow(new Object[] {"UKG", 8244});
+
+return model;</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="M3_QUERY"
+               id="M3_QUERY"
+               type="scriptable">
+      <Columns/>
+      <Parameters/>
+      <Query>import org.pentaho.reporting.engine.classic.core.util.TypedTableModel;
+String [] columnNames = {"Country", "Amount"};
+Class[] columnTypes = {String.class, Integer.class};
+TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
+
+
+ model.addRow(new Object[] {"US-WY", 45667});
+ model.addRow(new Object[] {"US-UT", 93922});
+ model.addRow(new Object[] {"US-NJ", 95445});
+ model.addRow(new Object[] {"US-MD", 8244});
+ model.addRow(new Object[] {"US-AR", 46453});
+ model.addRow(new Object[] {"US-AL", 2344});
+ model.addRow(new Object[] {"US-MO", 8244});
+ model.addRow(new Object[] {"US-MN", 657});
+ model.addRow(new Object[] {"US-TX", 34567});
+ model.addRow(new Object[] {"US-MI", 2346});
+ model.addRow(new Object[] {"US-MT", 8452});
+ model.addRow(new Object[] {"US-SC", 6892});
+ model.addRow(new Object[] {"US-CA", 89343});
+ model.addRow(new Object[] {"US-NH", 73453});
+
+return model;</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="G3_QUERY"
+               id="G3_QUERY"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Columns/>
+      <Parameters/>
+      <Query>SELECT
+NON EMPTY {Hierarchize({{[Measures].[Actual]}})} ON COLUMNS,
+NON EMPTY {Hierarchize({[Department].[Executive Management]})} ON ROWS
+FROM [Quadrant Analysis]</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="G4_QUERY"
+               id="G4_QUERY"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Columns/>
+      <Parameters>
+         <Parameter default="PARAM1" name="PARAM1" type="String"/>
+      </Parameters>
+      <Query>SELECT
+NON EMPTY {Hierarchize({{[Measures].[Variance]}})} ON COLUMNS,
+NON EMPTY {Hierarchize({[Department].[${PARAM1}]})} ON ROWS
+FROM [Quadrant Analysis]</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="G5_QUERY"
+               id="G5_QUERY"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Columns/>
+      <Parameters>
+         <Parameter default="PARAM2" name="PARAM2" type="String"/>
+      </Parameters>
+      <Query>SELECT
+NON EMPTY {Hierarchize({{[Measures].[Variance]}})} ON COLUMNS,
+NON EMPTY {Hierarchize({[Department].[${PARAM2}]})} ON ROWS
+FROM [Quadrant Analysis]</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="G6_QUERY"
+               id="G6_QUERY"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Columns/>
+      <Parameters>
+         <Parameter default="PARAM3" name="PARAM3" type="String"/>
+      </Parameters>
+      <Query>SELECT
+NON EMPTY {Hierarchize({{[Measures].[Budget]}})} ON COLUMNS,
+NON EMPTY {Hierarchize({[Department].[${PARAM3}]})} ON ROWS
+FROM [Quadrant Analysis]</Query>
    </DataAccess>
 </CDADescriptor>

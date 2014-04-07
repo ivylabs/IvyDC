@@ -1,14 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CDADescriptor>
    <DataSources>
-      <Connection id="dummy" type="sql.jndi">
-         <Jndi></Jndi>
+      <Connection id="GAUGE_QUERY_SAMPLE" type="scripting.scripting">
+         <Initscript></Initscript>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="MAP_QUERY_SAMPLE" type="scripting.scripting">
+         <Initscript></Initscript>
+         <Language>beanshell</Language>
       </Connection>
    </DataSources>
-   <DataAccess access="public" cache="true" cacheDuration="3600" connection="dummy" id="dummy"
-               type="sql">
+   <DataAccess access="public" cache="true" cacheDuration="3600"
+               connection="GAUGE_QUERY_SAMPLE"
+               id="GAUGE_QUERY_SAMPLE"
+               type="scriptable">
       <Columns/>
       <Parameters/>
-      <Query></Query>
+      <Query>import org.pentaho.reporting.engine.classic.core.util.TypedTableModel;
+String [] columnNames = {"Title","Value"};
+Class[] columnTypes = {String.class, Integer.class};
+TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
+
+
+ model.addRow(new Object[] {"Gauge Title", 320});
+
+return model;</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="MAP_QUERY_SAMPLE"
+               id="MAP_QUERY_SAMPLE"
+               type="scriptable">
+      <Columns/>
+      <Parameters/>
+      <Query>import org.pentaho.reporting.engine.classic.core.util.TypedTableModel;
+String [] columnNames = {"Country", "Amount"};
+Class[] columnTypes = {String.class, Integer.class};
+TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
+
+
+ model.addRow(new Object[] {"US", 45667});
+ model.addRow(new Object[] {"PT", 93922});
+ model.addRow(new Object[] {"GB", 95445});
+ model.addRow(new Object[] {"FR", 8244});
+ model.addRow(new Object[] {"ES", 3535});
+ model.addRow(new Object[] {"BR", 3534});
+ model.addRow(new Object[] {"CA", 10000});
+ model.addRow(new Object[] {"UK", 76225});
+ model.addRow(new Object[] {"DE", 89341});
+ model.addRow(new Object[] {"NZ", 8454});
+ model.addRow(new Object[] {"AR", 78435});
+ model.addRow(new Object[] {"CO", 36769});
+ model.addRow(new Object[] {"AU", 10000});
+ model.addRow(new Object[] {"CZ", 478});
+ model.addRow(new Object[] {"PO", 587});
+ model.addRow(new Object[] {"CN", 3453});
+ model.addRow(new Object[] {"IN", 3455});
+ model.addRow(new Object[] {"JP", 45734});
+ model.addRow(new Object[] {"EG", 56583});
+ model.addRow(new Object[] {"ET", 35765});
+ model.addRow(new Object[] {"GA", 2323});
+ model.addRow(new Object[] {"GH", 36567});
+ model.addRow(new Object[] {"GN", 2463});
+ model.addRow(new Object[] {"GW", 2346});
+ model.addRow(new Object[] {"IE", 23467});
+ model.addRow(new Object[] {"RU", 8632});
+ model.addRow(new Object[] {"PR", 2345});
+ model.addRow(new Object[] {"UA", 10000});
+ model.addRow(new Object[] {"UY", 34573});
+ model.addRow(new Object[] {"ZM", 3265});
+ model.addRow(new Object[] {"MZ", 235});
+ model.addRow(new Object[] {"ZW", 2346});
+ model.addRow(new Object[] {"MM", 235});
+
+return model;</Query>
    </DataAccess>
 </CDADescriptor>

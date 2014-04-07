@@ -17,14 +17,13 @@
 			<Property>postExecution</Property>
 			<Property>listeners</Property>
 			<Property name="parameters">xActionArrayParameter</Property>
-			<Property name ="mapFile" type="string">mapFile</Property>
-			<Property name ="mapColor">mapColor</Property>
-			<Property name ="mapBackgroundColor" type="string">mapBackgroundColor</Property>
-			<Property name ="mapHoverColor" type="string">mapHoverColor</Property>
-			<Property name ="mapNormalizeFunction" type="string">mapNormalizeFunction</Property>
-			<Property name ="mapLowScaleColor" type="string">mapLowScaleColor</Property>
-			<Property name ="mapHighScaleColor" type="string">mapHighScaleColor</Property>
-			<Property name ="mapHoverOpacity" type="string">mapHoverOpacity</Property>
+			<Property>mapFile</Property>
+			<Property>mapColor</Property>
+			<Property>mapBackgroundColor</Property>
+			<Property>mapNormalizeFunction</Property>
+			<Property>mapLowScaleColor</Property>
+			<Property>mapHighScaleColor</Property>
+			<Property>mapHoverOpacity</Property>
 			<Property>mapClickFunction</Property>
 			<Property>mapOnRegionShowFunction</Property>
 			
@@ -141,20 +140,6 @@
 						<Parent>BaseProperty</Parent>
 						<DefaultValue>#baddff</DefaultValue>
 						<Description>Map Background Color</Description>
-						<InputType>Color</InputType>
-						<OutputType>String</OutputType>
-						<Order>52</Order>
-						<Advanced>false</Advanced>
-						<Version>1.0</Version>
-					</Header>
-				</DesignerProperty>
-				
-				<DesignerProperty>
-					<Header>
-						<Name>mapHoverColor</Name>
-						<Parent>BaseProperty</Parent>
-						<DefaultValue>#8da166</DefaultValue>
-						<Description>Map Hover Color</Description>
 						<InputType>Color</InputType>
 						<OutputType>String</OutputType>
 						<Order>52</Order>

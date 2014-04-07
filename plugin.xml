@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin title="IvyISCDEComponents" loader="DEFAULT">
+<plugin title="IvyDC" loader="DEFAULT">
 <overlays>
-		<overlay id="startup.IvyISCDEComponents" resourcebundle="content/IvyISCDEComponents/resources/lang/messages">
+		<overlay id="startup.IvyDC" resourcebundle="content/IvyDC/resources/lang/messages">
 			<menubar id="toolsmenu">
-	        	<menuitem id="IvyISCDEComponents" label="${Launcher.IvyISCDEComponents}" command="mantleXulHandler.openUrl('${Launcher.IvyISCDEComponents}','${Launcher.IvyISCDEComponents_TOOLTIP}','plugin/IvyISCDEComponents/api/default')"/>
+	        	<menuitem id="IvyDC" label="${Launcher.IvyDC}" command="mantleXulHandler.openUrl('${Launcher.IvyDC}','${Launcher.IvyDC_TOOLTIP}','plugin/IvyDC/api/default')"/>
 	      	</menubar>
 	    </overlay>
 	</overlays>
 	<lifecycle-listener class="pt.webdetails.cpk.CpkLifecycleListener"/>
 	<static-paths>
-		<static-path url="/IvyISCDEComponents/static" localFolder="static"/>
-		<static-path url="/IvyISCDEComponents/resources" localFolder="resources"/>
+		<static-path url="/IvyDC/static" localFolder="static"/>
+		<static-path url="/IvyDC/resources" localFolder="resources"/>
 	</static-paths>
 	<content-types>
 		<content-type>
-			<title>IvyISCDEComponents</title>
+			<title>IvyDC</title>
 			<description></description>
 			<company name="" url="" logo="@PLUGIN_COMPANY_LOGO@"></company>
 		</content-type>
 	</content-types>
 	<content-generator
-		id="IvyISCDEComponents"
-		title="IvyISCDEComponents"
-		type="IvyISCDEComponents"
+		id="IvyDC"
+		title="IvyDC"
+		type="IvyDC"
 		class="pt.webdetails.cpk.CpkContentGenerator"/>
 	<!-- Menu entry -->
 	<menu-items>
-		<!--<menu-item id="IvyISCDEComponents_main" anchor="tools-submenu" label="IvyISCDEComponents" command="content/IvyISCDEComponents/" type="MENU_ITEM" how="LAST_CHILD"/>-->
+		<!--<menu-item id="IvyDC_main" anchor="tools-submenu" label="IvyDC" command="content/IvyDC/" type="MENU_ITEM" how="LAST_CHILD"/>-->
 	</menu-items>
 </plugin>

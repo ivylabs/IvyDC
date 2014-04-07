@@ -18,16 +18,16 @@ var jQVectorMapComponent = BaseComponent.extend({
 			console.log("query not defined");
 		} else {
 			console.log("datasource has been added");
-				// create a query object
-				var query = new Query(myself.queryDefinition);
-				
-				// fire the query objects fetchdata method
-				// no params and no callback
-				query.fetchData(myself.parameters, function(values) {
+			// create a query object
+			var query = new Query(myself.queryDefinition);
+			
+			// fire the query objects fetchdata method
+			// no params and no callback
+			query.fetchData(myself.parameters, function(values) {
 
-					mapData = Dashboards.propertiesArrayToObject(values.resultset);
-					
-				});
+				mapData = Dashboards.propertiesArrayToObject(values.resultset);
+				
+			});
 
 		}
 		
@@ -46,8 +46,6 @@ var jQVectorMapComponent = BaseComponent.extend({
 	              }
 	            },
 				backgroundColor: this.mapBackgroundColor,
-				hoverColor: this.mapHoverColor,
-				hoverColor: true,
 				hoverOpacity : this.mapHoverOpacity,
 				onRegionClick: function(event, code){
 					if(myself.mapClickFunction){

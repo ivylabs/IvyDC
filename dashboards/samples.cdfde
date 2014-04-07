@@ -1,40 +1,1431 @@
 {
  "layout": {
   "title": "samples",
-  "rows": []
- },
- "components": {
-  "rows": []
- },
- "datasources": {
   "rows": [
    {
-    "id": "SQL",
-    "name": "SQL Queries",
+    "id": "94765c28-5de2-0880-1f09-b16ce7652231",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "746aeb3e-809a-5ed6-070e-0ea8902fb4fe",
+    "type": "LayoutColumn",
+    "typeDesc": "Column",
+    "parent": "94765c28-5de2-0880-1f09-b16ce7652231",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "columnSpan",
+      "value": "12",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrepend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnAppend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrependTop",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnAppendBottom",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBigBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "900df7cb-d43c-630e-5c91-89fd65ad995a",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "746aeb3e-809a-5ed6-070e-0ea8902fb4fe",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<div class=\"panel-group\" id=\"accordion\">\n  <div class=\"panel panel-default\">\n    <div class=\"panel-heading\">\n      <h4 class=\"panel-title\">\n        <a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseOne\">\n          Gage Component\n        </a>\n      </h4>\n    </div>\n    <div id=\"collapseOne\" class=\"panel-collapse collapse in\">\n      <div class=\"panel-body\">\n        <div class=\"row\" style=\"height:200px;\">\n            <div class=\"col-md-3\" id=\"G1\"></div>\n            <div class=\"col-md-3\" id=\"G2\"></div>\n            <div class=\"col-md-3\" id=\"G3\"></div>\n            <div class=\"col-md-3\" id=\"G4\"></div>\n        </div>\n        <div class=\"row\" style=\"max-height:370px;\">\n            <div class=\"col-md-6\" id=\"G5\"></div>\n            <div class=\"col-md-6\" id=\"G6\"></div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"panel panel-default\">\n    <div class=\"panel-heading\">\n      <h4 class=\"panel-title\">\n        <a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseTwo\">\n          Vector Map Component\n        </a>\n      </h4>\n    </div>\n    <div id=\"collapseTwo\" class=\"panel-collapse collapse in\">\n      <div class=\"panel-body\">\n        <div class=\"row\">\n            <div class=\"col-md-6\" style=\"height:350px;\" id=\"M1\"></div>\n            <div class=\"col-md-6\" style=\"height:350px;\" id=\"M2\"></div>\n        </div>\n        <div class=\"row\">\n            <br/>\n            <div class=\"col-md-12\">Try click in USA</div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-12\"  style=\"height:450px;\" id=\"M3\"></div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"panel panel-default\">\n    <div class=\"panel-heading\">\n      <h4 class=\"panel-title\">\n        <a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseThree\">\n          Video Player Component\n        </a>\n      </h4>\n    </div>\n    <div id=\"collapseThree\" class=\"panel-collapse collapse in\">\n      <div class=\"panel-body\">\n        <div class=\"row\">\n            <div class=\"col-md-3\" style=\"height:350px;\" id=\"V2\"></div>\n            <div class=\"col-md-9\" style=\"height:350px;\" id=\"V1\"></div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div> ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   }
+  ]
+ },
+ "components": {
+  "rows": [
+   {
+    "id": "IVYIS",
+    "name": "Ivy IS",
     "type": "Label",
     "typeDesc": "<i>Group</i>",
     "parent": "UnIqEiD",
     "properties": [
      {
       "name": "Group",
-      "value": "SQL Queries",
+      "value": "Ivy IS",
       "type": "Label"
      }
     ]
    },
    {
-    "id": "0a56c773-c21a-33cb-c9aa-716d1c31731a",
-    "type": "Componentssql_sqlJndi",
-    "typeDesc": "sql over sqlJndi",
-    "meta": "CDA",
-    "meta_conntype": "sql.jndi",
-    "meta_datype": "sql",
-    "parent": "SQL",
+    "id": "066ef34d-3c8f-7881-1491-d7a6ac3528fe",
+    "type": "ComponentsgaugeComponent",
+    "typeDesc": "Gauge Component",
+    "parent": "IVYIS",
     "properties": [
      {
       "name": "name",
-      "value": "dummy",
+      "value": "G1",
       "type": "Id"
+     },
+     {
+      "name": "label",
+      "value": "Gauge Chart Tittle",
+      "type": "String"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "expression",
+      "value": "function(){\n    alert(\"Hello world!\");\n    Dashboards.fireChange(\"PARAM2\",\"Executive Management\");\n}",
+      "type": "JavaScript"
+     },
+     {
+      "name": "dataSource",
+      "value": "G1_QUERY",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": "5",
+      "type": "Integer"
+     },
+     {
+      "name": "gaugeType",
+      "value": "gauge",
+      "type": "gaugeTypeCustom"
+     },
+     {
+      "name": "minValue",
+      "value": "0",
+      "type": "String"
+     },
+     {
+      "name": "maxValue",
+      "value": "1000",
+      "type": "String"
+     },
+     {
+      "name": "gaugeWidthScale",
+      "value": "0.5",
+      "type": "String"
+     },
+     {
+      "name": "gaugeSymbol",
+      "value": "%",
+      "type": "String"
+     },
+     {
+      "name": "subTitle",
+      "value": "Gauge Chart Subtitle",
+      "type": "String"
+     },
+     {
+      "name": "extensionPoints",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "formatNumber",
+      "value": true,
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "G1",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "a57de8a9-f9ea-caf6-3910-2d27b6806c78",
+    "type": "ComponentsgaugeComponent",
+    "typeDesc": "Gauge Component",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "G2",
+      "type": "Id"
+     },
+     {
+      "name": "label",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "expression",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "dataSource",
+      "value": "G1_QUERY",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": "5",
+      "type": "Integer"
+     },
+     {
+      "name": "gaugeType",
+      "value": "doughnut",
+      "type": "gaugeTypeCustom"
+     },
+     {
+      "name": "minValue",
+      "value": "0",
+      "type": "String"
+     },
+     {
+      "name": "maxValue",
+      "value": "1000",
+      "type": "String"
+     },
+     {
+      "name": "gaugeWidthScale",
+      "value": "0.5",
+      "type": "String"
+     },
+     {
+      "name": "gaugeSymbol",
+      "value": "%",
+      "type": "String"
+     },
+     {
+      "name": "subTitle",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "extensionPoints",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "formatNumber",
+      "value": true,
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "G2",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "5a8324ea-f8f2-7c91-ad82-99391c7693c9",
+    "type": "ComponentsgaugeComponent",
+    "typeDesc": "Gauge Component",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "G3",
+      "type": "Id"
+     },
+     {
+      "name": "label",
+      "value": "Click There",
+      "type": "String"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "expression",
+      "value": "function(){\n    Dashboards.fireChange(\"PARAM1\",\"Executive Management\");\n}",
+      "type": "JavaScript"
+     },
+     {
+      "name": "dataSource",
+      "value": "G3_QUERY",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": "5",
+      "type": "Integer"
+     },
+     {
+      "name": "gaugeType",
+      "value": "gauge",
+      "type": "gaugeTypeCustom"
+     },
+     {
+      "name": "minValue",
+      "value": "100000",
+      "type": "String"
+     },
+     {
+      "name": "maxValue",
+      "value": "6500000",
+      "type": "String"
+     },
+     {
+      "name": "gaugeWidthScale",
+      "value": "0.3",
+      "type": "String"
+     },
+     {
+      "name": "gaugeSymbol",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "subTitle",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "extensionPoints",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "formatNumber",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "G3",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "f6778e59-b0ad-c1c3-337b-8d81081c7c94",
+    "type": "ComponentsgaugeComponent",
+    "typeDesc": "Gauge Component",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "G4",
+      "type": "Id"
+     },
+     {
+      "name": "label",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "listeners",
+      "value": "['${p:PARAM1}']",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[[\"PARAM1\",\"PARAM1\",\"String\",\"\"]]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "expression",
+      "value": "function(){\n    Dashboards.fireChange(\"PARAM3\",\"Executive Management\");    \n}",
+      "type": "JavaScript"
+     },
+     {
+      "name": "dataSource",
+      "value": "G4_QUERY",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": "6",
+      "type": "Integer"
+     },
+     {
+      "name": "gaugeType",
+      "value": "doughnut",
+      "type": "gaugeTypeCustom"
+     },
+     {
+      "name": "minValue",
+      "value": "0",
+      "type": "String"
+     },
+     {
+      "name": "maxValue",
+      "value": "500000",
+      "type": "String"
+     },
+     {
+      "name": "gaugeWidthScale",
+      "value": "0.3",
+      "type": "String"
+     },
+     {
+      "name": "gaugeSymbol",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "subTitle",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "extensionPoints",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "formatNumber",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "G4",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "daf6e816-e346-cc81-7f2e-3a1d9aca5d8f",
+    "type": "ComponentsgaugeComponent",
+    "typeDesc": "Gauge Component",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "G5",
+      "type": "Id"
+     },
+     {
+      "name": "label",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "listeners",
+      "value": "['${p:PARAM2}']",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[[\"PARAM2\",\"PARAM2\",\"String\",\"\"]]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "expression",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "dataSource",
+      "value": "G5_QUERY",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": "6",
+      "type": "Integer"
+     },
+     {
+      "name": "gaugeType",
+      "value": "doughnut",
+      "type": "gaugeTypeCustom"
+     },
+     {
+      "name": "minValue",
+      "value": "0",
+      "type": "String"
+     },
+     {
+      "name": "maxValue",
+      "value": "500000",
+      "type": "String"
+     },
+     {
+      "name": "gaugeWidthScale",
+      "value": "1",
+      "type": "String"
+     },
+     {
+      "name": "gaugeSymbol",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "subTitle",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "extensionPoints",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "formatNumber",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "G5",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "7a7f7418-5c45-b505-d5d0-648877e61698",
+    "type": "ComponentsgaugeComponent",
+    "typeDesc": "Gauge Component",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "G6",
+      "type": "Id"
+     },
+     {
+      "name": "label",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "listeners",
+      "value": "['${p:PARAM3}']",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[[\"PARAM3\",\"PARAM3\",\"String\",\"\"]]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "expression",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "dataSource",
+      "value": "G6_QUERY",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": "6",
+      "type": "Integer"
+     },
+     {
+      "name": "gaugeType",
+      "value": "gauge",
+      "type": "gaugeTypeCustom"
+     },
+     {
+      "name": "minValue",
+      "value": "0",
+      "type": "String"
+     },
+     {
+      "name": "maxValue",
+      "value": "100000000",
+      "type": "String"
+     },
+     {
+      "name": "gaugeWidthScale",
+      "value": "0.3",
+      "type": "String"
+     },
+     {
+      "name": "gaugeSymbol",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "subTitle",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "extensionPoints",
+      "value": "[[\"startAnimationTime\",\"function(){ return 1000;}\"],[\"startAnimationType\",\"bounce\"],[\"showMinMax\",\"false\"],[\"gaugeColor\",\"#036\"],[\"levelColors\",\"function(){ return [\\\"#8cc63f\\\"]; }\"]]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "formatNumber",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "G6",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "3b50172f-e48f-5b67-7d1e-ba08e5683ab1",
+    "type": "ComponentsjQVectorMapComponent",
+    "typeDesc": "jQVectorMapComponent",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "M1",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "mapClickFunction",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "mapOnRegionShowFunction",
+      "value": "function( event, label, code, data ) { \n    return data[code]!==undefined?label + \" - \" + data[code]:label;\n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "dataSource",
+      "value": "M1_QUERY",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "mapFile",
+      "value": "world_mill_en",
+      "type": "mapFileCustom"
+     },
+     {
+      "name": "mapColor",
+      "value": "#fefff2",
+      "type": "Color"
+     },
+     {
+      "name": "mapBackgroundColor",
+      "value": "#baddff",
+      "type": "Color"
+     },
+     {
+      "name": "mapNormalizeFunction",
+      "value": "polynomial",
+      "type": "mapNormalizeFunctionCustom"
+     },
+     {
+      "name": "mapLowScaleColor",
+      "value": "#03f748",
+      "type": "Color"
+     },
+     {
+      "name": "mapHighScaleColor",
+      "value": "#317000",
+      "type": "Color"
+     },
+     {
+      "name": "mapHoverOpacity",
+      "value": 0.7,
+      "type": "Float"
+     },
+     {
+      "name": "htmlObject",
+      "value": "M1",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "7db01de2-79cb-fe14-3334-976a015d71c4",
+    "type": "ComponentsjQVectorMapComponent",
+    "typeDesc": "jQVectorMapComponent",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "M2",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "mapClickFunction",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "mapOnRegionShowFunction",
+      "value": "function( event, label, code, data ) { \n    return data[code]!==undefined?label + \" - \" + data[code]:label;\n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "dataSource",
+      "value": "M2_QUERY",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "mapFile",
+      "value": "uk_mill_en",
+      "type": "mapFileCustom"
+     },
+     {
+      "name": "mapColor",
+      "value": "#f5e1d2",
+      "type": "Color"
+     },
+     {
+      "name": "mapBackgroundColor",
+      "value": "#edffff",
+      "type": "Color"
+     },
+     {
+      "name": "mapNormalizeFunction",
+      "value": "polynomial",
+      "type": "mapNormalizeFunctionCustom"
+     },
+     {
+      "name": "mapLowScaleColor",
+      "value": "#b9cdf7",
+      "type": "Color"
+     },
+     {
+      "name": "mapHighScaleColor",
+      "value": "#0020ad",
+      "type": "Color"
+     },
+     {
+      "name": "mapHoverOpacity",
+      "value": "0.3",
+      "type": "Float"
+     },
+     {
+      "name": "htmlObject",
+      "value": "M2",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "e99f0ff4-8e82-fb5e-d518-6c9cdd4ebb8a",
+    "type": "ComponentsjQVectorMapComponent",
+    "typeDesc": "jQVectorMapComponent",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "M3",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "['${p:MAP1}']",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "mapClickFunction",
+      "value": "function(event, code){\n    if(code !=\"US\"){\n        alert(\"Sorry, don't exist demo data for this country.\");\n        return;\n    }\n    Dashboards.fireChange(\"MAP1\",\"USA\");\n}",
+      "type": "JavaScript"
+     },
+     {
+      "name": "mapOnRegionShowFunction",
+      "value": "function( event, label, code, data ) { \n    return data[code]!==undefined?label + \" - \" + data[code]:label;\n} ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "dataSource",
+      "value": "M1_QUERY",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "mapFile",
+      "value": "world_mill_en",
+      "type": "mapFileCustom"
+     },
+     {
+      "name": "mapColor",
+      "value": "#f5e1d2",
+      "type": "Color"
+     },
+     {
+      "name": "mapBackgroundColor",
+      "value": "#edffff",
+      "type": "Color"
+     },
+     {
+      "name": "mapNormalizeFunction",
+      "value": "polynomial",
+      "type": "mapNormalizeFunctionCustom"
+     },
+     {
+      "name": "mapLowScaleColor",
+      "value": "#f5c5b8",
+      "type": "Color"
+     },
+     {
+      "name": "mapHighScaleColor",
+      "value": "#ab2e00",
+      "type": "Color"
+     },
+     {
+      "name": "mapHoverOpacity",
+      "value": "0.3",
+      "type": "Float"
+     },
+     {
+      "name": "htmlObject",
+      "value": "M3",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "function(){\n    if(MAP1===\"USA\"){\n        this.mapFile = \"us_aea_en\";\n        this.queryDefinition.dataAccessId = \"M3_QUERY\";\n    }\n}",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "92f4cd93-c8d9-f884-5737-84bde8fa66dd",
+    "type": "ComponentsvideoPlayerComponent",
+    "typeDesc": "Video Player",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "V1",
+      "type": "Id"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "videos",
+      "value": "[[\"http://vjs.zencdn.net/v/oceans.mp4\",\"video/mp4\"],[\"http://vjs.zencdn.net/v/oceans.webm\",\"video/webm\"]]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "tracks",
+      "value": "[[\"/pentaho/api/repos/IvyDC/static/custom/others/demo.captions.vtt\",\"en\"]]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "controls",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "autoPlay",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "CssClasses",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "buttonsControlsColor",
+      "value": "#17008c",
+      "type": "Color"
+     },
+     {
+      "name": "controlsLevelColor",
+      "value": "#80e1fc",
+      "type": "Color"
+     },
+     {
+      "name": "controlBarSize",
+      "value": "80",
+      "type": "Integer"
+     },
+     {
+      "name": "videoPosterImg",
+      "value": "http://www.ivy-is.co.uk/wp-content/uploads/2014/03/logo_300px_wide.png",
+      "type": "String"
+     },
+     {
+      "name": "videoLoop",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "popup",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "V1",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "7e714824-cbab-e0f2-2be9-72063585df75",
+    "type": "ComponentsvideoPlayerComponent",
+    "typeDesc": "Video Player",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "V2",
+      "type": "Id"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "videos",
+      "value": "[[\"http://vjs.zencdn.net/v/oceans.mp4\",\"video/mp4\"]]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "tracks",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "controls",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "autoPlay",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "CssClasses",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "buttonsControlsColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "controlsLevelColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "controlBarSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "videoPosterImg",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "videoLoop",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "popup",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "V2",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "function(){\n    this.height=\"400\";\n    this.width=\"500\";\n}",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "GENERIC",
+    "name": "Generic",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "Generic",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "af7d9ca1-414d-9896-8781-293fa89e2f50",
+    "type": "ComponentsParameter",
+    "typeDesc": "Simple parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "PARAM1",
+      "type": "Id"
+     },
+     {
+      "name": "propertyValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "f2e313a2-d8a0-5d47-0126-6dbcacf2e41e",
+    "type": "ComponentsParameter",
+    "typeDesc": "Simple parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "PARAM2",
+      "type": "Id"
+     },
+     {
+      "name": "propertyValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "0e2eb178-3ea2-78d6-f40e-d713c891fcda",
+    "type": "ComponentsParameter",
+    "typeDesc": "Simple parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "PARAM3",
+      "type": "Id"
+     },
+     {
+      "name": "propertyValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "feb20c70-46fc-2b36-e462-18da36826c46",
+    "type": "ComponentsParameter",
+    "typeDesc": "Simple parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "MAP1",
+      "type": "Id"
+     },
+     {
+      "name": "propertyValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   }
+  ]
+ },
+ "datasources": {
+  "rows": [
+   {
+    "id": "SCRIPTING",
+    "name": "SCRIPTING Queries",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "SCRIPTING Queries",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "77714393-7eba-318d-d0c2-6ca430f36ec7",
+    "type": "Componentsscriptable_scripting",
+    "typeDesc": "scriptable over scripting",
+    "parent": "SCRIPTING",
+    "properties": [
+     {
+      "name": "name",
+      "value": "G1_QUERY",
+      "type": "Id"
+     },
+     {
+      "name": "language",
+      "value": "beanshell",
+      "type": "String"
+     },
+     {
+      "name": "initscript",
+      "value": "",
+      "type": "String"
      },
      {
       "name": "access",
@@ -42,13 +1433,8 @@
       "type": "Access"
      },
      {
-      "name": "jndi",
-      "value": "",
-      "type": "Jndi"
-     },
-     {
       "name": "query",
-      "value": "",
+      "value": "\nimport org.pentaho.reporting.engine.classic.core.util.TypedTableModel;\nString [] columnNames = {\"Title\",\"Value\"};\nClass[] columnTypes = {String.class, Integer.class};\nTypedTableModel model = new TypedTableModel(columnNames, columnTypes);\n\n\n model.addRow(new Object[] {\"Value\", 720});\n\nreturn model;",
       "type": "SqlQuery"
      },
      {
@@ -86,9 +1472,543 @@
       "value": "true",
       "type": "Boolean"
      }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "scripting.scripting",
+    "meta_datype": "scriptable"
+   },
+   {
+    "id": "66b63b95-5326-d6d8-006d-91c9ee34d5e0",
+    "type": "Componentsscriptable_scripting",
+    "typeDesc": "scriptable over scripting",
+    "parent": "SCRIPTING",
+    "properties": [
+     {
+      "name": "name",
+      "value": "M1_QUERY",
+      "type": "Id"
+     },
+     {
+      "name": "language",
+      "value": "beanshell",
+      "type": "String"
+     },
+     {
+      "name": "initscript",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "query",
+      "value": "\nimport org.pentaho.reporting.engine.classic.core.util.TypedTableModel;\nString [] columnNames = {\"Country\", \"Amount\"};\nClass[] columnTypes = {String.class, Integer.class};\nTypedTableModel model = new TypedTableModel(columnNames, columnTypes);\n\n\n model.addRow(new Object[] {\"US\", 45667});\n model.addRow(new Object[] {\"PT\", 93922});\n model.addRow(new Object[] {\"GB\", 95445});\n model.addRow(new Object[] {\"FR\", 8244});\n model.addRow(new Object[] {\"ES\", 3535});\n model.addRow(new Object[] {\"BR\", 3534});\n model.addRow(new Object[] {\"CA\", 10000});\n model.addRow(new Object[] {\"UK\", 76225});\n model.addRow(new Object[] {\"DE\", 89341});\n model.addRow(new Object[] {\"NZ\", 8454});\n model.addRow(new Object[] {\"AR\", 78435});\n model.addRow(new Object[] {\"CO\", 36769});\n model.addRow(new Object[] {\"AU\", 10000});\n model.addRow(new Object[] {\"CZ\", 478});\n model.addRow(new Object[] {\"PO\", 587});\n model.addRow(new Object[] {\"CN\", 3453});\n model.addRow(new Object[] {\"IN\", 3455});\n model.addRow(new Object[] {\"JP\", 45734});\n model.addRow(new Object[] {\"EG\", 56583});\n model.addRow(new Object[] {\"ET\", 35765});\n model.addRow(new Object[] {\"GA\", 2323});\n model.addRow(new Object[] {\"GH\", 36567});\n model.addRow(new Object[] {\"GN\", 2463});\n model.addRow(new Object[] {\"GW\", 2346});\n model.addRow(new Object[] {\"IE\", 23467});\n model.addRow(new Object[] {\"RU\", 8632});\n model.addRow(new Object[] {\"PR\", 2345});\n model.addRow(new Object[] {\"UA\", 10000});\n model.addRow(new Object[] {\"UY\", 34573});\n model.addRow(new Object[] {\"ZM\", 3265});\n model.addRow(new Object[] {\"MZ\", 235});\n model.addRow(new Object[] {\"ZW\", 2346});\n model.addRow(new Object[] {\"MM\", 235});\n\nreturn model;",
+      "type": "SqlQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "scripting.scripting",
+    "meta_datype": "scriptable"
+   },
+   {
+    "id": "cda00fbf-df50-906e-b043-d7906bba295d",
+    "type": "Componentsscriptable_scripting",
+    "typeDesc": "scriptable over scripting",
+    "parent": "SCRIPTING",
+    "properties": [
+     {
+      "name": "name",
+      "value": "M2_QUERY",
+      "type": "Id"
+     },
+     {
+      "name": "language",
+      "value": "beanshell",
+      "type": "String"
+     },
+     {
+      "name": "initscript",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "query",
+      "value": "\nimport org.pentaho.reporting.engine.classic.core.util.TypedTableModel;\nString [] columnNames = {\"Country\", \"Amount\"};\nClass[] columnTypes = {String.class, Integer.class};\nTypedTableModel model = new TypedTableModel(columnNames, columnTypes);\n\n\n model.addRow(new Object[] {\"UKM\", 45667});\n model.addRow(new Object[] {\"UKL\", 93922});\n model.addRow(new Object[] {\"UKJ\", 95445});\n model.addRow(new Object[] {\"UKG\", 8244});\n\nreturn model;",
+      "type": "SqlQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "scripting.scripting",
+    "meta_datype": "scriptable"
+   },
+   {
+    "id": "e1ef0440-3a16-b8ad-a3f6-31b0e4470924",
+    "type": "Componentsscriptable_scripting",
+    "typeDesc": "scriptable over scripting",
+    "parent": "SCRIPTING",
+    "properties": [
+     {
+      "name": "name",
+      "value": "M3_QUERY",
+      "type": "Id"
+     },
+     {
+      "name": "language",
+      "value": "beanshell",
+      "type": "String"
+     },
+     {
+      "name": "initscript",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "query",
+      "value": "\nimport org.pentaho.reporting.engine.classic.core.util.TypedTableModel;\nString [] columnNames = {\"Country\", \"Amount\"};\nClass[] columnTypes = {String.class, Integer.class};\nTypedTableModel model = new TypedTableModel(columnNames, columnTypes);\n\n\n model.addRow(new Object[] {\"US-WY\", 45667});\n model.addRow(new Object[] {\"US-UT\", 93922});\n model.addRow(new Object[] {\"US-NJ\", 95445});\n model.addRow(new Object[] {\"US-MD\", 8244});\n model.addRow(new Object[] {\"US-AR\", 46453});\n model.addRow(new Object[] {\"US-AL\", 2344});\n model.addRow(new Object[] {\"US-MO\", 8244});\n model.addRow(new Object[] {\"US-MN\", 657});\n model.addRow(new Object[] {\"US-TX\", 34567});\n model.addRow(new Object[] {\"US-MI\", 2346});\n model.addRow(new Object[] {\"US-MT\", 8452});\n model.addRow(new Object[] {\"US-SC\", 6892});\n model.addRow(new Object[] {\"US-CA\", 89343});\n model.addRow(new Object[] {\"US-NH\", 73453});\n\nreturn model;",
+      "type": "SqlQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "scripting.scripting",
+    "meta_datype": "scriptable"
+   },
+   {
+    "id": "MDX",
+    "name": "MDX Queries",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "MDX Queries",
+      "type": "Label"
+     }
     ]
+   },
+   {
+    "id": "b883ea0b-7cad-f3d5-a12c-23f8a82669db",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "G3_QUERY",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SampleData",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "SELECT\nNON EMPTY {Hierarchize({{[Measures].[Actual]}})} ON COLUMNS,\nNON EMPTY {Hierarchize({[Department].[Executive Management]})} ON ROWS\nFROM [Quadrant Analysis]",
+      "type": "SqlQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "9d999ec4-0e03-e7c9-ea13-4265d35f47be",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "G4_QUERY",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SampleData",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "SELECT\nNON EMPTY {Hierarchize({{[Measures].[Variance]}})} ON COLUMNS,\nNON EMPTY {Hierarchize({[Department].[${PARAM1}]})} ON ROWS\nFROM [Quadrant Analysis]",
+      "type": "SqlQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[[\"PARAM1\",\"PARAM1\",\"String\",\"\"]]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "1f6657d4-bc3c-0374-a124-cad46e5e6665",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "G5_QUERY",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SampleData",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "SELECT\nNON EMPTY {Hierarchize({{[Measures].[Variance]}})} ON COLUMNS,\nNON EMPTY {Hierarchize({[Department].[${PARAM2}]})} ON ROWS\nFROM [Quadrant Analysis]",
+      "type": "SqlQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[[\"PARAM2\",\"PARAM2\",\"String\",\"\"]]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
+   },
+   {
+    "id": "1f1a6361-6b02-462b-1eae-4571ce95f821",
+    "type": "Componentsmdx_mondrianJndi",
+    "typeDesc": "mdx over mondrianJndi",
+    "parent": "MDX",
+    "properties": [
+     {
+      "name": "name",
+      "value": "G6_QUERY",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "SampleData",
+      "type": "Jndi"
+     },
+     {
+      "name": "catalog",
+      "value": "mondrian:/SampleData",
+      "type": "MondrianCatalog"
+     },
+     {
+      "name": "query",
+      "value": "SELECT\nNON EMPTY {Hierarchize({{[Measures].[Budget]}})} ON COLUMNS,\nNON EMPTY {Hierarchize({[Department].[${PARAM3}]})} ON ROWS\nFROM [Quadrant Analysis]",
+      "type": "SqlQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[[\"PARAM3\",\"PARAM3\",\"String\",\"\"]]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "bandedMode",
+      "value": "compact",
+      "type": "BandedMode"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "mondrian.jndi",
+    "meta_datype": "mdx"
    }
   ]
  },
- "filename": "file:///home/hazamonzo/bi-projects/project-ivy-demo-non-cbf/biserver-ce/pentaho-solutions/system/IvyISCDEComponents/dashboards/samples.cdfde"
+ "filename": "/system/IvyDC/dashboards/samples.cdfde"
 }
