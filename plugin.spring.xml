@@ -10,7 +10,7 @@
     <context:annotation-config/>
     <!-- REST resources -->
     <bean id="api" class="org.pentaho.platform.web.servlet.JAXRSPluginServlet"/>
-    <bean id="IvyISCDEComponents.api" class="pt.webdetails.cpk.CpkApi"/>
+    <bean id="IvyDC.api" class="pt.webdetails.cpk.CpkApi"/>
 
     <!--  Content Generator  -->
     <!-- <bean id="cpk" class="pt.webdetails.cpk.CpkContentGenerator" scope="prototype"/> -->

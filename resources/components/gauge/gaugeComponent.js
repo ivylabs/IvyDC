@@ -3,6 +3,8 @@ var gaugeComponent = BaseComponent.extend({
 	update : function() {
 		var myself=this;
 
+		$("#"+myself.htmlObject).empty();
+
 		if(!myself.queryDefinition){
 			console.log("query not defined");
 			dataViewerHTML = "<b>We need to set a query with two fields of data!</b>";
@@ -60,7 +62,7 @@ var gaugeComponent = BaseComponent.extend({
 				var extension = {};
 				if(myself.extensionPoints != undefined && myself.extensionPoints[0] != undefined){
 					for(var i = 0; i < myself.extensionPoints.length; i++){
-						extension[myself.extensionPoints[i][0]] = typeof myself.extensionPoints[i][0] === 'function'?myself.extensionPoints[i][0]():myself.extensionPoints[i][0];
+						extension[myself.extensionPoints[i][0]] = typeof myself.extensionPoints[i][1] === 'function'?myself.extensionPoints[i][1]():myself.extensionPoints[i][1];
 					}
 				}
 
