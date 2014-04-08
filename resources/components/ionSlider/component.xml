@@ -1,0 +1,237 @@
+<DesignerComponent>
+	<Header>
+		<Name>Ion Slider</Name>
+		<IName>IonSliderComponent</IName>
+		<Description>Ion Slider</Description>
+		<Category>IVYIS</Category>
+		<CatDescription>Ivy IS</CatDescription>
+		<Type>PalleteEntry</Type>
+		<Version>1.0</Version>
+	</Header>
+	<Contents>
+		
+		<Model>
+			<Property>parameter</Property>
+			<Property>listeners</Property>
+			<Property>htmlObject</Property>
+			<Property name="parameters">xActionArrayParameter</Property>
+            <Definition name="queryDefinition">
+				<Property>dataSource</Property>
+			</Definition>
+			<Property>postFetch</Property>
+			<Property>preExecution</Property>
+			<Property>postExecution</Property>
+			<Property>preChange</Property>
+			<Property>postChange</Property>
+			<Property>refreshPeriod</Property>
+			<Property>executeAtStart</Property>
+			<Property>slideType</Property>
+			<Property>skins</Property>
+			<Property>minRange</Property>
+			<Property>maxRange</Property>
+			<Property>stepValue</Property>
+			<Property>prefixValue</Property>
+			<Property>postfixValue</Property>
+			<Property>maxPostfix</Property>
+			<Property>hideMinMax</Property>
+			<Property>hideFromTo</Property>
+			<Property>prettify</Property>
+			<Property>hasGrid</Property>
+		</Model>
+
+		<Implementation>
+			<Code src="ionSliderComponent.js" />
+			
+			<Dependencies>
+				<Dependency src="js/ion.rangeSlider.min.js">ion.rangeSlider.min.js</Dependency>
+			</Dependencies>
+			
+			<Styles>
+				<Style src="css/ion.rangeSlider.css">ion.rangeSlider.css</Style>
+				<Style src="css/normalize.min.css">normalize.min.css</Style>
+			</Styles>
+			
+			<CustomProperties>
+
+				<DesignerProperty>
+					<Header>
+						<Name>slideType</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>single</DefaultValue>
+						<Description>Slide Type</Description>
+						<InputType type='valuelist' />
+						<OutputType>String</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+					<Values>
+						<Value display='Single'>single</Value>
+						<Value display='Double'>double</Value>
+					</Values>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>skins</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>ion.rangeSlider.skinNice</DefaultValue>
+						<Description>Skins</Description>
+						<InputType type='valuelist' />
+						<OutputType>String</OutputType>
+						<Order>53</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+					<Values>
+						<Value display='Skin Flat'>ion.rangeSlider.skinFlat</Value>
+						<Value display='Skin Nice'>ion.rangeSlider.skinNice</Value>
+						<Value display='Skin Simple'>ion.rangeSlider.skinSimple</Value>
+					</Values>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>minRange</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Min Range</Description>
+						<InputType>Integer</InputType>
+						<OutputType>Numeric</OutputType>
+						<Order>54</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>maxRange</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Max Range</Description>
+						<InputType>Integer</InputType>
+						<OutputType>Numeric</OutputType>
+						<Order>55</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>stepValue</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>1</DefaultValue>
+						<Description>Step slider</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>56</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>prefixValue</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Prefix</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>57</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>postfixValue</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Postfix</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>58</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>maxPostfix</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Max Postfix</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>59</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>hideMinMax</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"false"</DefaultValue>
+						<Description>Hide min and max values</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>60</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>hideFromTo</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"false"</DefaultValue>
+						<Description>Hide from and to values</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>61</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>prettify</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"true"</DefaultValue>
+						<Description>Prettify</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>62</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>hasGrid</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"true"</DefaultValue>
+						<Description>Has Grid</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>62</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+			
+			</CustomProperties>
+			
+		</Implementation>
+	</Contents>
+</DesignerComponent>
