@@ -126,7 +126,7 @@
      },
      {
       "name": "html",
-      "value": "<div class=\"hidden-print affix\" role=\"complementary\">\n    <br />\n    <h4>Component List</h4>\n    <ul class=\"nav nav-stacked\" id=\"sidebar\">\n        <li><a href=\"#gauge\">Gauge</a></li>\n        <li><a href=\"#vector_map\">Vector Map</a></li>\n        <li><a href=\"#video_player\">Video Player</a></li>\n    </ul> \n</div> ",
+      "value": "<div class=\"hidden-print affix\" role=\"complementary\">\n    <br />\n    <h4>Component List</h4>\n    <ul class=\"nav nav-stacked\" id=\"sidebar\">\n        <li><a href=\"#gauge\">Gauge</a></li>\n        <li><a href=\"#vector_map\">Vector Map</a></li>\n        <li><a href=\"#video_player\">Video Player</a></li>\n        <li><a href=\"#ion_slider\">Ion Range Slider</a></li>\n    </ul> \n</div> ",
       "type": "Html"
      },
      {
@@ -632,6 +632,150 @@
      {
       "name": "html",
       "value": "<div id=\"video_player\" style=\"padding-top: 50px;\">\n    <h2>Video Player</h2>\n    <h4>Common Options</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Option</th>\n                <th>Example</th>\n                <th>Description</th>\n            </tr>\n            </thead>\n            <tbody>\n            <tr>\n                <td>Videos</td>\n                <td>[[\"http://vjs.zencdn.net/v/oceans.mp4\",\"video/mp4\"]]</td>\n                <td>Array bidimensional with the list of video url and video content type</td>\n            </tr>\n            <tr>\n                <td>Tracks</td>\n                <td>[[\"http://example.com/path/to/captions.vtt\",\"en\"]]</td>\n                <td>Array bidimensional with the list of captions url (on <a href=\"http://dev.w3.org/html5/webvtt/\" target=\"_blank\">WebVTT</a> format) and language two-letter code (valid BCP 47 language tag)</td>\n            </tr>\n            <tr>\n                <td>Enable Controls</td>\n                <td>True</td>\n                <td>Show video controls (play button, fullscreen button, volume sound, time, ...)</td>\n            </tr>\n            <tr>\n                <td>Auto Play</td>\n                <td>False</td>\n                <td>Starts play video when is rendered</td>\n            </tr>\n            <tr>\n                <td>Custom CSS</td>\n                <td></td>\n                <td>Add customm CSS classes to implement different themes</td>\n            </tr>\n            <tr>\n                <td>Buttons Controllers Color</td>\n                <td>#84ff00</td>\n                <td>Define a color for buttons controllers</td>\n            </tr>\n            <tr>\n                <td>Control Level Color</td>\n                <td></td>\n                <td>Define a color for control level (volume sound and time reproduction)</td>\n            </tr>\n            <tr>\n                <td>Control Bar Size</td>\n                <td>150</td>\n                <td>Define a size (in percentage) for the controllers</td>\n            </tr>\n            <tr>\n                <td>Porter Image</td>\n                <td>http://ivy-is.co.uk/wp-content/uploads/2014/01/logo_web.png</td>\n                <td>Image url to show when video is rendered</td>\n            </tr>\n            <tr>\n                <td>Loop</td>\n                <td>False</td>\n                <td>Play video in loop</td>\n            </tr>\n            <tr>\n                <td>Show Video in a Popup</td>\n                <td>False</td>\n                <td>Render a link that show a video as a popup</td>\n            </tr>\n        </tbody>\n    </table>\n    <h4>Default Video Player</h4>\n    <div id=\"panel_sample_video\"></div>\n    <hr /> \n</div> ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "6cd4a0af-6e3d-d688-7455-8bdb4517460b",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "6d3c0c41-05cb-5ea7-3d72-dce87511280f",
+    "properties": [
+     {
+      "name": "name",
+      "value": "SLIDER",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "c2e0136c-8b86-3742-8299-2e1d1d31662b",
+    "type": "LayoutColumn",
+    "typeDesc": "Column",
+    "parent": "6cd4a0af-6e3d-d688-7455-8bdb4517460b",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "columnSpan",
+      "value": "12",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrepend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnAppend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrependTop",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnAppendBottom",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBigBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "21236646-ed10-c29a-6a80-529445ef5f37",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "c2e0136c-8b86-3742-8299-2e1d1d31662b",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<div id=\"ion_slider\" style=\"padding-top: 50px;\">\n    <h2>Ion Range Slider</h2>\n    <h4>Common Options</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Option</th>\n                <th>Example</th>\n                <th>Description</th>\n            </tr>\n            </thead>\n            <tbody>\n            <tr>\n                <td>Slide Type</td>\n                <td>Single</td>\n                <td>Define the slide type (can be Single or Double)</td>\n            </tr>\n            <tr>\n                <td>Skins</td>\n                <td>Skin Nice</td>\n                <td>Define the skin for the slider (can be Skin Flat, Skin Nice and Skin Simple)</td>\n            </tr>\n            <tr>\n                <td>Min Range</td>\n                <td>0</td>\n                <td>Define the minimal number of slider range</td>\n            </tr>\n            <tr>\n                <td>Max Range</td>\n                <td>100</td>\n                <td>Define the maximal number of slider range</td>\n            </tr>\n            <tr>\n                <td>Step slider</td>\n                <td>1</td>\n                <td>Define tha slider step value</td>\n            </tr>\n            <tr>\n                <td>Prefix</td>\n                <td>£</td>\n                <td>Define prefix text to all values (Optional property)</td>\n            </tr>\n            <tr>\n                <td>Postfix</td>\n                <td>%</td>\n                <td>Define postfix text to all values (Optional property)</td>\n            </tr>\n            <tr>\n                <td>Max Postfix</td>\n                <td>+</td>\n                <td>Define postfix text to maximum value (Optional property)</td>\n            </tr>\n            <tr>\n                <td>Hide min and max values</td>\n                <td>False</td>\n                <td>Disables Min and Max fields</td>\n            </tr>\n            <tr>\n                <td>Hide from and to values</td>\n                <td>False</td>\n                <td>Disables From an To fields</td>\n            </tr>\n            <tr>\n                <td>Prettify</td>\n                <td>True</td>\n                <td>Allow to separate large numbers with spaces (eg. 10 000 than 10000)</td>\n            </tr>\n            <tr>\n                <td>Has Grid</td>\n                <td>True</td>\n                <td>Enables grid at the bottom of the slider (Optional property)</td>\n            </tr>\n        </tbody>\n    </table>\n    <h4>Default Ion Range Slider</h4>\n    <div id=\"panel_sample_slider\"></div>\n    <hr /> \n</div> ",
       "type": "Html"
      },
      {
@@ -1168,6 +1312,186 @@
       "type": "JavaScript"
      }
     ]
+   },
+   {
+    "id": "994dbe66-e8c3-d571-a563-a672135b3710",
+    "type": "ComponentsIonRangeSliderComponent",
+    "typeDesc": "Ion Range Slider",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "SAMPLE_SLIDER",
+      "type": "Id"
+     },
+     {
+      "name": "parameter",
+      "value": "${p:PARAM_SLIDER}",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "refreshPeriod",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "slideType",
+      "value": "single",
+      "type": "slideTypeCustom"
+     },
+     {
+      "name": "skins",
+      "value": "ion.rangeSlider.skinNice",
+      "type": "skinsCustom"
+     },
+     {
+      "name": "minRange",
+      "value": "0",
+      "type": "Integer"
+     },
+     {
+      "name": "maxRange",
+      "value": "100",
+      "type": "Integer"
+     },
+     {
+      "name": "stepValue",
+      "value": "1",
+      "type": "String"
+     },
+     {
+      "name": "prefixValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "postfixValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "maxPostfix",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "hideMinMax",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "hideFromTo",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "prettify",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "hasGrid",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "panel_sample_slider",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "GENERIC",
+    "name": "Generic",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "Generic",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "34afcf2b-dea5-e34b-6400-fc268ae9c7da",
+    "type": "ComponentsJavascriptParameter",
+    "typeDesc": "Custom parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "PARAM_SLIDER",
+      "type": "Id"
+     },
+     {
+      "name": "javaScript",
+      "value": "[15,70]",
+      "type": "JavaScript"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
    }
   ]
  },
@@ -1259,7 +1583,7 @@
     "meta_datype": "scriptable"
    },
    {
-    "id": "5d511da3-0624-6274-80cb-a506ae09eee5",
+    "id": "454fe863-14b5-cc2a-4a00-b26e539c363e",
     "type": "Componentsscriptable_scripting",
     "typeDesc": "scriptable over scripting",
     "parent": "SCRIPTING",
