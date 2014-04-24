@@ -1,0 +1,179 @@
+<DesignerComponent>
+	<Header>
+		<Name>Pentaho Analyzer Component</Name>
+		<IName>PentahoAnalyzerComponent</IName>
+		<Description>Pentaho Analyzer Component</Description>
+		<Category>IVYIS</Category>
+		<CatDescription>Ivy IS</CatDescription>
+		<Type>PalleteEntry</Type>
+		<Version>1.0</Version>
+	</Header>
+	<Contents>
+		<Model>
+			<Property>executeAtStart</Property>
+			<Property>htmlObject</Property>
+			<Property>preExecution</Property>
+			<Property>postExecution</Property>
+			<Property>listeners</Property>
+			<Property name="parameters">xActionArrayParameter</Property>
+			<Property>analyzerFilePath</Property>
+			<Property>viewMode</Property>
+			<Property>height</Property>
+			<Property>extensionPoints</Property>
+			<Definition name="urlParametersDefinition">
+				<Property>cube</Property>
+				<Property>catalog</Property>
+				<Property>showFieldList</Property>
+				<Property>showRepositoryButtons</Property>
+				<Property>showFieldLayout</Property>
+			</Definition>
+		</Model>
+
+		<Implementation>
+			<Code src="pentahoAnalyzer.js" />
+
+			<Dependencies/>
+
+			<Styles/>
+
+			<CustomProperties>
+
+				<DesignerProperty>
+					<Header>
+						<Name>analyzerFilePath</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Analyzer file</Description>
+						<Tooltip>Analyzer File</Tooltip>
+						<InputType>AnalyzerPath</InputType>
+						<OutputType>String</OutputType>
+						<Order>51</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>viewMode</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>new</DefaultValue>
+						<Description>View Mode</Description>
+						<InputType type='valuelist'/>
+						<OutputType>String</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+					<Values>
+						<Value display='New'>new</Value>
+						<Value display='Edit'>edit</Value>
+						<Value display='View'>view</Value>
+					</Values>
+
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>height</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>480px</DefaultValue>
+						<Description>Height</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>53</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>cube</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Cube</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>54</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>catalog</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Catalog</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>55</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>showFieldList</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>true</DefaultValue>
+						<Description>Show Field List</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>56</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>showRepositoryButtons</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>true</DefaultValue>
+						<Description>Show Repository Buttons</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>57</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>showFieldLayout</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>true</DefaultValue>
+						<Description>Show Field Layout</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>58</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>extensionPoints</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"[]"</DefaultValue>
+						<Description>Extension points</Description>
+						<Tooltip>Extra Extension points</Tooltip>
+						<InputType>ValuesArray</InputType>
+						<OutputType>Array</OutputType>
+						<Order>70</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+			</CustomProperties>
+
+		</Implementation>
+	</Contents>
+</DesignerComponent>
