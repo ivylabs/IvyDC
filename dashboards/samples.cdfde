@@ -919,7 +919,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"pentaho_analyzer\" style=\"padding-top: 50px;\">\n    <h2>Pentaho Analyzer</h2>\n    <div id=\"pentaho_analyzer_1\"></div>\n    <div id=\"pentaho_analyzer_2\"></div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"pentaho_analyzer\" style=\"padding-top: 50px;\">\n    <h2>Pentaho Analyzer</h2>\n    <div class=\"alert alert-danger alert-dismissable\">\n      This Component just works on <strong>Pentaho Enterprise Edition</strong>.\n    </div>\n    <div id=\"pentaho_analyzer_1\"></div>\n    <div id=\"pentaho_analyzer_2\"></div>\n    <hr /> \n</div> ",
       "type": "Html"
      },
      {
@@ -2089,6 +2089,11 @@
       "type": "Boolean"
      },
      {
+      "name": "extensionPoints",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
       "name": "htmlObject",
       "value": "pentaho_analyzer_1",
       "type": "HtmlObject"
@@ -2175,6 +2180,11 @@
       "name": "showFieldLayout",
       "value": "false",
       "type": "Boolean"
+     },
+     {
+      "name": "extensionPoints",
+      "value": "[]",
+      "type": "ValuesArray"
      },
      {
       "name": "htmlObject",
