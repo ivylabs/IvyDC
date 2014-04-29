@@ -126,7 +126,7 @@
      },
      {
       "name": "html",
-      "value": "<div>\n    <br />\n    <h4>Component Samples</h4>\n    <ul class=\"nav nav-stacked\" id=\"sidebar\">\n        <li><a href=\"#gauge\">Gauge</a></li>\n        <li><a href=\"#vector_map\">Vector Map</a></li>\n        <li><a href=\"#video_player\">Video Player</a></li>\n    </ul> \n</div> ",
+      "value": "<div class=\"hidden-print affix\" role=\"complementary\">\n    <br />\n    <h4>Component List</h4>\n    <ul class=\"nav nav-stacked\" id=\"sidebar\">\n        <li><a href=\"#gauge\">Gauge</a></li>\n        <li><a href=\"#vector_map\">Vector Map</a></li>\n        <li><a href=\"#video_player\">Video Player</a></li>\n        <li><a href=\"#ion_slider\">Ion Range Slider</a></li>\n        <li><a href=\"#pentaho_analyzer\">Pentaho Analyzer</a></li>\n    </ul> \n</div> ",
       "type": "Html"
      },
      {
@@ -487,7 +487,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"map\" style=\"padding-top: 50px;\">\n    <h2>Vector Maps</h2>\n    <div class=\"row\">\n    <div style=\"height:350px;\" class=\"col-md-6\" id=\"sample_map_1\"></div>\n    <div style=\"height:350px;\" class=\"col-md-6\" id=\"sample_map_2\"></div>\n    </div>\n    <div class=\"row\">\n    <div class=\"col-md-12\"><h3>Clickable Map</h3></div>\n    </div>\n    <div class=\"row\">\n    <div style=\"height:350px;\" class=\"col-md-12\" id=\"sample_map_3\"></div>\n    </div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"vector_map\" style=\"padding-top: 50px;\">\n    <h2>Vector Maps</h2>\n    <div class=\"row\">\n    <div style=\"height:350px;\" class=\"col-md-6\" id=\"sample_map_1\"></div>\n    <div style=\"height:350px;\" class=\"col-md-6\" id=\"sample_map_2\"></div>\n    </div>\n    <div class=\"row\">\n    <div class=\"col-md-12\"><h3>Clickable Map</h3></div>\n    </div>\n    <div class=\"row\">\n    <div style=\"height:350px;\" class=\"col-md-12\" id=\"sample_map_3\"></div>\n    </div>\n    <hr /> \n</div> ",
       "type": "Html"
      },
      {
@@ -508,7 +508,7 @@
     ]
    },
    {
-    "id": "7e8e5e27-72e8-987a-9bac-848e94c2d079",
+    "id": "8c2bdf15-aca6-37b7-a168-ca7079588e46",
     "type": "LayoutRow",
     "typeDesc": "Row",
     "parent": "6ffda715-d309-ea2f-2224-44f47249f4d3",
@@ -546,10 +546,10 @@
     ]
    },
    {
-    "id": "1e363a32-0537-1589-f3d5-872f41803732",
+    "id": "cc9252df-88e0-fcd8-2a87-0415bacaaf76",
     "type": "LayoutColumn",
     "typeDesc": "Column",
-    "parent": "7e8e5e27-72e8-987a-9bac-848e94c2d079",
+    "parent": "8c2bdf15-aca6-37b7-a168-ca7079588e46",
     "properties": [
      {
       "name": "name",
@@ -619,10 +619,10 @@
     ]
    },
    {
-    "id": "62ac7cb3-c685-962e-1968-01afb67a8c8b",
+    "id": "de14ff79-e26d-bd58-6ee6-9b167a0a389a",
     "type": "LayoutHtml",
     "typeDesc": "Html",
-    "parent": "1e363a32-0537-1589-f3d5-872f41803732",
+    "parent": "cc9252df-88e0-fcd8-2a87-0415bacaaf76",
     "properties": [
      {
       "name": "name",
@@ -631,7 +631,295 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"\" style=\"padding-top: 50px;\">\n    <h2>Video Player</h2>\n    <h3>Embedded</h3>\n    <div id=\"video_sample_1\"></div>\n    <h3>Open in Popup</h3>\n    <div id=\"video_sample_2\"></div>\n    </div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"video_player\" style=\"padding-top: 50px;\">\n    <h2>Video Player</h2>\n    <h3>Embedded</h3>\n    <div id=\"video_sample_1\"></div>\n    <h3>Open in Popup</h3>\n    <div id=\"video_sample_2\"></div>\n    <hr /> \n</div> ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "8442f509-ba3f-9d06-8474-b24a03e4d244",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "6ffda715-d309-ea2f-2224-44f47249f4d3",
+    "properties": [
+     {
+      "name": "name",
+      "value": "SLIDER",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "99fc5016-059e-e777-87e8-8b9884a76664",
+    "type": "LayoutColumn",
+    "typeDesc": "Column",
+    "parent": "8442f509-ba3f-9d06-8474-b24a03e4d244",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "columnSpan",
+      "value": "12",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrepend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnAppend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrependTop",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnAppendBottom",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBigBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "0c46db77-b72d-63c8-11db-57445ec92027",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "99fc5016-059e-e777-87e8-8b9884a76664",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<div id=\"ion_slider\" style=\"padding-top: 50px;\">\n    <h2>Ion Range Slider</h2>\n    <div id=\"ion_slider_1\"></div>\n    <div id=\"ion_slider_2\"></div>\n    <hr /> \n</div> ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "6f72bd8d-5bf7-bc36-ac1d-aafb9814fa24",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "6ffda715-d309-ea2f-2224-44f47249f4d3",
+    "properties": [
+     {
+      "name": "name",
+      "value": "ANALYZER",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "aa6f03ce-1ad2-4558-7110-42ecd725eac6",
+    "type": "LayoutColumn",
+    "typeDesc": "Column",
+    "parent": "6f72bd8d-5bf7-bc36-ac1d-aafb9814fa24",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "columnSpan",
+      "value": "12",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrepend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnAppend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrependTop",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnAppendBottom",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBigBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "1b8b33ba-64ed-7fd5-1f3f-63de7f7f21c7",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "aa6f03ce-1ad2-4558-7110-42ecd725eac6",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<div id=\"pentaho_analyzer\" style=\"padding-top: 50px;\">\n    <h2>Pentaho Analyzer</h2>\n    <div class=\"alert alert-danger alert-dismissable\">\n      This Component just works on <strong>Pentaho Enterprise Edition</strong>.\n    </div>\n    <div id=\"pentaho_analyzer_1\"></div>\n    <div id=\"pentaho_analyzer_2\"></div>\n    <hr /> \n</div> ",
       "type": "Html"
      },
      {
@@ -1459,6 +1747,468 @@
     ]
    },
    {
+    "id": "526156fa-8da0-3205-028b-eea312d17ae9",
+    "type": "ComponentsIonRangeSliderComponent",
+    "typeDesc": "Ion Range Slider",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "S1",
+      "type": "Id"
+     },
+     {
+      "name": "parameter",
+      "value": "${p:SLIDER_PARAM}",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "refreshPeriod",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "slideType",
+      "value": "single",
+      "type": "slideTypeCustom"
+     },
+     {
+      "name": "skins",
+      "value": "ion.rangeSlider.skinFlat",
+      "type": "skinsCustom"
+     },
+     {
+      "name": "minRange",
+      "value": "10",
+      "type": "Integer"
+     },
+     {
+      "name": "maxRange",
+      "value": "30",
+      "type": "Integer"
+     },
+     {
+      "name": "stepValue",
+      "value": "1",
+      "type": "String"
+     },
+     {
+      "name": "prefixValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "postfixValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "maxPostfix",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "hideMinMax",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "hideFromTo",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "prettify",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "hasGrid",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "ion_slider_1",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "5ff446d9-fae0-fd0c-7aa9-43776549a632",
+    "type": "ComponentsIonRangeSliderComponent",
+    "typeDesc": "Ion Range Slider",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "S2",
+      "type": "Id"
+     },
+     {
+      "name": "parameter",
+      "value": "${p:SLIDER_PARAM}",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "refreshPeriod",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "slideType",
+      "value": "double",
+      "type": "slideTypeCustom"
+     },
+     {
+      "name": "skins",
+      "value": "ion.rangeSlider.skinFlat",
+      "type": "skinsCustom"
+     },
+     {
+      "name": "minRange",
+      "value": "0",
+      "type": "Integer"
+     },
+     {
+      "name": "maxRange",
+      "value": "50",
+      "type": "Integer"
+     },
+     {
+      "name": "stepValue",
+      "value": "1",
+      "type": "String"
+     },
+     {
+      "name": "prefixValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "postfixValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "maxPostfix",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "hideMinMax",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "hideFromTo",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "prettify",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "hasGrid",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "htmlObject",
+      "value": "ion_slider_2",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "02dceb29-efc2-a7d6-438a-b2c046b8697f",
+    "type": "ComponentsPentahoAnalyzerComponent",
+    "typeDesc": "Pentaho Analyzer Component",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "A1",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "analyzerFilePath",
+      "value": "public/Steel Wheels/Country Performance (heat grid).xanalyzer",
+      "type": "AnalyzerPath"
+     },
+     {
+      "name": "viewMode",
+      "value": "edit",
+      "type": "viewModeCustom"
+     },
+     {
+      "name": "height",
+      "value": "480px",
+      "type": "String"
+     },
+     {
+      "name": "cube",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "catalog",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "showFieldList",
+      "value": true,
+      "type": "Boolean"
+     },
+     {
+      "name": "showRepositoryButtons",
+      "value": true,
+      "type": "Boolean"
+     },
+     {
+      "name": "showFieldLayout",
+      "value": true,
+      "type": "Boolean"
+     },
+     {
+      "name": "extensionPoints",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "htmlObject",
+      "value": "pentaho_analyzer_1",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "45c4fe00-94a0-b437-60c8-79dc7c8c39d3",
+    "type": "ComponentsPentahoAnalyzerComponent",
+    "typeDesc": "Pentaho Analyzer Component",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "A2",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "analyzerFilePath",
+      "value": "public/Steel Wheels/European Sales (geo map).xanalyzer",
+      "type": "AnalyzerPath"
+     },
+     {
+      "name": "viewMode",
+      "value": "view",
+      "type": "viewModeCustom"
+     },
+     {
+      "name": "height",
+      "value": "480px",
+      "type": "String"
+     },
+     {
+      "name": "cube",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "catalog",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "showFieldList",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "showRepositoryButtons",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "showFieldLayout",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "extensionPoints",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "htmlObject",
+      "value": "pentaho_analyzer_2",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
     "id": "GENERIC",
     "name": "Generic",
     "type": "Label",
@@ -1557,7 +2307,7 @@
     ]
    },
    {
-    "id": "feb20c70-46fc-2b36-e462-18da36826c46",
+    "id": "567bef91-1a58-7185-7050-f7ca8a1ce057",
     "type": "ComponentsParameter",
     "typeDesc": "Simple parameter",
     "parent": "GENERIC",
@@ -1571,6 +2321,34 @@
       "name": "propertyValue",
       "value": "",
       "type": "String"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "e59b5a5b-4944-315f-5f2e-1321116a78bd",
+    "type": "ComponentsJavascriptParameter",
+    "typeDesc": "Custom parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "SLIDER_PARAM",
+      "type": "Id"
+     },
+     {
+      "name": "javaScript",
+      "value": "[12,25]",
+      "type": "JavaScript"
      },
      {
       "name": "parameterViewRole",
