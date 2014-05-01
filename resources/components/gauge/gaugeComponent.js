@@ -59,6 +59,21 @@ var gaugeComponent = BaseComponent.extend({
         			donut: myself.gaugeType == "doughnut"
 				};
 
+				if(values.resultset[0][4] !== undefined){
+					gageConf.gaugeColor = values.resultset[0][4];
+				}
+
+				if(values.resultset[0][5] !== undefined){
+					var lvlColors = [values.resultset[0][5]];
+					if(values.resultset[0][6] !== undefined){
+						lvlColors.push(values.resultset[0][6]);
+					}
+					if(values.resultset[0][7] !== undefined){
+						lvlColors.push(values.resultset[0][7]);
+					}
+					gageConf.levelColors = lvlColors;
+				}
+
 				var extension = {};
 				if(myself.extensionPoints != undefined && myself.extensionPoints[0] != undefined){
 					for(var i = 0; i < myself.extensionPoints.length; i++){
@@ -68,7 +83,7 @@ var gaugeComponent = BaseComponent.extend({
 
 				gageConf = $.extend({}, gageConf, extension);
 				
-				var g1 = new JustGage(gageConf);
+				myself.gaugeChartObj = new JustGage(gageConf);
 				if(myself.expression!==undefined){
 					$("#"+myself.htmlObject).click(function(e){
 						myself.expression(e);

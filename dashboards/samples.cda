@@ -45,7 +45,7 @@ Class[] columnTypes = {String.class, Integer.class};
 TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
 
 
- model.addRow(new Object[] {"Value", 720});
+ model.addRow(new Object[] {"Value", 700});
 
 return model;</Query>
    </DataAccess>

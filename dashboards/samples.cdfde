@@ -2408,7 +2408,7 @@
      },
      {
       "name": "query",
-      "value": "\nimport org.pentaho.reporting.engine.classic.core.util.TypedTableModel;\nString [] columnNames = {\"Title\",\"Value\"};\nClass[] columnTypes = {String.class, Integer.class};\nTypedTableModel model = new TypedTableModel(columnNames, columnTypes);\n\n\n model.addRow(new Object[] {\"Value\", 720});\n\nreturn model;",
+      "value": "\nimport org.pentaho.reporting.engine.classic.core.util.TypedTableModel;\nString [] columnNames = {\"Title\",\"Value\"};\nClass[] columnTypes = {String.class, Integer.class};\nTypedTableModel model = new TypedTableModel(columnNames, columnTypes);\n\n\n model.addRow(new Object[] {\"Value\", 700});\n\nreturn model;",
       "type": "SqlQuery"
      },
      {
