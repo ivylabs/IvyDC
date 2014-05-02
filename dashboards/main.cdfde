@@ -343,7 +343,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"gauge\" style=\"padding-top: 50px;\">\n    <h2>Gauge</h2>\n    <h4>Common Options</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Option</th>\n                <th>Example</th>\n                <th>Description</th>\n            </tr>\n            </thead>\n            <tbody>\n            <tr>\n                <td>Label</td>\n                <td></td>\n                <td>The lable of the Gauge Component</td>\n            </tr>\n            <tr>\n                <td>Expression</td>\n                <td><div class=\"well\"> function( event ) { ... } </div></td>\n                <td>The Javascript to execute when the Gauge is clicked</td>\n            </tr>\n            <tr>\n                <td>Gauge Type</td>\n                <td>Gauge, Donut</td>\n                <td>The type of gauge to render. It can be either Dial or Donut</td>\n            </tr>\n            <tr>\n                <td>Min Value</td>\n                <td>10</td>\n                <td>The minimal value of range</td>\n            </tr>\n            <tr>\n                <td>Max Value</td>\n                <td>1000</td>\n                <td>The maximal value of range</td>\n            </tr>\n            <tr>\n                <td>Gauge Width Scale</td>\n                <td>2</td>\n                <td>The maximal value of range</td>\n            </tr>\n            <tr>\n                <td>Symbol</td>\n                <td>%</td>\n                <td>The value symbol can be %, $, £, ...</td>\n            </tr>\n            <tr>\n                <td>Subtitle</td>\n                <td></td>\n                <td>The sub title appear in bottom</td>\n            </tr>\n            <tr>\n                <td>Format Number</td>\n                <td>true</td>\n                <td>The Lable that appears below the Gauge</td>\n            </tr>\n            <tr>\n                <td>Extension points</td>\n                <td></td>\n                <td>Array of properties that override the justgage</td>\n            </tr>\n        </tbody>\n    </table>\n    <h4>Input Resultset</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Field</th>\n                <ht>Description</ht>\n            </tr>\n        </thead>\n        <tr>\n            <td>Title</td>\n            <td>Gauge title</td>\n        </tr>\n        <tr>\n            <td>Value</td>\n            <td>Value used in the chart</td>\n        </tr>\n        <tr>\n            <td>Min Value (optional)</td>\n            <td>Set the minimal value dinamycally from the resultset</td>\n        </tr>\n        <tr>\n            <td>Max Value (optional)</td>\n            <td>Set the maximum value dinamycally from the resultset</td>\n        </tr>\n        <tr>\n            <td>Gauge Color (optional)</td>\n            <td>Set the color code dinamycally from the resultset for gauge backgound</td>\n        </tr>\n        <tr>\n            <td>Mim Level Color (optional)</td>\n            <td>Set the color code dinamycally from the resultset for min level color</td>\n        </tr>\n        <tr>\n            <td>Middle Level Color (optional)</td>\n            <td>Set the color code dinamycally from the resultset for middle level color</td>\n        </tr>\n        <tr>\n            <td>Max Level Color (optional)</td>\n            <td>Set the color code dinamycally from the resultset for max level color</td>\n        </tr>\n    </table>\n    <h4>Default Gauge</h4>\n    <div class=\"row\" style=\"height:200px;\">\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_1\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_2\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_3\"></div>\n    </div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"gauge\" style=\"padding-top: 50px;\">\n    <h2>Gauge</h2>\n    <h4>Common Options</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Option</th>\n                <th>Example</th>\n                <th>Description</th>\n            </tr>\n            </thead>\n            <tbody>\n            <tr>\n                <td>Label</td>\n                <td></td>\n                <td>The lable of the Gauge Component</td>\n            </tr>\n            <tr>\n                <td>Expression</td>\n                <td><div class=\"well\"> function( event ) { ... } </div></td>\n                <td>The Javascript to execute when the Gauge is clicked</td>\n            </tr>\n            <tr>\n                <td>Gauge Type</td>\n                <td>Gauge, Donut</td>\n                <td>The type of gauge to render. It can be either Dial or Donut</td>\n            </tr>\n            <tr>\n                <td>Min Value</td>\n                <td>10</td>\n                <td>The minimal value of range</td>\n            </tr>\n            <tr>\n                <td>Max Value</td>\n                <td>1000</td>\n                <td>The maximal value of range</td>\n            </tr>\n            <tr>\n                <td>Gauge Width Scale</td>\n                <td>2</td>\n                <td>The maximal value of range</td>\n            </tr>\n            <tr>\n                <td>Symbol</td>\n                <td>%</td>\n                <td>The value symbol can be %, $, £, ...</td>\n            </tr>\n            <tr>\n                <td>Subtitle</td>\n                <td></td>\n                <td>The sub title appear in bottom</td>\n            </tr>\n            <tr>\n                <td>Format Number</td>\n                <td>true</td>\n                <td>The Lable that appears below the Gauge</td>\n            </tr>\n            <tr>\n                <td>Extension points</td>\n                <td></td>\n                <td>Array of properties that override the justgage</td>\n            </tr>\n        </tbody>\n    </table>\n    <h4>Input Resultset</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Field</th>\n                <th>Description</th>\n            </tr>\n        </thead>\n        <tr>\n            <td>Title</td>\n            <td>Gauge title</td>\n        </tr>\n        <tr>\n            <td>Value</td>\n            <td>Value used in the chart</td>\n        </tr>\n        <tr>\n            <td>Min Value (optional)</td>\n            <td>Set the minimal value dinamycally from the resultset</td>\n        </tr>\n        <tr>\n            <td>Max Value (optional)</td>\n            <td>Set the maximum value dinamycally from the resultset</td>\n        </tr>\n        <tr>\n            <td>Gauge Color (optional)</td>\n            <td>Set the color code dinamycally from the resultset for gauge backgound</td>\n        </tr>\n        <tr>\n            <td>Mim Level Color (optional)</td>\n            <td>Set the color code dinamycally from the resultset for min level color</td>\n        </tr>\n        <tr>\n            <td>Middle Level Color (optional)</td>\n            <td>Set the color code dinamycally from the resultset for middle level color</td>\n        </tr>\n        <tr>\n            <td>Max Level Color (optional)</td>\n            <td>Set the color code dinamycally from the resultset for max level color</td>\n        </tr>\n    </table>\n    <h4>Default Gauge</h4>\n    <div class=\"row\" style=\"height:200px;\">\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_1\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_2\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_3\"></div>\n    </div>\n    <hr /> \n</div> ",
       "type": "Html"
      },
      {
@@ -1760,13 +1760,13 @@
       "type": "Id"
      },
      {
-      "name": "initscript",
-      "value": "",
+      "name": "language",
+      "value": "beanshell",
       "type": "String"
      },
      {
-      "name": "language",
-      "value": "beanshell",
+      "name": "initscript",
+      "value": "",
       "type": "String"
      },
      {
@@ -1831,13 +1831,13 @@
       "type": "Id"
      },
      {
-      "name": "initscript",
-      "value": "",
+      "name": "language",
+      "value": "beanshell",
       "type": "String"
      },
      {
-      "name": "language",
-      "value": "beanshell",
+      "name": "initscript",
+      "value": "",
       "type": "String"
      },
      {
