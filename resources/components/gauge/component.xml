@@ -35,9 +35,7 @@
 		<Implementation>
 			<Code src="gaugeComponent.js" />
 			
-			<Dependencies>		    
-				<Dependency src="eve.js" version="1.0">eve</Dependency>
-				<Dependency src="raphael-2.1.2.js">raphael-2.1.2</Dependency>
+			<Dependencies>
 				<Dependency src="justgage.js" version="1.0">justgage</Dependency>
 			</Dependencies>
 			
