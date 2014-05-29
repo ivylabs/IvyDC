@@ -27,6 +27,7 @@
 			<Property>formatNumber</Property>
 			<Property>gaugeSymbol</Property>
 			<Property>extensionPoints</Property>
+			<Property>textRenderer</Property>
 			<Definition name="queryDefinition">
 				<Property type="query">dataSource</Property>
 			</Definition>        

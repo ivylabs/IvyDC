@@ -1025,7 +1025,7 @@
      },
      {
       "name": "subTitle",
-      "value": "Gauge Chart Subtitle",
+      "value": "Text Formatted",
       "type": "String"
      },
      {
@@ -1037,6 +1037,11 @@
       "name": "formatNumber",
       "value": true,
       "type": "Boolean"
+     },
+     {
+      "name": "textRenderer",
+      "value": "function(data){\n    return \"Ivy IS: \" + data;\n}",
+      "type": "JavaScript"
      },
      {
       "name": "htmlObject",
@@ -1142,6 +1147,11 @@
       "type": "Boolean"
      },
      {
+      "name": "textRenderer",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
       "name": "htmlObject",
       "value": "panel_sample_gauge_2",
       "type": "HtmlObject"
@@ -1243,6 +1253,11 @@
       "name": "formatNumber",
       "value": "true",
       "type": "Boolean"
+     },
+     {
+      "name": "textRenderer",
+      "value": "",
+      "type": "JavaScript"
      },
      {
       "name": "htmlObject",

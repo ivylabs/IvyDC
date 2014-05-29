@@ -59,7 +59,7 @@ var gaugeComponent = BaseComponent.extend({
         			donut: myself.gaugeType == "doughnut"
 				};
 
-				if(myself.textRenderer == undefined && typeof myself.textRenderer == "function"){
+				if(myself.textRenderer != undefined && typeof myself.textRenderer == "function"){
 					gageConf.textRenderer = myself.textRenderer;
 				}
 
