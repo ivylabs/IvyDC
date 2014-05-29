@@ -5,6 +5,10 @@
          <Initscript></Initscript>
          <Language>beanshell</Language>
       </Connection>
+      <Connection id="G2_QUERY" type="scripting.scripting">
+         <Initscript></Initscript>
+         <Language>beanshell</Language>
+      </Connection>
       <Connection id="M1_QUERY" type="scripting.scripting">
          <Initscript></Initscript>
          <Language>beanshell</Language>
@@ -46,6 +50,27 @@ TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
 
 
  model.addRow(new Object[] {"Value", 700});
+ model.addRow(new Object[] {"Value", 4546});
+
+return model;</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="G2_QUERY"
+               id="G2_QUERY"
+               type="scriptable">
+      <Columns/>
+      <Parameters/>
+      <Query>import org.pentaho.reporting.engine.classic.core.util.TypedTableModel;
+String [] columnNames = {"Title","Value"};
+Class[] columnTypes = {String.class, Integer.class};
+TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
+
+
+ model.addRow(new Object[] {"Value", 700});
+ model.addRow(new Object[] {"Value", 4546});
+ model.addRow(new Object[] {"Value", 345});
+ model.addRow(new Object[] {"Value", 3457});
+ model.addRow(new Object[] {"Value", 95});
+ model.addRow(new Object[] {"Value", 43});
 
 return model;</Query>
    </DataAccess>

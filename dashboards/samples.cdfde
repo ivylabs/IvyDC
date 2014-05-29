@@ -1098,7 +1098,7 @@
      },
      {
       "name": "dataSource",
-      "value": "G1_QUERY",
+      "value": "G2_QUERY",
       "type": "Datasource"
      },
      {
@@ -2396,7 +2396,7 @@
     ]
    },
    {
-    "id": "77714393-7eba-318d-d0c2-6ca430f36ec7",
+    "id": "d134b09d-7fc4-b30d-cc67-368ebe4b636d",
     "type": "Componentsscriptable_scripting",
     "typeDesc": "scriptable over scripting",
     "parent": "SCRIPTING",
@@ -2423,7 +2423,78 @@
      },
      {
       "name": "query",
-      "value": "\nimport org.pentaho.reporting.engine.classic.core.util.TypedTableModel;\nString [] columnNames = {\"Title\",\"Value\"};\nClass[] columnTypes = {String.class, Integer.class};\nTypedTableModel model = new TypedTableModel(columnNames, columnTypes);\n\n\n model.addRow(new Object[] {\"Value\", 700});\n\nreturn model;",
+      "value": "\nimport org.pentaho.reporting.engine.classic.core.util.TypedTableModel;\nString [] columnNames = {\"Title\",\"Value\"};\nClass[] columnTypes = {String.class, Integer.class};\nTypedTableModel model = new TypedTableModel(columnNames, columnTypes);\n\n\n model.addRow(new Object[] {\"Value\", 700});\n model.addRow(new Object[] {\"Value\", 4546});\n\nreturn model;",
+      "type": "SqlQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "scripting.scripting",
+    "meta_datype": "scriptable"
+   },
+   {
+    "id": "77714393-7eba-318d-d0c2-6ca430f36ec7",
+    "type": "Componentsscriptable_scripting",
+    "typeDesc": "scriptable over scripting",
+    "parent": "SCRIPTING",
+    "properties": [
+     {
+      "name": "name",
+      "value": "G2_QUERY",
+      "type": "Id"
+     },
+     {
+      "name": "initscript",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "language",
+      "value": "beanshell",
+      "type": "String"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "query",
+      "value": "\nimport org.pentaho.reporting.engine.classic.core.util.TypedTableModel;\nString [] columnNames = {\"Title\",\"Value\"};\nClass[] columnTypes = {String.class, Integer.class};\nTypedTableModel model = new TypedTableModel(columnNames, columnTypes);\n\n\n model.addRow(new Object[] {\"Value\", 700});\n model.addRow(new Object[] {\"Value\", 4546});\n model.addRow(new Object[] {\"Value\", 345});\n model.addRow(new Object[] {\"Value\", 3457});\n model.addRow(new Object[] {\"Value\", 95});\n model.addRow(new Object[] {\"Value\", 43});\n\nreturn model;",
       "type": "SqlQuery"
      },
      {
