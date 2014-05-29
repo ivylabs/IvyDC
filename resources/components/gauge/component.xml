@@ -160,6 +160,21 @@
 					<Version>1.0</Version>
 				</Header>
 				</DesignerProperty>
+
+				<DesignerProperty>
+				<Header>
+					<Name>textRenderer</Name>
+					<Parent>BaseProperty</Parent>
+					<DefaultValue></DefaultValue>
+					<Description>Text Render</Description>
+					<Tooltip>Function to format the value number</Tooltip>
+					<InputType>JavaScript</InputType>
+					<OutputType>Function</OutputType>
+					<Order>56</Order>
+					<Advanced>true</Advanced>
+					<Version>1.0</Version>
+				</Header>
+				</DesignerProperty>
 				
 			</CustomProperties>
 			

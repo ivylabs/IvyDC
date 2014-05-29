@@ -59,6 +59,10 @@ var gaugeComponent = BaseComponent.extend({
         			donut: myself.gaugeType == "doughnut"
 				};
 
+				if(myself.textRenderer == undefined && typeof myself.textRenderer == "function"){
+					gageConf.textRenderer = myself.textRenderer;
+				}
+
 				if(values.resultset[0][4] !== undefined){
 					gageConf.gaugeColor = values.resultset[0][4];
 				}
