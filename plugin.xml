@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin title="IvyDC" loader="DEFAULT">
 <overlays>
-		<overlay id="startup.IvyDC" resourcebundle="content/IvyDC/resources/lang/messages">
+		<overlay id="startup.IvyDC" resourcebundle="content/IvyDC/resources/lang/messages" priority="4">
 			<menubar id="toolsmenu">
 	        	<menuitem id="IvyDC" label="${Launcher.IvyDC}" command="mantleXulHandler.openUrl('${Launcher.IvyDC}','${Launcher.IvyDC_TOOLTIP}','plugin/IvyDC/api/default')"/>
 	      	</menubar>
