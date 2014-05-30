@@ -66,11 +66,11 @@ TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
 
 
  model.addRow(new Object[] {"Value", 700});
- model.addRow(new Object[] {"Value", 4546});
- model.addRow(new Object[] {"Value", 345});
- model.addRow(new Object[] {"Value", 3457});
- model.addRow(new Object[] {"Value", 95});
- model.addRow(new Object[] {"Value", 43});
+ model.addRow(new Object[] {"Value 1", 4546});
+ model.addRow(new Object[] {"Value 2", 345});
+ model.addRow(new Object[] {"Value 3", 3457});
+ model.addRow(new Object[] {"Value 4", 95});
+ model.addRow(new Object[] {"Value 5", 43});
 
 return model;</Query>
    </DataAccess>
