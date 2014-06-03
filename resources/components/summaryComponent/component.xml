@@ -1,0 +1,162 @@
+<DesignerComponent>
+	<Header>
+		<Name>Summary</Name>
+		<IName>summaryComp</IName>
+		<Description>Summary</Description>
+		<Category>IVYIS</Category>
+		<CatDescription>Ivy IS</CatDescription>
+		<Type>PalleteEntry</Type>
+		<Version>1.0</Version>
+	</Header>
+	<Contents>
+		
+		<Model>
+			<Property>label</Property>
+			<Property>listeners</Property>
+			<Property name="parameters">xActionArrayParameter</Property>
+			<Property>executeAtStart</Property>
+			<Property>htmlObject</Property>
+			<Property>preExecution</Property>
+			<Property>postExecution</Property>
+			<Property>valueLabel</Property>
+			<Property>valueLabelFormat</Property>
+			<Property>subValueLabel</Property>
+			<Property>subValueLabelFormat</Property>
+			<Property>clickActionFunction</Property>
+			<Property>increaseArrow</Property>
+			<Property>increaseColor</Property>
+			
+			<Definition name="queryDefinition">
+				<Property type="query">dataSource</Property>
+			</Definition>
+		</Model>
+		
+		<Implementation>
+			<Code src="summaryComponent.js" />
+			
+			<Styles>
+				<Style version="1.0" src="summary.css">
+					Summary
+				</Style>
+			</Styles>
+			
+			<CustomProperties>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>valueLabel</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Value Label</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>52</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>valueLabelFormat</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Value Format</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>53</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>subValueLabel</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Sub Value Label</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>54</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>subValueLabelFormat</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Sub Value Format</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>55</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>increaseArrow</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>up</DefaultValue>
+						<Description>Increase Arrow</Description>
+						<InputType type='valuelist' />
+						<OutputType>String</OutputType>
+						<Order>56</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+					<Values>
+						<Value display='Up'>up</Value>
+						<Value display='Down'>down</Value>
+					</Values>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>increaseColor</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>green</DefaultValue>
+						<Description>Increase Color</Description>
+						<InputType type='valuelist' />
+						<OutputType>String</OutputType>
+						<Order>57</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+					<Values>
+						<Value display='Green'>green</Value>
+						<Value display='Red'>red</Value>
+					</Values>
+				</DesignerProperty>
+
+				
+				<DesignerProperty>
+					<Header>
+						<Name>clickActionFunction</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Click Action</Description>
+						<Tooltip>Click Action</Tooltip>
+						<Advanced>false</Advanced>
+						<InputType>JavaScript</InputType>
+						<OutputType>Function</OutputType>
+						<Order>58</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>            
+				</DesignerProperty>
+
+				
+			</CustomProperties>
+			
+			
+			
+		</Implementation>
+		
+	</Contents>
+</DesignerComponent>

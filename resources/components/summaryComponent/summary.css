@@ -1,0 +1,36 @@
+.summary .upgreen {
+	background: url("upgreen.png") no-repeat 5px 0px;
+}
+
+.summary .downgreen {
+	background: url("downgreen.png") no-repeat 5px 0px;
+}
+
+.summary .upred {
+	background: url("upred.png") no-repeat 5px 0px;
+}
+
+.summary .downred {
+	background: url("downred.png") no-repeat 5px 0px;
+}
+
+.summary .equals {
+	background: url("equals.png") no-repeat 5px 0px;
+}
+	
+.summary .arrow b {
+	height: 24px;
+	display: block;
+	position: relative;
+	margin-left:35px;
+	line-height: 24px;
+}​
+
+.summary {
+	padding: 10px;
+}
+
+.summary .details.click {
+    cursor: pointer;
+    float: right;
+}

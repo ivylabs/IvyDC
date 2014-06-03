@@ -1,0 +1,28 @@
+<DesignerComponent>
+	<Header>
+		<Name>Export Data</Name>
+		<IName>exportData</IName>
+		<Description>Export Data</Description>
+		<Category>IVYIS</Category>
+		<CatDescription>Ivy IS</CatDescription>
+		<Type>PalleteEntry</Type>
+		<Version>1.0</Version>
+	</Header>
+	<Contents>
+		<Model>
+			<Property>label</Property>
+			<Property>executeAtStart</Property>
+			<Property>htmlObject</Property>
+			<Property>listeners</Property>
+			<Property>preExecution</Property>
+			<Property>postExecution</Property><Property>tooltip</Property>
+		</Model>
+		<Implementation>
+			<Code src="exportData.js" />
+			<Styles>
+				<Style version="1.0" src="exportData.css">Export Data</Style>
+			</Styles>
+			<Dependencies/>
+		</Implementation>
+	</Contents>
+</DesignerComponent>

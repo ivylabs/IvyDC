@@ -37,6 +37,10 @@
          <Catalog>mondrian:/SampleData</Catalog>
          <Jndi>SampleData</Jndi>
       </Connection>
+      <Connection id="SUMMARY_1" type="mondrian.jndi">
+         <Catalog>mondrian:/SampleData</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
    </DataSources>
    <DataAccess access="public" cache="true" cacheDuration="3600" connection="G1_QUERY"
                id="G1_QUERY"
@@ -215,6 +219,17 @@ FROM [Quadrant Analysis]</Query>
       <Query>SELECT
 NON EMPTY {Hierarchize({{[Measures].[Budget]}})} ON COLUMNS,
 NON EMPTY {Hierarchize({[Department].[${PARAM3}]})} ON ROWS
+FROM [Quadrant Analysis]</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="SUMMARY_1"
+               id="SUMMARY_1"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Columns/>
+      <Parameters/>
+      <Query>SELECT
+NON EMPTY {Hierarchize({{[Measures].[Actual], [Measures].[Budget]}})} ON COLUMNS,
+NON EMPTY {Hierarchize({[Region].[Region].Members})} ON ROWS
 FROM [Quadrant Analysis]</Query>
    </DataAccess>
 </CDADescriptor>
