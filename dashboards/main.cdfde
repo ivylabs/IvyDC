@@ -1328,7 +1328,7 @@
      },
      {
       "name": "textRenderer",
-      "value": "",
+      "value": "function(v){\n    return \"Joel\" + v;    \n}",
       "type": "JavaScript"
      },
      {

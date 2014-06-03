@@ -27,10 +27,12 @@ var gaugeComponent = BaseComponent.extend({
 			dataViewerHTML = "<b>We need to set a query with two fields of data!</b>";
 		} else {
 
-			Dashboards.log("Datasource has been added");
+			if(Dashboards.debug!=1)Dashboards.log("Datasource has been added");
 			
 			var query = new Query(myself.queryDefinition);
 			
+			if(Dashboards.debug!=1)Dashboards.log("Parameters: " + JSON.stringify(myself.parameters)||"<no parameters>");
+
 			query.fetchData(myself.parameters, function(values) {
 
 				var gridConf = myself.gridSize(values.resultset.length);
@@ -111,6 +113,8 @@ var gaugeComponent = BaseComponent.extend({
 					}
 
 					gageConf = $.extend({}, gageConf, extension);
+
+					if(Dashboards.debug!=1)Dashboards.log("Final gage properties: " + JSON.stringify(gageConf, function(key, val) { if (typeof val === 'function') {return val.toString();}return val;})||"<no properties>");
 					
 					myself.gaugeChartObj[idx] = new JustGage(gageConf);
 					if(myself.expression!==undefined){
