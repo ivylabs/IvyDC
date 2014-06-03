@@ -343,7 +343,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"gauge\" style=\"padding-top: 50px;\">\n    <h2>Gauges</h2>\n    <div class=\"row\" style=\"height:200px;\">\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_1\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_2\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_3\"></div>\n    </div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"gauge\" style=\"padding-top: 50px;\">\n    <h2>Gauges</h2>\n    <div class=\"row\">\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_1\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_2\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_3\"></div>\n    </div>\n    <hr /> \n</div> ",
       "type": "Html"
      },
      {
