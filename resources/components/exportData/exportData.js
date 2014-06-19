@@ -30,7 +30,7 @@ var exportData = BaseComponent.extend({
 		exportHTML += "<div id='"+myself.htmlObject+"_DIV_SHOW_EXPORT'>";
 		exportHTML += "<div id='"+myself.htmlObject+"_exportForm' style='padding-right: 15px;'>";
 		exportHTML += "<div class='clearfix ' style='height:30px;'>";
-		exportHTML += "<h2>"+myself.selectCompsTitle+"</h2> ";
+		exportHTML += "<h2 style='padding-left: 10px;'>"+myself.selectCompsTitle+"</h2> ";
 		exportHTML += "</div>";
 		
 		exportHTML += "<ul id='"+myself.htmlObject+"_chartExportList' class='chartExportList' >";
