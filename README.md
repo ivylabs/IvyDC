@@ -24,7 +24,7 @@ We dare you to improve this plugin with ideias, starts, pull request, ...
 
 #Old Realeases
 
-####0.0.2 release:
+###0.0.2 release:
 
 
 * Pentaho Analyzer Component
