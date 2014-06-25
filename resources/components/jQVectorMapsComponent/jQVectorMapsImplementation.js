@@ -63,7 +63,9 @@ var jQVectorMapComponent = BaseComponent.extend({
 		};
 
 		this.vectorMap=$("#"+this.htmlObject).vectorMap(mapDefinition);
-		
+		if(myself.mapClickFunction){
+			$("#"+this.htmlObject+" path.jvectormap-region").css("cursor","pointer");
+		}
 	}
 	
 });
