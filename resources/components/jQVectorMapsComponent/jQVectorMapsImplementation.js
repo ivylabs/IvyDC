@@ -1,6 +1,7 @@
 var jQVectorMapComponent = BaseComponent.extend({
 	update : function() {
 		if(this.vectorMap){
+			this.clear();
 	    	$("#"+this.htmlObject).empty();
 	    	$(".jvectormap-label").remove();
 		}

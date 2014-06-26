@@ -1,0 +1,300 @@
+<DesignerComponent>
+	<Header>
+		<Name>Pyramid Chart</Name>
+		<IName>PyramidChart</IName>
+		<Description>Pyramid Chart</Description>
+		<Category>IVYIS</Category>
+		<CatDescription>Ivy IS</CatDescription>
+		<Type>PalleteEntry</Type>
+		<Version>1.0</Version>
+	</Header>
+	<Contents>
+		<Model>
+			<Property>parameter</Property>
+			<Property>listeners</Property>
+			<Property>htmlObject</Property>
+			<Property name="parameters">xActionArrayParameter</Property>
+            <Definition name="queryDefinition">
+				<Property>dataSource</Property>
+			</Definition>
+			<Property>postFetch</Property>
+			<Property>preExecution</Property>
+			<Property>postExecution</Property>
+			<Property>preChange</Property>
+			<Property>postChange</Property>
+			<Property>refreshPeriod</Property>
+			<Property>executeAtStart</Property>
+			<Definition name="chartDefinition">
+				<Property name="titleLabel">chartTitle</Property>
+				<Property name="titleFont">chartTitleFont</Property>
+				<Property name="gapSpaceBars">chartGapSpaceBars</Property>
+				<Property name="baseColor">chartBaseColor</Property>
+				<Property name="highlightColor">chartHighlightColor</Property>
+				<Property name="leftLabel">chartLeftLabel</Property>
+				<Property name="leftLabelFont">chartLeftLabelFont</Property>
+				<Property name="rightLabel">chartRightLabel</Property>
+				<Property name="rightLabelFont">chartRightLabelFont</Property>
+				<Property name="showCategory">chartShowCategory</Property>
+				<Property name="categoryFont">chartCategoryFont</Property>
+				<Property name="labelSpace">chartCategoryLabelSize</Property>
+				<Property name="showValues">chartShowValues</Property>
+				<Property name="valuesFont">chartValuesFont</Property>
+				<Property name="formatValues">chartFormatValuesFuntion</Property>
+				<Property name="mouseHoverBars">chartHoverFunction</Property>
+				<Property name="clickAction">chartClickActionFunction</Property>
+			</Definition>
+		</Model>
+
+		<Implementation>
+			<Code src="pyramidChartComponent.js" />
+
+			<Dependencies>
+				<Dependency src="pyramidChart.js">pyramidChart.js</Dependency>
+			</Dependencies>
+
+			<Styles/>
+
+			<CustomProperties>
+				<DesignerProperty>
+					<Header>
+						<Name>chartTitle</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Chart Title</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>70</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>chartTitleFont</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>bold 10pt Arial,sans-serif</DefaultValue>
+						<Description>Chart Title Font</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>71</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>chartGapSpaceBars</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>2</DefaultValue>
+						<Description>Space Bars gap</Description>
+						<InputType>Integer</InputType>
+						<OutputType>Number</OutputType>
+						<Order>72</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>chartBaseColor</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>#fefff2</DefaultValue>
+						<Description>Chart Base Color</Description>
+						<InputType>Color</InputType>
+						<OutputType>String</OutputType>
+						<Order>73</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>chartHighlightColor</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>#317000</DefaultValue>
+						<Description>Chart Highlight Color</Description>
+						<InputType>Color</InputType>
+						<OutputType>String</OutputType>
+						<Order>74</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>chartLeftLabel</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Chart Left Label</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>75</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>chartLeftLabelFont</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>bold 8pt Arial,sans-serif</DefaultValue>
+						<Description>Chart Left Label Font</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>76</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>chartRightLabel</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Chart Left Label</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>77</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>chartRightLabelFont</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>bold 8pt Arial,sans-serif</DefaultValue>
+						<Description>Chart Left Label Font</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>78</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>chartShowCategory</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>true</DefaultValue>
+						<Description>Show Category</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>79</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>chartCategoryFont</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>bold 8pt Arial,sans-serif</DefaultValue>
+						<Description>Chart Category Font</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>80</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>chartCategoryLabelSize</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>40</DefaultValue>
+						<Description>Chart Category Label Size</Description>
+						<InputType>Integer</InputType>
+						<OutputType>Number</OutputType>
+						<Order>81</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>chartShowValues</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>true</DefaultValue>
+						<Description>Show Values</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>82</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>chartValuesFont</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>bold 8pt Arial,sans-serif</DefaultValue>
+						<Description>Chart Values Font</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>83</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+		      	
+		      	<DesignerProperty>
+					<Header>
+						<Name>chartFormatValuesFuntion</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Format Values Function</Description>
+						<Advanced>true</Advanced>
+						<InputType>JavaScript</InputType>
+						<OutputType>Function</OutputType>
+						<Order>84</Order>
+						<Version>1.0</Version>
+					</Header>            
+		      	</DesignerProperty>
+		      	
+		      	<DesignerProperty>
+					<Header>
+						<Name>chartHoverFunction</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Hover Function</Description>
+						<Advanced>true</Advanced>
+						<InputType>JavaScript</InputType>
+						<OutputType>Function</OutputType>
+						<Order>85</Order>
+						<Version>1.0</Version>
+					</Header>            
+		      	</DesignerProperty>
+		      	
+		      	<DesignerProperty>
+					<Header>
+						<Name>chartClickActionFunction</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Click Action</Description>
+						<Advanced>true</Advanced>
+						<InputType>JavaScript</InputType>
+						<OutputType>Function</OutputType>
+						<Order>86</Order>
+						<Version>1.0</Version>
+					</Header>            
+		      	</DesignerProperty>
+
+			</CustomProperties>
+
+		</Implementation>
+	</Contents>
+</DesignerComponent>
