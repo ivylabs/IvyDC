@@ -3,7 +3,7 @@
 	var opts = {
 		width: 600,
 		height: 400,
-		topMargin: 15,
+		topMargin: 50,
 		outerMargin: 15,
 		labelSpace: 0,
 		gapSpaceBars: 2,
@@ -93,6 +93,12 @@
 				}
 				return
 			});
+
+			vis.add(pv.Label)
+				.top(15)
+				.textAlign("center")
+				.data([options.titleLabel])
+				.font(options.titleFont);
 			
 			/* barData1 label */
 			vis.add(pv.Label)
