@@ -51,7 +51,7 @@ var videoPlayerComponent = BaseComponent.extend({
 			
 			$('#'+this.htmlObject+'_video').attr('width',$('#'+this.htmlObject+'_popupForm').width());
 		
-			$("#"+this.htmlObject).html("<a href='#"+this.htmlObject+"_popupForm' id='"+this.htmlObject+"_openVideo'>Open Video</a>");
+			$("#"+this.htmlObject).html("<a href='#"+this.htmlObject+"_popupForm' id='"+this.htmlObject+"_openVideo'>"+this.textLinkPopup+"</a>");
 
 			$('#'+this.htmlObject+'_openVideo').fancybox({
 				'width': this.width,
