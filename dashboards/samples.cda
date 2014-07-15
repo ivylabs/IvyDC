@@ -21,6 +21,14 @@
          <Initscript></Initscript>
          <Language>beanshell</Language>
       </Connection>
+      <Connection id="P1_QUERY" type="scripting.scripting">
+         <Initscript></Initscript>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="F1_QUERY" type="scripting.scripting">
+         <Initscript></Initscript>
+         <Language>beanshell</Language>
+      </Connection>
       <Connection id="G3_QUERY" type="mondrian.jndi">
          <Catalog>mondrian:/SampleData</Catalog>
          <Jndi>SampleData</Jndi>
@@ -38,6 +46,10 @@
          <Jndi>SampleData</Jndi>
       </Connection>
       <Connection id="SUMMARY_1" type="mondrian.jndi">
+         <Catalog>mondrian:/SampleData</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="P3_QUERY" type="mondrian.jndi">
          <Catalog>mondrian:/SampleData</Catalog>
          <Jndi>SampleData</Jndi>
       </Connection>
@@ -171,6 +183,47 @@ TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
 
 return model;</Query>
    </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="P1_QUERY"
+               id="P1_QUERY"
+               type="scriptable">
+      <Columns/>
+      <Parameters/>
+      <Query>import org.pentaho.reporting.engine.classic.core.util.TypedTableModel;
+String [] columnNames = {"Title","Value1","Value2"};
+Class[] columnTypes = {String.class, Integer.class, Integer.class};
+TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
+
+
+ model.addRow(new Object[] {"CTO", 43545, 36652});
+ model.addRow(new Object[] {"CDO", 36652, 34435});
+ model.addRow(new Object[] {"CEO", 34435, 32462});
+ model.addRow(new Object[] {"CKO", 32462, 32567});
+ model.addRow(new Object[] {"CDO", 32567, 32543});
+ model.addRow(new Object[] {"CAO", 32543, 30242});
+
+return model;</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="F1_QUERY"
+               id="F1_QUERY"
+               type="scriptable">
+      <Columns/>
+      <Parameters/>
+      <Query>import org.pentaho.reporting.engine.classic.core.util.TypedTableModel;
+String [] columnNames = {"Title","Value"};
+Class[] columnTypes = {String.class, Integer.class};
+TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
+
+
+ model.addRow(new Object[] {"CTO", 34534});
+ model.addRow(new Object[] {"CEO", 34435});
+ model.addRow(new Object[] {"CCO", 43545});
+ model.addRow(new Object[] {"CAO", 32543});
+ model.addRow(new Object[] {"CDO", 36652});
+ model.addRow(new Object[] {"CDO", 32567});
+ model.addRow(new Object[] {"CKO", 32462});
+
+return model;</Query>
+   </DataAccess>
    <DataAccess access="public" cache="true" cacheDuration="3600" connection="G3_QUERY"
                id="G3_QUERY"
                type="mdx">
@@ -230,6 +283,17 @@ FROM [Quadrant Analysis]</Query>
       <Query>SELECT
 NON EMPTY {Hierarchize({{[Measures].[Actual], [Measures].[Budget]}})} ON COLUMNS,
 NON EMPTY {Hierarchize({[Region].[Region].Members})} ON ROWS
+FROM [Quadrant Analysis]</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="P3_QUERY"
+               id="P3_QUERY"
+               type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Columns/>
+      <Parameters/>
+      <Query>SELECT
+NON EMPTY {Hierarchize({{[Measures].[Actual], [Measures].[Budget]}})} ON COLUMNS,
+NON EMPTY Order({Hierarchize({[Department].[Department].Members})}, [Measures].[Actual], BDESC) ON ROWS
 FROM [Quadrant Analysis]</Query>
    </DataAccess>
 </CDADescriptor>

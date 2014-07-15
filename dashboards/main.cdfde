@@ -116,7 +116,7 @@
      },
      {
       "name": "html",
-      "value": "<div class=\"hidden-print affix\" role=\"complementary\">\n    <br />\n    <h4>Component List</h4>\n    <ul class=\"nav nav-stacked\" id=\"sidebar\">\n        <li><a href=\"#gauge\">Gauge</a></li>\n        <li><a href=\"#vector_map\">Vector Map</a></li>\n        <li><a href=\"#video_player\">Video Player</a></li>\n        <li><a href=\"#ion_slider\">Ion Range Slider</a></li>\n        <li><a href=\"#export_data\">Export Data</a></li>\n        <li><a href=\"#summary\">Summary</a></li>\n        <li><a href=\"#pentaho_analyzer\">Pentaho Analyzer</a></li>\n    </ul> \n</div> ",
+      "value": "<div class=\"hidden-print affix\" role=\"complementary\">\n    <br />\n    <h4>Component List</h4>\n    <ul class=\"nav nav-stacked\" id=\"sidebar\">\n        <li><a href=\"#gauge\">Gauge</a></li>\n        <li><a href=\"#funnel\">Funnel Chart</a></li>\n        <li><a href=\"#pyramid\">Comparison/Pyramid Chart</a></li>\n        <li><a href=\"#vector_map\">Vector Map</a></li>\n        <li><a href=\"#video_player\">Video Player</a></li>\n        <li><a href=\"#ion_slider\">Ion Range Slider</a></li>\n        <li><a href=\"#export_data\">Export Data</a></li>\n        <li><a href=\"#summary\">Summary</a></li>\n        <li><a href=\"#pentaho_analyzer\">Pentaho Analyzer</a></li>\n    </ul> \n</div> ",
       "type": "Html"
      },
      {
@@ -314,6 +314,274 @@
      {
       "name": "html",
       "value": "<div id=\"gauge\" style=\"padding-top: 50px;\">\n    <h2>Gauge</h2>\n    <h4>Common Options</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Option</th>\n                <th>Example</th>\n                <th>Description</th>\n            </tr>\n            </thead>\n            <tbody>\n            <tr>\n                <td>Label</td>\n                <td></td>\n                <td>The lable of the Gauge Component</td>\n            </tr>\n            <tr>\n                <td>Expression</td>\n                <td><div class=\"well\"> function( event ) { ... } </div></td>\n                <td>The Javascript to execute when the Gauge is clicked</td>\n            </tr>\n            <tr>\n                <td>Gauge Type</td>\n                <td>Gauge, Donut</td>\n                <td>The type of gauge to render. It can be either Dial or Donut</td>\n            </tr>\n            <tr>\n                <td>Min Value</td>\n                <td>10</td>\n                <td>The minimal value of range</td>\n            </tr>\n            <tr>\n                <td>Max Value</td>\n                <td>1000</td>\n                <td>The maximal value of range</td>\n            </tr>\n            <tr>\n                <td>Gauge Width Scale</td>\n                <td>2</td>\n                <td>The maximal value of range</td>\n            </tr>\n            <tr>\n                <td>Symbol</td>\n                <td>%</td>\n                <td>The value symbol can be %, $, £, ...</td>\n            </tr>\n            <tr>\n                <td>Subtitle</td>\n                <td></td>\n                <td>The sub title appear in bottom</td>\n            </tr>\n            <tr>\n                <td>Format Number</td>\n                <td>true</td>\n                <td>The Lable that appears below the Gauge</td>\n            </tr>\n            <tr>\n                <td>Text Render</td>\n                <td><div class=\"well\"> function( value ) { return ... } </div></td>\n                <td>Define a javascript function that receive the value and return the value formatted</td>\n            </tr>\n            <tr>\n                <td>Extension points</td>\n                <td></td>\n                <td>Array of properties that override the justgage</td>\n            </tr>\n        </tbody>\n    </table>\n    <h4>Input Resultset</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Field</th>\n                <th>Description</th>\n            </tr>\n        </thead>\n        <tr>\n            <td>Title</td>\n            <td>Gauge title</td>\n        </tr>\n        <tr>\n            <td>Value</td>\n            <td>Value used in the chart</td>\n        </tr>\n        <tr>\n            <td>Min Value (optional)</td>\n            <td>Set the minimal value dinamycally from the resultset</td>\n        </tr>\n        <tr>\n            <td>Max Value (optional)</td>\n            <td>Set the maximum value dinamycally from the resultset</td>\n        </tr>\n        <tr>\n            <td>Gauge Color (optional)</td>\n            <td>Set the color code dinamycally from the resultset for gauge backgound</td>\n        </tr>\n        <tr>\n            <td>Mim Level Color (optional)</td>\n            <td>Set the color code dinamycally from the resultset for min level color</td>\n        </tr>\n        <tr>\n            <td>Middle Level Color (optional)</td>\n            <td>Set the color code dinamycally from the resultset for middle level color</td>\n        </tr>\n        <tr>\n            <td>Max Level Color (optional)</td>\n            <td>Set the color code dinamycally from the resultset for max level color</td>\n        </tr>\n    </table>\n    <h4>Default Gauge</h4>\n    <div class=\"row\">\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_1\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_2\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_3\"></div>\n    </div>\n    <hr /> \n</div> ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "240e8bc7-8f9a-d4aa-3828-779ebd4165df",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "10504327-6618-0f01-40b6-a76be2cda86e",
+    "properties": [
+     {
+      "name": "name",
+      "value": "FUNNEL",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "63e4e099-4253-1936-8061-bdf31b7b40d2",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "240e8bc7-8f9a-d4aa-3828-779ebd4165df",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "2477405d-42eb-27ca-9bc5-db58583af72a",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "63e4e099-4253-1936-8061-bdf31b7b40d2",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<div id=\"funnel\" style=\"padding-top: 50px;\">\n    <h2>Funnel Chart</h2>\n    <h4>Common Options</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Option</th>\n                <th>Example</th>\n                <th>Description</th>\n            </tr>\n            </thead>\n            <tbody>\n            <tr>\n                <td>Show Value</td>\n                <td>True</td>\n                <td>Show value label on funnel chart</td>\n            </tr>\n            <tr>\n                <td>Formart Value</td>\n                <td><div class=\"well\"> function( value, percentage, dataRow, options ) { ... } </div></td>\n                <td>The Javascript function that returns the value formatted</td>\n            </tr>\n            <tr>\n                <td>Value Color</td>\n                <td>#ffffff</td>\n                <td>Value color label</td>\n            </tr>\n            <tr>\n                <td>Show Percentage</td>\n                <td>True</td>\n                <td>Show percentage on value label</td>\n            </tr>\n            <tr>\n                <td>Percentage Color</td>\n                <td>#ffffff</td>\n                <td>Percentage color label</td>\n            </tr>\n            <tr>\n                <td>Show Tooltip</td>\n                <td>True</td>\n                <td>If show Tooltip</td>\n            </tr>\n            <tr>\n                <td>Tooltip Format</td>\n                <td><div class=\"well\"> function( data ) { return data.label + \": \" + data.value; } </div></td>\n                <td>The Javascript function that returns the tooltip text</td>\n            </tr>\n            <tr>\n                <td>Show Label</td>\n                <td>True</td>\n                <td>Show the categories label</td>\n            </tr>\n            <tr>\n                <td>Label Color</td>\n                <td></td>\n                <td>The categories label color</td>\n            </tr>\n            <tr>\n                <td>Area Colors</td>\n                <td>[]</td>\n                <td>An array of Hex colors for the diferent categories</td>\n            </tr>\n            <tr>\n                <td>Enable Area mouse over</td>\n                <td>True</td>\n                <td>Enable Area mouse over</td>\n            </tr>\n            <tr>\n                <td>Mouse Over Opacity Color</td>\n                <td>0.9</td>\n                <td>Mouse over opacity color (decimal number)</td>\n            </tr>\n            <tr>\n                <td>Area On Click</td>\n                <td><div class=\"well\"> function( data ) { ... } </div></td>\n                <td>The Javascript function called when click in some funnel chart area</td>\n            </tr>\n        </tbody>\n    </table>\n    <h4>Input Resultset</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Field</th>\n                <th>Description</th>\n            </tr>\n        </thead>\n        <tr>\n            <td>Category</td>\n            <td>Category of value</td>\n        </tr>\n        <tr>\n            <td>Value</td>\n            <td>Value used in the chart</td>\n        </tr>\n    </table>\n    <h4>Default Funnel</h4>\n    <div class=\"row\">\n    <div class=\"col-md-4\" style=\"height:400px;\" id=\"panel_sample_funnel_1\"></div>\n    <div class=\"col-md-4\" style=\"height:400px;\" id=\"panel_sample_funnel_2\"></div>\n    <div class=\"col-md-4\" style=\"height:400px;\" id=\"panel_sample_funnel_3\"></div>\n    </div>\n    <hr /> \n</div> ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "20a67242-c41c-c071-eeb2-dffcb8c1579b",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "10504327-6618-0f01-40b6-a76be2cda86e",
+    "properties": [
+     {
+      "name": "name",
+      "value": "PYRAMID",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "1953c966-fa70-8183-fc44-6a7f383fc7b9",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "20a67242-c41c-c071-eeb2-dffcb8c1579b",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "b8a486c7-f432-568b-d7a0-2c5a974466e7",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "1953c966-fa70-8183-fc44-6a7f383fc7b9",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<div id=\"pyramid\" style=\"padding-top: 50px;\">\n    <h2>Comparison/Pyramid Chart</h2>\n    <h4>Common Options</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Option</th>\n                <th>Example</th>\n                <th>Description</th>\n            </tr>\n            </thead>\n            <tbody>\n            <tr>\n                <td>Chart Title</td>\n                <td></td>\n                <td>Chart title text label</td>\n            </tr>\n            <tr>\n                <td>Chart Title Font</td>\n                <td>bold 10pt Arial,sans-serif</td>\n                <td>Chart title text font</td>\n            </tr>\n            <tr>\n                <td>Space Bars gap</td>\n                <td>2</td>\n                <td>Space Bars gap</td>\n            </tr>\n            <tr>\n                <td>Chart Base Color</td>\n                <td>#8cc63f</td>\n                <td>Chart bars base color</td>\n            </tr>\n            <tr>\n                <td>Chart Highlight Color</td>\n                <td>#539100</td>\n                <td>Chart bars highlight color</td>\n            </tr>\n            <tr>\n                <td>Chart Left Label</td>\n                <td></td>\n                <td>Left bar title (empty means take from result set)</td>\n            </tr>\n            <tr>\n                <td>Chart Left Label Font</td>\n                <td>bold 10pt Arial,sans-serif</td>\n                <td>Left bar title text font</td>\n            </tr>\n            <tr>\n                <td>Chart Right Label</td>\n                <td></td>\n                <td>Right bar title (empty means take from result set)</td>\n            </tr>\n            <tr>\n                <td>Chart Right Label Font</td>\n                <td>bold 10pt Arial,sans-serif</td>\n                <td>Right bar title text font</td>\n            </tr>\n            <tr>\n                <td>Show Category</td>\n                <td>True</td>\n                <td>Show category label in middle on two bars</td>\n            </tr>\n            <tr>\n                <td>Chart Category Font</td>\n                <td>True</td>\n                <td>Category text font</td>\n            </tr>\n            <tr>\n                <td>Chart Category Label Size</td>\n                <td>40</td>\n                <td>Width category label</td>\n            </tr>\n            <tr>\n                <td>Show Values</td>\n                <td>True</td>\n                <td>Show the values at the end of the bars</td>\n            </tr>\n            <tr>\n                <td>Chart Values Font</td>\n                <td>bold 8pt Arial,sans-serif</td>\n                <td>Values text font</td>\n            </tr>\n            <tr>\n                <td>Format Values Function</td>\n                <td><div class=\"well\"> function( value, dataRow ) { ... } </div></td>\n                <td>The Javascript function that returns the value formatted</td>\n            </tr>\n            <tr>\n                <td>Hover Function</td>\n                <td><div class=\"well\"> function( arrayValue, dataRow, chartObj ) { ... } </div></td>\n                <td>The Javascript function callback on mouve over bars</td>\n            </tr>\n            <tr>\n                <td>Click Action</td>\n                <td><div class=\"well\"> function( dataRow ) { ... } </div></td>\n                <td>The Javascript function called when click in some pyramid chart bars</td>\n            </tr>\n        </tbody>\n    </table>\n    <h4>Input Resultset</h4>\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>Field</th>\n                <th>Description</th>\n            </tr>\n        </thead>\n        <tr>\n            <td>Category</td>\n            <td>Category of value</td>\n        </tr>\n        <tr>\n            <td>First Value</td>\n            <td>First value to compare</td>\n        </tr>\n        <tr>\n            <td>Second Value</td>\n            <td>Second value to compare</td>\n        </tr>\n    </table>\n    <h4>Default Pyramid</h4>\n    <div class=\"row\">\n    <div class=\"col-md-12\" style=\"height:400px;\" id=\"panel_sample_pyramid_1\"></div>\n    </div>\n    <hr /> \n</div> ",
       "type": "Html"
      },
      {
@@ -1649,6 +1917,11 @@
       "type": "Boolean"
      },
      {
+      "name": "textLinkPopup",
+      "value": "",
+      "type": "String"
+     },
+     {
       "name": "htmlObject",
       "value": "panel_sample_video",
       "type": "HtmlObject"
@@ -2048,6 +2321,598 @@
     ]
    },
    {
+    "id": "e93ef78a-534d-c19e-9655-58682c3680f0",
+    "type": "ComponentsFunnelChart",
+    "typeDesc": "Funnel Chart",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "SAMPLE_FUNNEL_1",
+      "type": "Id"
+     },
+     {
+      "name": "parameter",
+      "value": "",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "FUNNEL_QUERY_SAMPLE",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "refreshPeriod",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "showValue",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "formatValue",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "valueColor",
+      "value": "#ffffff",
+      "type": "Color"
+     },
+     {
+      "name": "showPercent",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "percentColor",
+      "value": "#ffffff",
+      "type": "Color"
+     },
+     {
+      "name": "tooltip",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "onTooltip",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "showLabel",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "labelColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "areaColors",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "areaMouseOver",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "opacityColorMouseOver",
+      "value": 0.9,
+      "type": "Float"
+     },
+     {
+      "name": "areaOnClick",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "htmlObject",
+      "value": "panel_sample_funnel_1",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "47175bb9-333c-2072-1083-688520237448",
+    "type": "ComponentsFunnelChart",
+    "typeDesc": "Funnel Chart",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "SAMPLE_FUNNEL_2",
+      "type": "Id"
+     },
+     {
+      "name": "parameter",
+      "value": "",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "FUNNEL_QUERY_SAMPLE",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "refreshPeriod",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "showValue",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "formatValue",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "valueColor",
+      "value": "#ffffff",
+      "type": "Color"
+     },
+     {
+      "name": "showPercent",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "percentColor",
+      "value": "#ffffff",
+      "type": "Color"
+     },
+     {
+      "name": "tooltip",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "onTooltip",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "showLabel",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "labelColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "areaColors",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "areaMouseOver",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "opacityColorMouseOver",
+      "value": 0.9,
+      "type": "Float"
+     },
+     {
+      "name": "areaOnClick",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "htmlObject",
+      "value": "panel_sample_funnel_2",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "5e9a11b2-7081-0ac3-3e28-a7d31a5d1687",
+    "type": "ComponentsFunnelChart",
+    "typeDesc": "Funnel Chart",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "SAMPLE_FUNNEL_3",
+      "type": "Id"
+     },
+     {
+      "name": "parameter",
+      "value": "",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "FUNNEL_QUERY_SAMPLE",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "refreshPeriod",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "showValue",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "formatValue",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "valueColor",
+      "value": "#ffffff",
+      "type": "Color"
+     },
+     {
+      "name": "showPercent",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "percentColor",
+      "value": "#ffffff",
+      "type": "Color"
+     },
+     {
+      "name": "tooltip",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "onTooltip",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "showLabel",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "labelColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "areaColors",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "areaMouseOver",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "opacityColorMouseOver",
+      "value": 0.9,
+      "type": "Float"
+     },
+     {
+      "name": "areaOnClick",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "htmlObject",
+      "value": "panel_sample_funnel_3",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
+    "id": "9fbe705b-42ff-63b3-3a3b-e75e2e4b1a9b",
+    "type": "ComponentsPyramidChart",
+    "typeDesc": "Pyramid Chart",
+    "parent": "IVYIS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "SAMPLE_PYRAMID_1",
+      "type": "Id"
+     },
+     {
+      "name": "parameter",
+      "value": "",
+      "type": "Parameter"
+     },
+     {
+      "name": "listeners",
+      "value": "[]",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "dataSource",
+      "value": "PYRAMID_QUERY_SAMPLE",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "refreshPeriod",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "titleLabel",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "titleFont",
+      "value": "bold 10pt Arial,sans-serif",
+      "type": "String"
+     },
+     {
+      "name": "gapSpaceBars",
+      "value": "10",
+      "type": "Integer"
+     },
+     {
+      "name": "baseColor",
+      "value": "#8bc63f",
+      "type": "Color"
+     },
+     {
+      "name": "highlightColor",
+      "value": "#529100",
+      "type": "Color"
+     },
+     {
+      "name": "leftLabel",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "leftLabelFont",
+      "value": "bold 8pt Arial,sans-serif",
+      "type": "String"
+     },
+     {
+      "name": "rightLabel",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "rightLabelFont",
+      "value": "bold 8pt Arial,sans-serif",
+      "type": "String"
+     },
+     {
+      "name": "showCategory",
+      "value": true,
+      "type": "Boolean"
+     },
+     {
+      "name": "categoryFont",
+      "value": "bold 8pt Arial,sans-serif",
+      "type": "String"
+     },
+     {
+      "name": "labelSpace",
+      "value": 40,
+      "type": "Integer"
+     },
+     {
+      "name": "showValues",
+      "value": true,
+      "type": "Boolean"
+     },
+     {
+      "name": "valuesFont",
+      "value": "bold 8pt Arial,sans-serif",
+      "type": "String"
+     },
+     {
+      "name": "formatValues",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "mouseHoverBars",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "clickAction",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "htmlObject",
+      "value": "panel_sample_pyramid_1",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     }
+    ]
+   },
+   {
     "id": "GENERIC",
     "name": "Generic",
     "type": "Label",
@@ -2126,6 +2991,11 @@
      },
      {
       "name": "oLanguage",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "language",
       "value": "",
       "type": "JavaScript"
      },
@@ -2502,6 +3372,11 @@
       "type": "Boolean"
      },
      {
+      "name": "dataPartRole",
+      "value": "",
+      "type": "String"
+     },
+     {
       "name": "dataSeparator",
       "value": "~",
       "type": "String"
@@ -2720,6 +3595,11 @@
       "name": "percentValueFormat",
       "value": "",
       "type": "JavaScript"
+     },
+     {
+      "name": "pointingMode",
+      "value": "near",
+      "type": "cccPointingModeCustom"
      },
      {
       "name": "renderCallback",
@@ -2983,7 +3863,7 @@
     ]
    },
    {
-    "id": "ded1bc3b-166a-bb9d-fcb4-e9b0e7b0f8c0",
+    "id": "5430f1e7-a0e8-b038-7cb0-ff688c975377",
     "type": "Componentsscriptable_scripting",
     "typeDesc": "scriptable over scripting",
     "parent": "SCRIPTING",
@@ -3011,6 +3891,148 @@
      {
       "name": "query",
       "value": "\nimport org.pentaho.reporting.engine.classic.core.util.TypedTableModel;\nString [] columnNames = {\"Title\",\"Value\"};\nClass[] columnTypes = {String.class, Integer.class};\nTypedTableModel model = new TypedTableModel(columnNames, columnTypes);\n\n\n model.addRow(new Object[] {\"Gauge Title\", 320});\n\nreturn model;",
+      "type": "SqlQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "scripting.scripting",
+    "meta_datype": "scriptable"
+   },
+   {
+    "id": "96ea9fe3-0d0c-8057-08a3-7ce44a8bdbde",
+    "type": "Componentsscriptable_scripting",
+    "typeDesc": "scriptable over scripting",
+    "parent": "SCRIPTING",
+    "properties": [
+     {
+      "name": "name",
+      "value": "FUNNEL_QUERY_SAMPLE",
+      "type": "Id"
+     },
+     {
+      "name": "language",
+      "value": "beanshell",
+      "type": "String"
+     },
+     {
+      "name": "initscript",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "query",
+      "value": "\nimport org.pentaho.reporting.engine.classic.core.util.TypedTableModel;\nString [] columnNames = {\"Title\",\"Value\"};\nClass[] columnTypes = {String.class, Integer.class};\nTypedTableModel model = new TypedTableModel(columnNames, columnTypes);\n\n\n model.addRow(new Object[] {\"CTO\", 34534});\n model.addRow(new Object[] {\"CEO\", 34435});\n model.addRow(new Object[] {\"CCO\", 43545});\n model.addRow(new Object[] {\"CAO\", 32543});\n model.addRow(new Object[] {\"CDO\", 36652});\n model.addRow(new Object[] {\"CDO\", 32567});\n model.addRow(new Object[] {\"CKO\", 32462});\n\nreturn model;",
+      "type": "SqlQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ],
+    "meta": "CDA",
+    "meta_conntype": "scripting.scripting",
+    "meta_datype": "scriptable"
+   },
+   {
+    "id": "ded1bc3b-166a-bb9d-fcb4-e9b0e7b0f8c0",
+    "type": "Componentsscriptable_scripting",
+    "typeDesc": "scriptable over scripting",
+    "parent": "SCRIPTING",
+    "properties": [
+     {
+      "name": "name",
+      "value": "PYRAMID_QUERY_SAMPLE",
+      "type": "Id"
+     },
+     {
+      "name": "language",
+      "value": "beanshell",
+      "type": "String"
+     },
+     {
+      "name": "initscript",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "query",
+      "value": "\nimport org.pentaho.reporting.engine.classic.core.util.TypedTableModel;\nString [] columnNames = {\"Title\",\"Value1\",\"Value2\"};\nClass[] columnTypes = {String.class, Integer.class, Integer.class};\nTypedTableModel model = new TypedTableModel(columnNames, columnTypes);\n\n\n model.addRow(new Object[] {\"CTO\", 43545, 36652});\n model.addRow(new Object[] {\"CDO\", 36652, 34435});\n model.addRow(new Object[] {\"CEO\", 34435, 32462});\n model.addRow(new Object[] {\"CKO\", 32462, 32567});\n model.addRow(new Object[] {\"CDO\", 32567, 32543});\n model.addRow(new Object[] {\"CAO\", 32543, 30242});\n\nreturn model;",
       "type": "SqlQuery"
      },
      {

@@ -45,7 +45,7 @@
 			<Code src="funnelChartComponent.js" />
 
 			<Dependencies>
-				<Dependency src="funnelChart.js">funnelChart.js</Dependency>
+				<Dependency src="../IvyCharts/funnelChart.js" version="1">funnelChart.js</Dependency>
 			</Dependencies>
 
 			<Styles/>
@@ -182,7 +182,7 @@
 						<Name>funnelAreaColors</Name>
 						<Parent>BaseProperty</Parent>
 						<DefaultValue>"[]"</DefaultValue>
-						<Description>Area Color</Description>
+						<Description>Area Colors</Description>
 						<InputType>Array</InputType>
 						<OutputType>Array</OutputType>
 						<Order>79</Order>

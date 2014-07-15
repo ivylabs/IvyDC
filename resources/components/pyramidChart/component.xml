@@ -49,7 +49,7 @@
 			<Code src="pyramidChartComponent.js" />
 
 			<Dependencies>
-				<Dependency src="pyramidChart.js">pyramidChart.js</Dependency>
+				<Dependency src="../IvyCharts/pyramidChart.js" version="1">pyramidChart.js</Dependency>
 			</Dependencies>
 
 			<Styles/>
@@ -101,7 +101,7 @@
 					<Header>
 						<Name>chartBaseColor</Name>
 						<Parent>BaseProperty</Parent>
-						<DefaultValue>#fefff2</DefaultValue>
+						<DefaultValue>#8cc63f</DefaultValue>
 						<Description>Chart Base Color</Description>
 						<InputType>Color</InputType>
 						<OutputType>String</OutputType>
@@ -115,7 +115,7 @@
 					<Header>
 						<Name>chartHighlightColor</Name>
 						<Parent>BaseProperty</Parent>
-						<DefaultValue>#317000</DefaultValue>
+						<DefaultValue>#539100</DefaultValue>
 						<Description>Chart Highlight Color</Description>
 						<InputType>Color</InputType>
 						<OutputType>String</OutputType>
@@ -158,7 +158,7 @@
 						<Name>chartRightLabel</Name>
 						<Parent>BaseProperty</Parent>
 						<DefaultValue></DefaultValue>
-						<Description>Chart Left Label</Description>
+						<Description>Chart Right Label</Description>
 						<InputType>String</InputType>
 						<OutputType>String</OutputType>
 						<Order>77</Order>
@@ -172,7 +172,7 @@
 						<Name>chartRightLabelFont</Name>
 						<Parent>BaseProperty</Parent>
 						<DefaultValue>bold 8pt Arial,sans-serif</DefaultValue>
-						<Description>Chart Left Label Font</Description>
+						<Description>Chart Right Label Font</Description>
 						<InputType>String</InputType>
 						<OutputType>String</OutputType>
 						<Order>78</Order>

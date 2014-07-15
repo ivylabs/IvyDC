@@ -7,8 +7,8 @@
 		outerMargin: 15,
 		labelSpace: 0,
 		gapSpaceBars: 2,
-		baseColor: "#a7b6c1",
-		highlightColor: "#a14538",
+		baseColor: "#8cc63f",
+		highlightColor: "#539100",
 		dataRange: 29000,
 		titleLabel: "",
 		titleFont: "bold 10pt Arial,sans-serif",
@@ -38,7 +38,7 @@
 	    return obj3;
 	}
 
-	_processChartData = function(data){
+	_processPyramidChartData = function(data){
 		var chartData=[];
 		var max = 0;
 		for(var i=0;i<data.resultset.length;i++){
@@ -52,7 +52,7 @@
 	function PyramidChart(options) {
 		this.options = _mergeOptions(opts, options||opts);
 		if(!this.options.data){ console.log("No data found!"); throw "No data found!";}
-		var dataProcessed = _processChartData(this.options.data);
+		var dataProcessed = _processPyramidChartData(this.options.data);
 		this.options.chartData = dataProcessed[0];
 		this.options.dataRange = dataProcessed[1]*2.5;
 	}
@@ -77,7 +77,7 @@
 
 		/* edit with care */
 		var chartWidth = (options.width-options.innerMargin-options.outerMargin)*2,
-			barWidth = (options.height)/options.chartData.length,
+			barWidth = (options.height-options.topMargin)/options.chartData.length,
 			yScale = pv.Scale.linear(0, options.chartData.length).range(0, options.height-options.topMargin),
 			total = pv.Scale.linear(0, options.dataRange).range(0,chartWidth),
 			commas = pv.Format.number(),
