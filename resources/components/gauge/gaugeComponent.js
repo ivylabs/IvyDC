@@ -21,12 +21,12 @@ var gaugeComponent = BaseComponent.extend({
 
 	gridSize: function(rowNum){
 		if(rowNum == 1){
-			return [1, "col-md-12 span-24"];
+			return [1, "100%"];
 		}else if(rowNum > 3){
-			return [4, "col-md-3 span-6"];
+			return [4, "25%"];
 		}
 
-		return [2, "col-md-6 span-12"];
+		return [2, "50%"];
 	},
 
 	update : function() {
@@ -57,7 +57,7 @@ var gaugeComponent = BaseComponent.extend({
 					}
 
 					currCol = myself.GUID();
-					$("#"+currRow).append("<div class='"+gridConf[1]+"' id ="+currCol+"></div>");
+					$("#"+currRow).append("<div style='float: left; width: "+gridConf[1]+";' id ="+currCol+"></div>");
 
 					var actualValue, minValue, maxValue, title, subtitle;
 					if(myself.label == undefined){
