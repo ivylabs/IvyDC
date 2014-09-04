@@ -1,0 +1,240 @@
+<DesignerComponent>
+	<Header>
+		<Name>Funnel Chart</Name>
+		<IName>FunnelChart</IName>
+		<Description>Funnel Chart</Description>
+		<Category>IVYIS</Category>
+		<CatDescription>Ivy IS</CatDescription>
+		<Type>PalleteEntry</Type>
+		<Version>1.0</Version>
+	</Header>
+	<Contents>
+		<Model>
+			<Property>parameter</Property>
+			<Property>listeners</Property>
+			<Property>htmlObject</Property>
+			<Property name="parameters">xActionArrayParameter</Property>
+            <Definition name="queryDefinition">
+				<Property>dataSource</Property>
+			</Definition>
+			<Property>postFetch</Property>
+			<Property>preExecution</Property>
+			<Property>postExecution</Property>
+			<Property>preChange</Property>
+			<Property>postChange</Property>
+			<Property>refreshPeriod</Property>
+			<Property>executeAtStart</Property>
+			<Definition name="chartDefinition">
+				<Property name="showValue">funnelShowValue</Property>
+				<Property name="formatValue">funnelFormatValue</Property>
+				<Property name="valueColor">funnelValueColor</Property>
+				<Property name="showPercent">funnelShowPercent</Property>
+				<Property name="percentColor">funnelPercentColor</Property>
+				<Property name="tooltip">funnelTooltip</Property>
+				<Property name="onTooltip">funnelOnTooltip</Property>
+				<Property name="showLabel">funnelShowLabel</Property>
+				<Property name="labelColor">funnelLabelColor</Property>
+				<Property name="areaColors">funnelAreaColors</Property>
+				<Property name="areaMouseOver">funnelAreaMouseOver</Property>
+				<Property name="opacityColorMouseOver">funnelOpacityColorMouseOver</Property>
+				<Property name="areaOnClick">funnelAreaOnClick</Property>
+			</Definition>
+		</Model>
+
+		<Implementation>
+			<Code src="funnelChartComponent.js" />
+
+			<Dependencies>
+				<Dependency src="../IvyCharts/funnelChart.js" version="1">funnelChart.js</Dependency>
+			</Dependencies>
+
+			<Styles/>
+
+			<CustomProperties>
+				<DesignerProperty>
+					<Header>
+						<Name>funnelShowValue</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"true"</DefaultValue>
+						<Description>Show Value</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>70</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>funnelFormatValue</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Format Value</Description>
+						<InputType>JavaScript</InputType>
+						<OutputType>Function</OutputType>
+						<Order>71</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>funnelValueColor</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>#ffffff</DefaultValue>
+						<Description>Value Color</Description>
+						<InputType>Color</InputType>
+						<OutputType>String</OutputType>
+						<Order>72</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>funnelShowPercent</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"true"</DefaultValue>
+						<Description>Show Percent</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>73</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>funnelPercentColor</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>#ffffff</DefaultValue>
+						<Description>Percent Color</Description>
+						<InputType>Color</InputType>
+						<OutputType>String</OutputType>
+						<Order>74</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>funnelTooltip</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"true"</DefaultValue>
+						<Description>Show Tooltip</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>75</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>funnelOnTooltip</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Tooltip Format</Description>
+						<InputType>JavaScript</InputType>
+						<OutputType>Function</OutputType>
+						<Order>76</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>funnelShowLabel</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"true"</DefaultValue>
+						<Description>Show Label</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>77</Order>
+						<Advanced>false</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>funnelLabelColor</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Label Color</Description>
+						<InputType>Color</InputType>
+						<OutputType>String</OutputType>
+						<Order>78</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>funnelAreaColors</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"[]"</DefaultValue>
+						<Description>Area Colors</Description>
+						<InputType>Array</InputType>
+						<OutputType>Array</OutputType>
+						<Order>79</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>funnelAreaMouseOver</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>"true"</DefaultValue>
+						<Description>Enable Area mouse over</Description>
+						<InputType>Boolean</InputType>
+						<OutputType>Boolean</OutputType>
+						<Order>80</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+				<DesignerProperty>
+					<Header>
+						<Name>funnelOpacityColorMouseOver</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue>0.9</DefaultValue>
+						<Description>Mouse Over Opacity Color</Description>
+						<InputType>Float</InputType>
+						<OutputType>Number</OutputType>
+						<Order>81</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>funnelAreaOnClick</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Area On Click</Description>
+						<InputType>JavaScript</InputType>
+						<OutputType>Function</OutputType>
+						<Order>82</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+
+			</CustomProperties>
+
+		</Implementation>
+	</Contents>
+</DesignerComponent>

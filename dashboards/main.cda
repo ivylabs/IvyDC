@@ -5,6 +5,14 @@
          <Initscript></Initscript>
          <Language>beanshell</Language>
       </Connection>
+      <Connection id="FUNNEL_QUERY_SAMPLE" type="scripting.scripting">
+         <Initscript></Initscript>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="PYRAMID_QUERY_SAMPLE" type="scripting.scripting">
+         <Initscript></Initscript>
+         <Language>beanshell</Language>
+      </Connection>
       <Connection id="MAP_QUERY_SAMPLE" type="scripting.scripting">
          <Initscript></Initscript>
          <Language>beanshell</Language>
@@ -27,6 +35,49 @@ TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
 
 
  model.addRow(new Object[] {"Gauge Title", 320});
+
+return model;</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600"
+               connection="FUNNEL_QUERY_SAMPLE"
+               id="FUNNEL_QUERY_SAMPLE"
+               type="scriptable">
+      <Columns/>
+      <Parameters/>
+      <Query>import org.pentaho.reporting.engine.classic.core.util.TypedTableModel;
+String [] columnNames = {"Title","Value"};
+Class[] columnTypes = {String.class, Integer.class};
+TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
+
+
+ model.addRow(new Object[] {"CTO", 34534});
+ model.addRow(new Object[] {"CEO", 34435});
+ model.addRow(new Object[] {"CCO", 43545});
+ model.addRow(new Object[] {"CAO", 32543});
+ model.addRow(new Object[] {"CDO", 36652});
+ model.addRow(new Object[] {"CDO", 32567});
+ model.addRow(new Object[] {"CKO", 32462});
+
+return model;</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600"
+               connection="PYRAMID_QUERY_SAMPLE"
+               id="PYRAMID_QUERY_SAMPLE"
+               type="scriptable">
+      <Columns/>
+      <Parameters/>
+      <Query>import org.pentaho.reporting.engine.classic.core.util.TypedTableModel;
+String [] columnNames = {"Title","Value1","Value2"};
+Class[] columnTypes = {String.class, Integer.class, Integer.class};
+TypedTableModel model = new TypedTableModel(columnNames, columnTypes);
+
+
+ model.addRow(new Object[] {"CTO", 43545, 36652});
+ model.addRow(new Object[] {"CDO", 36652, 34435});
+ model.addRow(new Object[] {"CEO", 34435, 32462});
+ model.addRow(new Object[] {"CKO", 32462, 32567});
+ model.addRow(new Object[] {"CDO", 32567, 32543});
+ model.addRow(new Object[] {"CAO", 32543, 30242});
 
 return model;</Query>
    </DataAccess>

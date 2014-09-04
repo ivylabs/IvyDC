@@ -25,6 +25,7 @@
 			<Property>videoPosterImg</Property>
 			<Property>videoLoop</Property>
 			<Property>popup</Property>
+			<Property>textLinkPopup</Property>
 			
 		</Model>
 		<Implementation>
@@ -190,6 +191,20 @@
 						<InputType>Boolean</InputType>
 						<OutputType>Boolean</OutputType>
 						<Order>63</Order>
+						<Advanced>true</Advanced>
+						<Version>1.0</Version>
+					</Header>
+				</DesignerProperty>
+				
+				<DesignerProperty>
+					<Header>
+						<Name>textLinkPopup</Name>
+						<Parent>BaseProperty</Parent>
+						<DefaultValue></DefaultValue>
+						<Description>Text Link Popup</Description>
+						<InputType>String</InputType>
+						<OutputType>String</OutputType>
+						<Order>64</Order>
 						<Advanced>true</Advanced>
 						<Version>1.0</Version>
 					</Header>
