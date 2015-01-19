@@ -3023,16 +3023,6 @@
       "type": "JavaScript"
      },
      {
-      "name": "parameters",
-      "value": "[]",
-      "type": "ValuesArray"
-     },
-     {
-      "name": "colHeaders",
-      "value": "[]",
-      "type": "Array"
-     },
-     {
       "name": "colTypes",
       "value": "[]",
       "type": "colTypesCustom"
@@ -3049,6 +3039,16 @@
      },
      {
       "name": "colSortable",
+      "value": "[]",
+      "type": "Array"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "colHeaders",
       "value": "[]",
       "type": "Array"
      },
@@ -3240,23 +3240,23 @@
       "type": "Datasource"
      },
      {
-      "name": "priority",
-      "value": 5,
-      "type": "Integer"
-     },
-     {
       "name": "width",
       "value": "250",
       "type": "Integer"
      },
      {
-      "name": "height",
-      "value": "250",
+      "name": "priority",
+      "value": 5,
       "type": "Integer"
      },
      {
       "name": "refreshPeriod",
       "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "height",
+      "value": "250",
       "type": "Integer"
      },
      {
