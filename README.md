@@ -10,7 +10,8 @@ This is a plugin for Pentaho platform with custom CDE Components to use in your 
 * Features and bugs fixed on others components
 
 #What is the road map for the next version?
-* ...
+* New Template
+* Bugs fix
 
 We dare you to improve this plugin with ideias, starts, pull request, ...
 
