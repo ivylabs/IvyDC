@@ -3,6 +3,29 @@
   "title": "samples",
   "rows": [
    {
+    "id": "b21d1f4d-6170-87cb-1ae9-18b0668cba06",
+    "type": "LayoutResourceCode",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "opts",
+      "type": "Id"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     },
+     {
+      "name": "resourceCode",
+      "value": "var dashboardProperties = {\n\tname: \"Samples\",\n\tmainTitle: \"Sample how to use Ivy Dashboard Components\"\n}; ",
+      "type": "Resource"
+     }
+    ]
+   },
+   {
     "id": "e8b53559-bf95-104b-a8b3-af717ae2c73c",
     "type": "LayoutRow",
     "typeDesc": "Row",
@@ -116,7 +139,7 @@
      },
      {
       "name": "html",
-      "value": "<div class=\"hidden-print affix\" role=\"complementary\">\n    <br />\n    <h4>Component List</h4>\n    <ul class=\"nav nav-stacked\" id=\"sidebar\">\n        <li><a href=\"#gauge\">Gauge</a></li>\n        <li><a href=\"#funnel\">Funnel Chart</a></li>\n        <li><a href=\"#pyramid\">Comparison/Pyramid Chart</a></li>\n        <li><a href=\"#vector_map\">Vector Map</a></li>\n        <li><a href=\"#video_player\">Video Player</a></li>\n        <li><a href=\"#ion_slider\">Ion Range Slider</a></li>\n        <li><a href=\"#export_data\">Export Data</a></li>\n        <li><a href=\"#summary\">Summary</a></li>\n        <li><a href=\"#pentaho_analyzer\">Pentaho Analyzer</a></li>\n    </ul> \n</div> ",
+      "value": "<nav id=\"menuAffix\" class=\"bs-docs-sidebar basic-login hidden-print hidden-xs hidden-sm affix\">\n    <h4>Component List</h4>\n    <ul class=\"nav bs-docs-sidenav\" id=\"sidebar\">\n        <li><a href=\"#gauge\">Gauge</a></li>\n        <li><a href=\"#funnel\">Funnel Chart</a></li>\n        <li><a href=\"#pyramid\">Comparison/Pyramid Chart</a></li>\n        <li><a href=\"#vector_map\">Vector Map</a></li>\n        <li><a href=\"#video_player\">Video Player</a></li>\n        <li><a href=\"#ion_slider\">Ion Range Slider</a></li>\n        <li><a href=\"#export_data\">Export Data</a></li>\n        <li><a href=\"#summary\">Summary</a></li>\n        <li><a href=\"#pentaho_analyzer\">Pentaho Analyzer</a></li>\n    </ul> \n</nav> ",
       "type": "Html"
      },
      {
@@ -313,7 +336,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"gauge\" style=\"padding-top: 50px;\">\n    <h2>Gauges</h2>\n    <div class=\"row\">\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_1\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_2\"></div>\n    <div class=\"col-md-4\" id=\"panel_sample_gauge_3\"></div>\n    </div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"gauge\" style=\"padding-top: 50px;\">\n    <div class=\"basic-login\">\n        <h2>Gauges</h2>\n        <div class=\"row\">\n        <div class=\"col-md-4\" id=\"panel_sample_gauge_1\"></div>\n        <div class=\"col-md-4\" id=\"panel_sample_gauge_2\"></div>\n        <div class=\"col-md-4\" id=\"panel_sample_gauge_3\"></div>\n        </div>\n        <hr /> \n    </div> \n</div> ",
       "type": "Html"
      },
      {
@@ -447,7 +470,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"funnel\" style=\"padding-top: 50px;\">\n    <h2>Funnel Chart</h2>\n    <div class=\"row\">\n        <div class=\"col-md-4\" style=\"height:400px;\" id=\"panel_sample_funnel_1\"></div>\n        <div class=\"col-md-4\" style=\"height:400px;\" id=\"panel_sample_funnel_2\"></div>\n        <div class=\"col-md-4\" style=\"height:400px;\" id=\"panel_sample_funnel_3\"></div>\n    </div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"funnel\" style=\"padding-top: 50px;\">\n    <div class=\"basic-login\">\n        <h2>Funnel Chart</h2>\n        <div class=\"row\">\n            <div class=\"col-md-4\" style=\"height:400px;\" id=\"panel_sample_funnel_1\"></div>\n            <div class=\"col-md-4\" style=\"height:400px;\" id=\"panel_sample_funnel_2\"></div>\n            <div class=\"col-md-4\" style=\"height:400px;\" id=\"panel_sample_funnel_3\"></div>\n        </div>\n        <hr /> \n    </div>\n</div> ",
       "type": "Html"
      },
      {
@@ -581,7 +604,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"pyramid\" style=\"padding-top: 50px;\">\n    <h2>Comparison/Pyramid Chart</h2>\n    <div class=\"row\">\n        <div class=\"col-md-6\" style=\"height:400px;\" id=\"panel_sample_pyramid_1\"></div>\n        <div class=\"col-md-6\" style=\"height:400px;\" id=\"panel_sample_pyramid_2\"></div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-md-12\" style=\"height:150px;\" id=\"panel_sample_pyramid_3\"></div>\n    </div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"pyramid\" style=\"padding-top: 50px;\">\n    <div class=\"basic-login\">\n        <h2>Comparison/Pyramid Chart</h2>\n        <div class=\"row\">\n            <div class=\"col-md-6\" style=\"height:400px;\" id=\"panel_sample_pyramid_1\"></div>\n            <div class=\"col-md-6\" style=\"height:400px;\" id=\"panel_sample_pyramid_2\"></div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-12\" style=\"height:150px;\" id=\"panel_sample_pyramid_3\"></div>\n        </div>\n        <hr /> \n    </div> \n</div> ",
       "type": "Html"
      },
      {
@@ -715,7 +738,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"vector_map\" style=\"padding-top: 50px;\">\n    <h2>Vector Maps</h2>\n    <div class=\"row\">\n    <div style=\"height:350px;\" class=\"col-md-6\" id=\"sample_map_1\"></div>\n    <div style=\"height:350px;\" class=\"col-md-6\" id=\"sample_map_2\"></div>\n    </div>\n    <div class=\"row\">\n    <div class=\"col-md-12\"><h3>Clickable Map</h3></div>\n    </div>\n    <div class=\"row\">\n    <div style=\"height:350px;\" class=\"col-md-12\" id=\"sample_map_3\"></div>\n    </div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"vector_map\" style=\"padding-top: 50px;\">\n    <div class=\"basic-login\">\n        <h2>Vector Maps</h2>\n        <div class=\"row\">\n        <div style=\"height:350px;\" class=\"col-md-6\" id=\"sample_map_1\"></div>\n        <div style=\"height:350px;\" class=\"col-md-6\" id=\"sample_map_2\"></div>\n        </div>\n        <div class=\"row\">\n        <div class=\"col-md-12\"><h3>Clickable Map</h3></div>\n        </div>\n        <div class=\"row\">\n        <div style=\"height:350px;\" class=\"col-md-12\" id=\"sample_map_3\"></div>\n        </div>\n        <hr /> \n    </div> \n</div> ",
       "type": "Html"
      },
      {
@@ -849,7 +872,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"video_player\" style=\"padding-top: 50px;\">\n    <h2>Video Player</h2>\n    <h3>Embedded</h3>\n    <div id=\"video_sample_1\"></div>\n    <h3>Open in Popup</h3>\n    <div id=\"video_sample_2\"></div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"video_player\" style=\"padding-top: 50px;\">\n    <div class=\"basic-login\">\n        <h2>Video Player</h2>\n        <h3>Embedded</h3>\n        <div id=\"video_sample_1\"></div>\n        <h3>Open in Popup</h3>\n        <div id=\"video_sample_2\"></div>\n        <hr /> \n    </div> \n</div> ",
       "type": "Html"
      },
      {
@@ -983,7 +1006,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"ion_slider\" style=\"padding-top: 50px;\">\n    <h2>Ion Range Slider</h2>\n    <div id=\"ion_slider_1\"></div>\n    <div id=\"ion_slider_2\"></div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"ion_slider\" style=\"padding-top: 50px;\">\n    <div class=\"basic-login\">\n        <h2>Ion Range Slider</h2>\n        <div id=\"ion_slider_1\"></div>\n        <div id=\"ion_slider_2\"></div>\n        <hr /> \n    </div> \n</div> ",
       "type": "Html"
      },
      {
@@ -1117,7 +1140,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"export_data\" style=\"padding-top: 50px;\">\n    <h2>Export Data</h2>\n    <div class=\"col-md-4\" id=\"export_data_1\"></div>\n    <div class=\"col-md-4\" id=\"table_sample\"></div>\n    <div class=\"col-md-4\" id=\"line_chart_sample\"></div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"export_data\" style=\"padding-top: 50px;\">\n    <div class=\"basic-login\" style=\"min-height: 400px;\">\n        <h2>Export Data</h2>\n        <div class=\"col-md-4\" id=\"export_data_1\"></div>\n        <div class=\"col-md-4\" id=\"table_sample\" style=\"height:250px\"></div>\n        <div class=\"col-md-4\" id=\"line_chart_sample\" style=\"height:250px\"></div>\n        <hr /> \n    </div> \n</div> ",
       "type": "Html"
      },
      {
@@ -1251,7 +1274,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"summary\" style=\"padding-top: 50px;\">\n    <h2>Summary</h2>\n    <div id=\"summary_1\"></div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"summary\" style=\"padding-top: 50px;\">\n    <div class=\"basic-login\">\n        <h2>Summary</h2>\n        <div id=\"summary_1\"></div>\n        <hr /> \n    </div> \n</div> ",
       "type": "Html"
      },
      {
@@ -1385,7 +1408,7 @@
      },
      {
       "name": "html",
-      "value": "<div id=\"pentaho_analyzer\" style=\"padding-top: 50px;\">\n    <h2>Pentaho Analyzer</h2>\n    <div class=\"alert alert-danger alert-dismissable\">\n      This Component just works on <strong>Pentaho Enterprise Edition</strong>.\n    </div>\n    <div id=\"pentaho_analyzer_1\"></div>\n    <div id=\"pentaho_analyzer_2\"></div>\n    <hr /> \n</div> ",
+      "value": "<div id=\"pentaho_analyzer\" style=\"padding-top: 50px;\">\n    <div class=\"basic-login\">\n        <h2>Pentaho Analyzer</h2>\n        <div class=\"alert alert-danger alert-dismissable\">\n          This Component just works on <strong>Pentaho Enterprise Edition</strong>.\n        </div>\n        <div id=\"pentaho_analyzer_1\"></div>\n        <div id=\"pentaho_analyzer_2\"></div>\n        <hr /> \n    </div> \n</div> ",
       "type": "Html"
      },
      {
