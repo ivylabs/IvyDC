@@ -23,7 +23,7 @@
 		id="IvyDC"
 		title="IvyDC"
 		type="IvyDC"
-		class="pt.webdetails.cpk.CpkContentGenerator"/>
+		class="com.ivyis.pentaho.ivylicense.resources.IvyContentGenerator"/>
 	<!-- Menu entry -->
 	<menu-items>
 		<!--<menu-item id="IvyDC_main" anchor="tools-submenu" label="IvyDC" command="content/IvyDC/" type="MENU_ITEM" how="LAST_CHILD"/>-->
