@@ -128,10 +128,12 @@ var gaugeComponent = BaseComponent.extend({
 
 					if(Dashboards.debug!=1)Dashboards.log("Final gage properties: " + JSON.stringify(gageConf, function(key, val) { if (typeof val === 'function') {return val.toString();}return val;})||"<no properties>");
 					
-					myself.gaugeChartObj[idx] = new JustGage(gageConf);
+					new JustGage(gageConf);
+					
+					myself.gaugeChartObj[currCol] = gageConf;
 					if(myself.expression!==undefined){
 						$("#"+currCol).click(function(e){
-							myself.expression(e);
+							myself.expression(e, myself.gaugeChartObj[e.currentTarget.id]);
 						});
 					}
 				}

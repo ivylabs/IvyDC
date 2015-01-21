@@ -38,6 +38,8 @@ var summaryComp = BaseComponent.extend({
     },
 
 	update : function() {
+		
+		this.clear();
 	
 		var myself=this;
 		
