@@ -3,8 +3,7 @@
 
 This is a plugin for Pentaho platform with custom CDE Components to use in your dashboards.
 
-![Ivy DC](http://www.ivy-is.co.uk/wp-content/uploads/2014/04/ivydc_samples.png)
-![Ivy DC](http://www.ivy-is.co.uk/wp-content/uploads/2014/04/ivydc_docs1.png)
+![Ivy DC](https://raw.githubusercontent.com/ivylabs/IvyDC/master/static/custom/img/ivydc_screenshoot.png)
 
 #Some of the features in this 0.0.5 release:
 * Features and bugs fixed on others components
