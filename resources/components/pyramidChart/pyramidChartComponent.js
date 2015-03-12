@@ -36,28 +36,29 @@ var PyramidChartComponent = BaseComponent.extend({
 		// no params and no callback
 		query.fetchData(myself.parameters, function(values) {
 			chartData = (typeof myself.postFetch=="function")?myself.postFetch(values):values;
+
+		    $("#" + myself.htmlObject).html('<div id="'+ myself.htmlObject +'protovis"></div>');
+		    myself.chartConf = myself.chartDefinition;
+		    myself.chartConf.htmlObjectChart = myself.htmlObject +'protovis';
+		    myself.chartConf.data = chartData;
+		    myself.chartConf.width = myself.getWidth();
+		    myself.chartConf.height = myself.getHeight();
+
+			myself.chartObj = new PyramidChart(myself.chartConf);
+			myself.chartObj.render();
+
+			var timer;
+		    $(window).bind('resize', function(){
+		      timer && clearTimeout(timer);
+		      timer = setTimeout(function(){
+			    myself.chartConf.width = myself.getWidth();
+			    myself.chartConf.height = myself.getHeight();
+		      	myself.chartObj.update(myself.chartConf);
+		      }, 150);
+		    });
+		    
 		});
 	}
-
-    $("#" + this.htmlObject).html('<div id="'+ this.htmlObject +'protovis"></div>');
-    myself.chartConf = myself.chartDefinition;
-    myself.chartConf.htmlObjectChart = this.htmlObject +'protovis';
-    myself.chartConf.data = chartData;
-    myself.chartConf.width = myself.getWidth();
-    myself.chartConf.height = myself.getHeight();
-
-	myself.chartObj = new PyramidChart(myself.chartConf);
-	myself.chartObj.render();
-
-	var timer;
-    $(window).bind('resize', function(){
-      timer && clearTimeout(timer);
-      timer = setTimeout(function(){
-	    myself.chartConf.width = myself.getWidth();
-	    myself.chartConf.height = myself.getHeight();
-      	myself.chartObj.update(myself.chartConf);
-      }, 150);
-    });
 
   },
 
