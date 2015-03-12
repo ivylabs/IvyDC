@@ -40,44 +40,44 @@ var jQVectorMapComponent = BaseComponent.extend({
 
 				mapData = Dashboards.propertiesArrayToObject(values.resultset);
 				
-			});
-
-		}
-		
-		var mapDefinition = {
-				map: this.mapFile,
-				series: {
-			      regions: [{
-			        values: mapData,
-			        scale: [this.mapLowScaleColor, this.mapHighScaleColor],
-			        normalizeFunction: this.mapNormalizeFunction
-			      }]
-			    },
-			    regionStyle: {
-	              initial: {
-	                fill: this.mapColor
-	              }
-	            },
-				backgroundColor: this.mapBackgroundColor,
-				hoverOpacity : this.mapHoverOpacity,
-				onRegionClick: function(event, code){
-					if(myself.mapClickFunction){
-						myself.mapClickFunction(event, code);
-					}
-				},
-				onRegionLabelShow: function(event, label, code){
-					if(myself.mapOnRegionShowFunction){
-						var labelString = myself.mapOnRegionShowFunction(event, label.text(), code, mapData);
+				var mapDefinition = {
+						map: myself.mapFile,
+						series: {
+					      regions: [{
+					        values: mapData,
+					        scale: [myself.mapLowScaleColor, myself.mapHighScaleColor],
+					        normalizeFunction: myself.mapNormalizeFunction
+					      }]
+					    },
+					    regionStyle: {
+			              initial: {
+			                fill: myself.mapColor
+			              }
+			            },
+						backgroundColor: myself.mapBackgroundColor,
+						hoverOpacity : myself.mapHoverOpacity,
+						onRegionClick: function(event, code){
+							if(myself.mapClickFunction){
+								myself.mapClickFunction(event, code);
+							}
+						},
+						onRegionLabelShow: function(event, label, code){
+							if(myself.mapOnRegionShowFunction){
+								var labelString = myself.mapOnRegionShowFunction(event, label.text(), code, mapData);
+								
+								label.html(labelString);
+							};
+						}
 						
-						label.html(labelString);
-					};
+				};
+
+				myself.vectorMap=$("#"+myself.htmlObject).vectorMap(mapDefinition);
+				if(myself.mapClickFunction){
+					$("#"+myself.htmlObject+" path.jvectormap-region").css("cursor","pointer");
 				}
 				
-		};
+			});
 
-		this.vectorMap=$("#"+this.htmlObject).vectorMap(mapDefinition);
-		if(myself.mapClickFunction){
-			$("#"+this.htmlObject+" path.jvectormap-region").css("cursor","pointer");
 		}
 	}
 	
