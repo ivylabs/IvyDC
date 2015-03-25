@@ -55,4 +55,3 @@ We dare you to improve this plugin with ideias, starts, pull request, ...
 * Samples
 * Documentation
 
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/320b5ae43fe4a489fbb422518d6bc1d1 "githalytics.com")](http://githalytics.com/ivylabs/IvyDC)
