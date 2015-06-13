@@ -11,7 +11,7 @@ This is a plugin for Pentaho platform with custom CDE Components to use in your 
 #What is the road map for the next version?
 * 
 
-We dare you to improve this plugin with ideias, starts, pull request, ...
+We dare you to improve this plugin with ideias, stars, pull request, ...
 
 
 
