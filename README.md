@@ -5,18 +5,22 @@ This is a plugin for Pentaho platform with custom CDE Components to use in your 
 
 ![Ivy DC](https://raw.githubusercontent.com/ivylabs/IvyDC/master/static/custom/img/ivydc_screenshoot.png)
 
-#Some of the features in this 0.0.5 release:
-* Features and bugs fixed on others components
+#Some of the features in this 0.0.6 release:
+* bugs fixed
 
 #What is the road map for the next version?
-* New Template
-* Bugs fix
+* 
 
 We dare you to improve this plugin with ideias, starts, pull request, ...
 
 
 
 #Old Realeases
+
+###0.0.5 releaseease:
+
+* Features and bugs fixed on others components
+
 
 ###0.0.4 releaseease:
 
