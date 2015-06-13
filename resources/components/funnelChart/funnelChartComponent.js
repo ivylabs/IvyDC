@@ -36,28 +36,29 @@ var FunnelChartComponent = BaseComponent.extend({
 		// no params and no callback
 		query.fetchData(myself.parameters, function(values) {
 			chartData = (typeof myself.postFetch=="function")?myself.postFetch(values):values;
+
+		    $("#" + myself.htmlObject).html('<div id="'+ myself.htmlObject +'Raphael"></div>');
+		    myself.chartConf = myself.chartDefinition;
+		    myself.chartConf.htmlObjectChart = myself.htmlObject +'Raphael';
+		    myself.chartConf.data = chartData;
+		    myself.chartConf.width = myself.getWidth();
+		    myself.chartConf.height = myself.getHeight();
+
+			myself.chartObj = new FunnelChart(myself.chartConf);
+			myself.chartObj.render();
+
+			var timer;
+		    $(window).bind('resize', function(){
+		      timer && clearTimeout(timer);
+		      timer = setTimeout(function(){
+			    myself.chartConf.width = myself.getWidth();
+			    myself.chartConf.height = myself.getHeight();
+		      	myself.chartObj.update(myself.chartConf);
+		      }, 150);
+		    });
+		    
 		});
 	}
-
-    $("#" + this.htmlObject).html('<div id="'+ this.htmlObject +'Raphael"></div>');
-    myself.chartConf = myself.chartDefinition;
-    myself.chartConf.htmlObjectChart = this.htmlObject +'Raphael';
-    myself.chartConf.data = chartData;
-    myself.chartConf.width = myself.getWidth();
-    myself.chartConf.height = myself.getHeight();
-
-	myself.chartObj = new FunnelChart(myself.chartConf);
-	myself.chartObj.render();
-
-	var timer;
-    $(window).bind('resize', function(){
-      timer && clearTimeout(timer);
-      timer = setTimeout(function(){
-	    myself.chartConf.width = myself.getWidth();
-	    myself.chartConf.height = myself.getHeight();
-      	myself.chartObj.update(myself.chartConf);
-      }, 150);
-    });
 
   },
 
