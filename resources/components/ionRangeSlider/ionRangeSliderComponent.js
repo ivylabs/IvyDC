@@ -42,13 +42,13 @@ var IonRangeSliderComponent = BaseComponent.extend({
             query.fetchData(myself.parameters, function(values) {
 
                 sliderData = values;
+            
+                if(sliderData.resultset.length>0 && sliderData.resultset[0].length>0){ this.fromRange = sliderData.resultset[0][0]; }
+                if(sliderData.resultset.length>0 && sliderData.resultset[0].length>1){ this.toRange = sliderData.resultset[0][1]; }
+                if(sliderData.resultset.length>0 && sliderData.resultset[0].length>2){ this.minRange = sliderData.resultset[0][2]; }
+                if(sliderData.resultset.length>0 && sliderData.resultset[0].length>3){ this.maxRange = sliderData.resultset[0][3]; }
                 
             });
-
-            if(sliderData.resultset.length>0 && sliderData.resultset[0].length>0){ this.fromRange = sliderData.resultset[0][0]; }
-            if(sliderData.resultset.length>0 && sliderData.resultset[0].length>1){ this.toRange = sliderData.resultset[0][1]; }
-            if(sliderData.resultset.length>0 && sliderData.resultset[0].length>2){ this.minRange = sliderData.resultset[0][2]; }
-            if(sliderData.resultset.length>0 && sliderData.resultset[0].length>3){ this.maxRange = sliderData.resultset[0][3]; }
 
         }
 
