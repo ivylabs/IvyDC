@@ -15,7 +15,7 @@ var IonRangeSliderComponent = BaseComponent.extend({
     update : function() {
         var myself = this;
         $("#" + this.htmlObject).empty();
-        var ph = $("#" + this.htmlObject);
+        this.ph = $("#" + this.htmlObject);
 
 
         if(this.parameter != undefined && this.parameter != null){
@@ -35,29 +35,47 @@ var IonRangeSliderComponent = BaseComponent.extend({
         if(myself.queryDefinition && Dashboards.objectToPropertiesArray(this.queryDefinition).length > 0){
 
             // create a query object
-            var query = new Query(myself.queryDefinition);
-            
+            // var query = new Query(myself.queryDefinition);
+            this.queryState = Dashboards.getQuery(myself.queryDefinition);
+
+            /* The non-paging query handler only needs to concern itself
+             * with handling postFetch and calling the draw function
+             */
+            var success = _.bind(function(data){
+                this.rawData = data;
+                this.processResponse(data);    
+            },this);
+            // var handler = this.getSuccessHandler(success);
+
             // fire the query objects fetchdata method
             // no params and no callback
-            query.fetchData(myself.parameters, function(values) {
-
-                sliderData = values;
+            // query.fetchData(myself.parameters, handler);
             
-                if(sliderData.resultset.length>0 && sliderData.resultset[0].length>0){ this.fromRange = sliderData.resultset[0][0]; }
-                if(sliderData.resultset.length>0 && sliderData.resultset[0].length>1){ this.toRange = sliderData.resultset[0][1]; }
-                if(sliderData.resultset.length>0 && sliderData.resultset[0].length>2){ this.minRange = sliderData.resultset[0][2]; }
-                if(sliderData.resultset.length>0 && sliderData.resultset[0].length>3){ this.maxRange = sliderData.resultset[0][3]; }
-                
-            });
+            this.queryState.setAjaxOptions({async:true});
+            this.queryState.fetchData(myself.parameters, success);
 
         }
-
+    },
+    getValue : function() {
+        return this.value[this.name];
+    },
+    processResponse : function(json) {
+        if(json.resultset.length>0 && json.resultset[0].length>0){ this.fromRange = json.resultset[0][0]; }
+        if(json.resultset.length>0 && json.resultset[0].length>1){ this.toRange = json.resultset[0][1]; }
+        if(json.resultset.length>0 && json.resultset[0].length>2){ this.minRange = json.resultset[0][2]; }
+        if(json.resultset.length>0 && json.resultset[0].length>3){ this.maxRange = json.resultset[0][3]; }
+        
         $("html head:first #skinCss").remove();
-        $("html head:first").append("<link rel=\"stylesheet\" href=\""+window.location.protocol+"//"+window.location.host+webAppPath+"/api/repos/IvyDC/resources/components/ionRangeSlider/css/"+myself.skins+".css\" id=\"skinCss\" />");
+        $("html head:first").append("<link rel=\"stylesheet\" href=\""+window.location.protocol+"//"+window.location.host+webAppPath+"/api/repos/IvyDC/resources/components/ionRangeSlider/css/"+this.skins+".css\" id=\"skinCss\" />");
 
         var inputSlider = $("<input type=\"text\" class=\"form-control\" />");
         
-        ph.append(inputSlider);
+        // Avoid duplicate sliders that happens when this method is called repeatedly.
+        if (this.ph.find("input").length == 0) {
+            this.ph.append(inputSlider);
+        }
+
+        var myself = this;
 
         var sliderConf = {
             type: this.slideType,
@@ -86,22 +104,18 @@ var IonRangeSliderComponent = BaseComponent.extend({
 
         this.sliderConf = sliderConf;
 
-        ph.find("input").ionRangeSlider(sliderConf);
+        this.ph.find("input").ionRangeSlider(sliderConf);
 
 
         // Work around for responsive purposes
-        myself.reRenderSlider = function (){ 
-            myself.update();
+        this.reRenderSlider = function (){ 
+            this.update();
         }
 
         var timer;
         $(window).bind('resize', function(){
          timer && clearTimeout(timer);
-         timer = setTimeout(myself.reRenderSlider, 150);
+         timer = setTimeout(this.reRenderSlider, 150);
         });
-        
-    },
-    getValue : function() {
-        return this.value[this.name];
     }
 });
