@@ -35,7 +35,6 @@ var IonRangeSliderComponent = BaseComponent.extend({
         if(myself.queryDefinition && Dashboards.objectToPropertiesArray(this.queryDefinition).length > 0){
 
             // create a query object
-            // var query = new Query(myself.queryDefinition);
             this.queryState = Dashboards.getQuery(myself.queryDefinition);
 
             /* The non-paging query handler only needs to concern itself
@@ -45,11 +44,6 @@ var IonRangeSliderComponent = BaseComponent.extend({
                 this.rawData = data;
                 this.processResponse(data);    
             },this);
-            // var handler = this.getSuccessHandler(success);
-
-            // fire the query objects fetchdata method
-            // no params and no callback
-            // query.fetchData(myself.parameters, handler);
             
             this.queryState.setAjaxOptions({async:true});
             this.queryState.fetchData(myself.parameters, success);
